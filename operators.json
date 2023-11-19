@@ -1,0 +1,2772 @@
+{
+    "'Justice Knight'": {
+        "charId": "char_4000_jnight",
+        "gender": "Female",
+        "race": "Jan 21",
+        "allegiance": "Pinus",
+        "position": "Ranged",
+        "rarity": 1,
+        "cost": 3,
+        "infected": "N/A"
+    },
+    "12F": {
+        "charId": "char_009_12fce",
+        "gender": "Male",
+        "race": "Savra",
+        "allegiance": "Rhodes Island",
+        "position": "Ranged",
+        "rarity": 2,
+        "cost": 24,
+        "infected": "No"
+    },
+    "Aak": {
+        "charId": "char_225_haak",
+        "gender": "Male",
+        "race": "Feline",
+        "allegiance": "Lee's Detective Agency",
+        "position": "Ranged",
+        "rarity": 6,
+        "cost": 13,
+        "infected": "No"
+    },
+    "Absinthe": {
+        "charId": "char_405_absin",
+        "gender": "Female",
+        "race": "Ursus",
+        "allegiance": "Ursus",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 22,
+        "infected": "No"
+    },
+    "Aciddrop": {
+        "charId": "char_366_acdrop",
+        "gender": "Female",
+        "race": "Liberi",
+        "allegiance": "Columbia",
+        "position": "Ranged",
+        "rarity": 4,
+        "cost": 18,
+        "infected": "Yes"
+    },
+    "Adnachiel": {
+        "charId": "char_211_adnach",
+        "gender": "Male",
+        "race": "Sankta",
+        "allegiance": "Reserve 4",
+        "position": "Ranged",
+        "rarity": 3,
+        "cost": 11,
+        "infected": "Yes"
+    },
+    "Akafuyu": {
+        "charId": "char_475_akafyu",
+        "gender": "Female",
+        "race": "Ægir",
+        "allegiance": "Higashi",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 25,
+        "infected": "No"
+    },
+    "Ambriel": {
+        "charId": "char_302_glaze",
+        "gender": "Female",
+        "race": "Sankta",
+        "allegiance": "Laterano",
+        "position": "Ranged",
+        "rarity": 4,
+        "cost": 20,
+        "infected": "No"
+    },
+    "Amiya": {
+        "charId": "char_002_amiya",
+        "gender": "Female",
+        "race": "Cautus/Chimera",
+        "allegiance": "Rhodes Island",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 20,
+        "infected": "Yes"
+    },
+    "Andreana": {
+        "charId": "char_218_cuttle",
+        "gender": "Female",
+        "race": "Ægir",
+        "allegiance": "Abyssal Hunter",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 21,
+        "infected": "No"
+    },
+    "Angelina": {
+        "charId": "char_291_aglina",
+        "gender": "Female",
+        "race": "Vulpo",
+        "allegiance": "Siracusa",
+        "position": "Ranged",
+        "rarity": 6,
+        "cost": 16,
+        "infected": "Yes"
+    },
+    "Ansel": {
+        "charId": "char_212_ansel",
+        "gender": "Male",
+        "race": "Cautus",
+        "allegiance": "Reserve 4",
+        "position": "Ranged",
+        "rarity": 3,
+        "cost": 17,
+        "infected": "No"
+    },
+    "Aosta": {
+        "charId": "char_346_aosta",
+        "gender": "Male",
+        "race": "Lupo",
+        "allegiance": "Chiave",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 31,
+        "infected": "Yes"
+    },
+    "April": {
+        "charId": "char_365_aprl",
+        "gender": "Female",
+        "race": "Cautus",
+        "allegiance": "Rim Billiton",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 13,
+        "infected": "Yes"
+    },
+    "Archetto": {
+        "charId": "char_332_archet",
+        "gender": "Female",
+        "race": "Liberi",
+        "allegiance": "Laterano",
+        "position": "Ranged",
+        "rarity": 6,
+        "cost": 14,
+        "infected": "No"
+    },
+    "Arene": {
+        "charId": "char_271_spikes",
+        "gender": "Male",
+        "race": "Sankta",
+        "allegiance": "Laterano",
+        "position": "Melee",
+        "rarity": 4,
+        "cost": 18,
+        "infected": "Yes"
+    },
+    "Asbestos": {
+        "charId": "char_378_asbest",
+        "gender": "Female",
+        "race": "Savra",
+        "allegiance": "Rim Billiton",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 25,
+        "infected": "Yes"
+    },
+    "Ash": {
+        "charId": "char_456_ash",
+        "gender": "Female",
+        "race": "Unknown",
+        "allegiance": "Rainbow 6",
+        "position": "Ranged",
+        "rarity": 6,
+        "cost": 14,
+        "infected": "No"
+    },
+    "Ashlock": {
+        "charId": "char_431_ashlok",
+        "gender": "Female",
+        "race": "Zalak",
+        "allegiance": "Pinus",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 27,
+        "infected": "Yes"
+    },
+    "Astesia": {
+        "charId": "char_274_astesi",
+        "gender": "Female",
+        "race": "Liberi",
+        "allegiance": "Columbia",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 21,
+        "infected": "Yes"
+    },
+    "Astgenne": {
+        "charId": "char_135_halo",
+        "gender": "Female",
+        "race": "Liberi",
+        "allegiance": "Rhine Lab",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 34,
+        "infected": "Yes"
+    },
+    "Aurora": {
+        "charId": "char_422_aurora",
+        "gender": "Female",
+        "race": "Ursus",
+        "allegiance": "Karlan",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 32,
+        "infected": "Yes"
+    },
+    "Ayerscarpe": {
+        "charId": "char_294_ayer",
+        "gender": "Male",
+        "race": "Cautus",
+        "allegiance": "Rim Billiton",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 19,
+        "infected": "No"
+    },
+    "Bagpipe": {
+        "charId": "char_222_bpipe",
+        "gender": "Female",
+        "race": "Vouivre",
+        "allegiance": "Victoria",
+        "position": "Melee",
+        "rarity": 6,
+        "cost": 13,
+        "infected": "No"
+    },
+    "Beagle": {
+        "charId": "char_122_beagle",
+        "gender": "Female",
+        "race": "Perro",
+        "allegiance": "Reserve 1",
+        "position": "Melee",
+        "rarity": 3,
+        "cost": 18,
+        "infected": "Yes"
+    },
+    "Beanstalk": {
+        "charId": "char_452_bstalk",
+        "gender": "Female",
+        "race": "Reproba",
+        "allegiance": "Columbia",
+        "position": "Ranged",
+        "rarity": 4,
+        "cost": 13,
+        "infected": "No"
+    },
+    "Beehunter": {
+        "charId": "char_137_brownb",
+        "gender": "Female",
+        "race": "Ursus",
+        "allegiance": "Ursus",
+        "position": "Melee",
+        "rarity": 4,
+        "cost": 9,
+        "infected": "Yes"
+    },
+    "Beeswax": {
+        "charId": "char_344_beewax",
+        "gender": "Female",
+        "race": "Caprinae",
+        "allegiance": "Sargon",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 23,
+        "infected": "No"
+    },
+    "Bena": {
+        "charId": "char_369_bena",
+        "gender": "Female",
+        "race": "Caprinae",
+        "allegiance": "Victoria",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 17,
+        "infected": "No"
+    },
+    "Bibeak": {
+        "charId": "char_252_bibeak",
+        "gender": "Female",
+        "race": "Liberi",
+        "allegiance": "Sami",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 22,
+        "infected": "Yes"
+    },
+    "Bison": {
+        "charId": "char_325_bison",
+        "gender": "Male",
+        "race": "Forte",
+        "allegiance": "Lungmen",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 24,
+        "infected": "No"
+    },
+    "Blacknight": {
+        "charId": "char_476_blkngt",
+        "gender": "Female",
+        "race": "Savra",
+        "allegiance": "Rim Billiton",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 14,
+        "infected": "Yes"
+    },
+    "Blaze": {
+        "charId": "char_017_huang",
+        "gender": "Female",
+        "race": "Feline",
+        "allegiance": "Elite Operators",
+        "position": "Melee",
+        "rarity": 6,
+        "cost": 24,
+        "infected": "Yes"
+    },
+    "Blemishine": {
+        "charId": "char_423_blemsh",
+        "gender": "Female",
+        "race": "Kuranta",
+        "allegiance": "Kazimierz",
+        "position": "Melee",
+        "rarity": 6,
+        "cost": 22,
+        "infected": "No"
+    },
+    "Blitz": {
+        "charId": "char_457_blitz",
+        "gender": "Male",
+        "race": "Unknown",
+        "allegiance": "Rainbow 6",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 22,
+        "infected": "No"
+    },
+    "Blue Poison": {
+        "charId": "char_129_bluep",
+        "gender": "Female",
+        "race": "Anura",
+        "allegiance": "Iberia",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 13,
+        "infected": "No"
+    },
+    "Breeze": {
+        "charId": "char_275_breeze",
+        "gender": "Female",
+        "race": "Vulpo",
+        "allegiance": "Victoria",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 17,
+        "infected": "Yes"
+    },
+    "Broca": {
+        "charId": "char_356_broca",
+        "gender": "Male",
+        "race": "Feline",
+        "allegiance": "Chiave",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 23,
+        "infected": "Yes"
+    },
+    "Bubble": {
+        "charId": "char_381_bubble",
+        "gender": "Female",
+        "race": "Cerato",
+        "allegiance": "Sargon",
+        "position": "Melee",
+        "rarity": 4,
+        "cost": 21,
+        "infected": "Yes"
+    },
+    "Cantabile": {
+        "charId": "char_497_ctable",
+        "gender": "Female",
+        "race": "Liberi",
+        "allegiance": "Rhodes Island",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 10,
+        "infected": "Yes"
+    },
+    "Cardigan": {
+        "charId": "char_209_ardign",
+        "gender": "Female",
+        "race": "Perro",
+        "allegiance": "Reserve 4",
+        "position": "Melee",
+        "rarity": 3,
+        "cost": 18,
+        "infected": "No"
+    },
+    "Carnelian": {
+        "charId": "char_426_billro",
+        "gender": "Female",
+        "race": "Caprinae",
+        "allegiance": "Leithanien",
+        "position": "Ranged",
+        "rarity": 6,
+        "cost": 24,
+        "infected": "No"
+    },
+    "Castle-3": {
+        "charId": "char_286_cast3",
+        "gender": "Male",
+        "race": "Dec. 10",
+        "allegiance": "Rhodes Island",
+        "position": "Melee",
+        "rarity": 1,
+        "cost": 3,
+        "infected": "N/A"
+    },
+    "Catapult": {
+        "charId": "char_282_catap",
+        "gender": "Female",
+        "race": "Kuranta",
+        "allegiance": "Reserve 6",
+        "position": "Ranged",
+        "rarity": 3,
+        "cost": 23,
+        "infected": "Yes"
+    },
+    "Ceobe": {
+        "charId": "char_2013_cerber",
+        "gender": "Female",
+        "race": "Perro",
+        "allegiance": "Rhodes Island",
+        "position": "Ranged",
+        "rarity": 6,
+        "cost": 21,
+        "infected": "Yes"
+    },
+    "Ceylon": {
+        "charId": "char_348_ceylon",
+        "gender": "Female",
+        "race": "Liberi",
+        "allegiance": "Siesta",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 22,
+        "infected": "No"
+    },
+    "Ch'en": {
+        "charId": "char_010_chen",
+        "gender": "Female",
+        "race": "Lung",
+        "allegiance": "LDG",
+        "position": "Melee",
+        "rarity": 6,
+        "cost": 23,
+        "infected": "Undisclosed"
+    },
+    "Ch'en the Holungday": {
+        "charId": "char_1013_chen2",
+        "gender": "Female",
+        "race": "Lung",
+        "allegiance": "Rhodes Island",
+        "position": "Ranged",
+        "rarity": 6,
+        "cost": 32,
+        "infected": "Yes"
+    },
+    "Chestnut": {
+        "charId": "char_4041_chnut",
+        "gender": "Male",
+        "race": "Durin",
+        "allegiance": "Rhodes Island",
+        "position": "Ranged",
+        "rarity": 4,
+        "cost": 14,
+        "infected": "No"
+    },
+    "Chiave": {
+        "charId": "char_349_chiave",
+        "gender": "Male",
+        "race": "Vulpo",
+        "allegiance": "Chiave",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 13,
+        "infected": "Yes"
+    },
+    "Chongyue": {
+        "charId": "char_2024_chyue",
+        "gender": "Male",
+        "race": "Undisclosed",
+        "allegiance": "Sui",
+        "position": "Melee",
+        "rarity": 6,
+        "cost": 11,
+        "infected": "No"
+    },
+    "Click": {
+        "charId": "char_328_cammou",
+        "gender": "Female",
+        "race": "Zalak",
+        "allegiance": "Rhodes Island",
+        "position": "Ranged",
+        "rarity": 4,
+        "cost": 20,
+        "infected": "No"
+    },
+    "Cliffheart": {
+        "charId": "char_173_slchan",
+        "gender": "Female",
+        "race": "Feline",
+        "allegiance": "Karlan",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 13,
+        "infected": "Yes"
+    },
+    "Conviction": {
+        "charId": "char_159_peacok",
+        "gender": "Conviction",
+        "race": "Unknown (Suspected Liberi)",
+        "allegiance": "Minos",
+        "position": "Melee",
+        "rarity": 4,
+        "cost": 16,
+        "infected": "Yes"
+    },
+    "Corroserum": {
+        "charId": "char_489_serum",
+        "gender": "Male",
+        "race": "Phidia",
+        "allegiance": "Columbia",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 33,
+        "infected": "No"
+    },
+    "Courier": {
+        "charId": "char_198_blackd",
+        "gender": "Male",
+        "race": "Itra",
+        "allegiance": "Karlan",
+        "position": "Melee",
+        "rarity": 4,
+        "cost": 12,
+        "infected": "No"
+    },
+    "Croissant": {
+        "charId": "char_201_moeshd",
+        "gender": "Female",
+        "race": "Forte",
+        "allegiance": "Penguin Logistics",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 22,
+        "infected": "No"
+    },
+    "Cuora": {
+        "charId": "char_150_snakek",
+        "gender": "Female",
+        "race": "Petram",
+        "allegiance": "Columbia",
+        "position": "Melee",
+        "rarity": 4,
+        "cost": 21,
+        "infected": "Yes"
+    },
+    "Cutter": {
+        "charId": "char_301_cutter",
+        "gender": "Female",
+        "race": "Vulpo",
+        "allegiance": "Columbia",
+        "position": "Melee",
+        "rarity": 4,
+        "cost": 21,
+        "infected": "Yes"
+    },
+    "Czerny": {
+        "charId": "char_4047_pianst",
+        "gender": "Male",
+        "race": "Elafia",
+        "allegiance": "Leithanien",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 27,
+        "infected": "Yes"
+    },
+    "Dagda": {
+        "charId": "char_157_dagda",
+        "gender": "Female",
+        "race": "Feline",
+        "allegiance": "Glasgow",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 12,
+        "infected": "No"
+    },
+    "Deepcolor": {
+        "charId": "char_110_deepcl",
+        "gender": "Female",
+        "race": "Undisclosed",
+        "allegiance": "Aegir",
+        "position": "Ranged",
+        "rarity": 4,
+        "cost": 10,
+        "infected": "No"
+    },
+    "Dobermann": {
+        "charId": "char_130_doberm",
+        "gender": "Female",
+        "race": "Perro",
+        "allegiance": "Rhodes Island",
+        "position": "Melee",
+        "rarity": 4,
+        "cost": 15,
+        "infected": "Yes"
+    },
+    "Dorothy": {
+        "charId": "char_4048_doroth",
+        "gender": "Female",
+        "race": "Zalak",
+        "allegiance": "Rhine Lab",
+        "position": "Ranged",
+        "rarity": 6,
+        "cost": 12,
+        "infected": "No"
+    },
+    "Dur-nar": {
+        "charId": "char_260_durnar",
+        "gender": "Female",
+        "race": "Vulpo",
+        "allegiance": "Rhodes Island",
+        "position": "Melee",
+        "rarity": 4,
+        "cost": 24,
+        "infected": "No"
+    },
+    "Durin": {
+        "charId": "char_501_durin",
+        "gender": "Female",
+        "race": "Durin",
+        "allegiance": "Action 4",
+        "position": "Ranged",
+        "rarity": 2,
+        "cost": 12,
+        "infected": "No"
+    },
+    "Dusk": {
+        "charId": "char_2015_dusk",
+        "gender": "Female",
+        "race": "Undisclosed",
+        "allegiance": "Sui",
+        "position": "Ranged",
+        "rarity": 6,
+        "cost": 34,
+        "infected": "No"
+    },
+    "Earthspirit": {
+        "charId": "char_183_skgoat",
+        "gender": "Female",
+        "race": "Caprinae",
+        "allegiance": "Leithanien",
+        "position": "Ranged",
+        "rarity": 4,
+        "cost": 14,
+        "infected": "Yes"
+    },
+    "Ebenholz": {
+        "charId": "char_4046_ebnhlz",
+        "gender": "Male",
+        "race": "Caprinae",
+        "allegiance": "Leithanien",
+        "position": "Ranged",
+        "rarity": 6,
+        "cost": 25,
+        "infected": "Yes"
+    },
+    "Elysium": {
+        "charId": "char_401_elysm",
+        "gender": "Male",
+        "race": "Liberi",
+        "allegiance": "Rhodes Island",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 11,
+        "infected": "Yes"
+    },
+    "Enforcer": {
+        "charId": "char_4036_forcer",
+        "gender": "Male",
+        "race": "Sankta",
+        "allegiance": "Laterano",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 22,
+        "infected": "No"
+    },
+    "Erato": {
+        "charId": "char_4043_erato",
+        "gender": "Female",
+        "race": "Liberi",
+        "allegiance": "Minos",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 23,
+        "infected": "No"
+    },
+    "Estelle": {
+        "charId": "char_127_estell",
+        "gender": "Female",
+        "race": "Archosauria",
+        "allegiance": "Sargon",
+        "position": "Melee",
+        "rarity": 4,
+        "cost": 22,
+        "infected": "Yes"
+    },
+    "Ethan": {
+        "charId": "char_355_ethan",
+        "gender": "Male",
+        "race": "Savra",
+        "allegiance": "Rhodes Island",
+        "position": "Melee",
+        "rarity": 4,
+        "cost": 19,
+        "infected": "Yes"
+    },
+    "Eunectes": {
+        "charId": "char_416_zumama",
+        "gender": "Female",
+        "race": "Pythia",
+        "allegiance": "Sargon",
+        "position": "Melee",
+        "rarity": 6,
+        "cost": 33,
+        "infected": "Yes"
+    },
+    "Executor": {
+        "charId": "char_279_excu",
+        "gender": "Male",
+        "race": "Sankta",
+        "allegiance": "Laterano",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 31,
+        "infected": "No"
+    },
+    "Exusiai": {
+        "charId": "char_103_angel",
+        "gender": "Female",
+        "race": "Sankta",
+        "allegiance": "Penguin Logistics",
+        "position": "Ranged",
+        "rarity": 6,
+        "cost": 14,
+        "infected": "No"
+    },
+    "Eyjafjalla": {
+        "charId": "char_180_amgoat",
+        "gender": "Female",
+        "race": "Caprinae",
+        "allegiance": "Leithanien",
+        "position": "Ranged",
+        "rarity": 6,
+        "cost": 21,
+        "infected": "Yes"
+    },
+    "FEater": {
+        "charId": "char_241_panda",
+        "gender": "Female",
+        "race": "Ursus",
+        "allegiance": "Lungmen",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 20,
+        "infected": "Yes"
+    },
+    "Fang": {
+        "charId": "char_123_fang",
+        "gender": "Female",
+        "race": "Kuranta",
+        "allegiance": "Reserve 1",
+        "position": "Melee",
+        "rarity": 3,
+        "cost": 11,
+        "infected": "Yes"
+    },
+    "Fartooth": {
+        "charId": "char_430_fartth",
+        "gender": "Female",
+        "race": "Liberi",
+        "allegiance": "Pinus",
+        "position": "Ranged",
+        "rarity": 6,
+        "cost": 22,
+        "infected": "Yes"
+    },
+    "Fiammetta": {
+        "charId": "char_300_phenxi",
+        "gender": "Female",
+        "race": "Liberi",
+        "allegiance": "Laterano",
+        "position": "Ranged",
+        "rarity": 6,
+        "cost": 29,
+        "infected": "No"
+    },
+    "Firewatch": {
+        "charId": "char_158_milu",
+        "gender": "Female",
+        "race": "Elafia",
+        "allegiance": "Rhodes Island",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 21,
+        "infected": "No"
+    },
+    "Firewhistle": {
+        "charId": "char_493_firwhl",
+        "gender": "Female",
+        "race": "Liberi",
+        "allegiance": "Rim Billiton",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 27,
+        "infected": "No"
+    },
+    "Flamebringer": {
+        "charId": "char_131_flameb",
+        "gender": "Male",
+        "race": "Sarkaz",
+        "allegiance": "Rhodes Island",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 20,
+        "infected": "Yes"
+    },
+    "Flametail": {
+        "charId": "char_420_flamtl",
+        "gender": "Female",
+        "race": "Zalak",
+        "allegiance": "Pinus",
+        "position": "Melee",
+        "rarity": 6,
+        "cost": 14,
+        "infected": "Yes"
+    },
+    "Flint": {
+        "charId": "char_415_flint",
+        "gender": "Female",
+        "race": "Liberi",
+        "allegiance": "Sargon",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 10,
+        "infected": "No"
+    },
+    "Folinic": {
+        "charId": "char_345_folnic",
+        "gender": "Female",
+        "race": "Feline",
+        "allegiance": "Rhodes Island",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 21,
+        "infected": "Yes"
+    },
+    "Franka": {
+        "charId": "char_106_franka",
+        "gender": "Female",
+        "race": "Vulpo",
+        "allegiance": "Blacksteel",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 18,
+        "infected": "Yes"
+    },
+    "Frost": {
+        "charId": "char_458_rfrost",
+        "gender": "Female",
+        "race": "Unknown",
+        "allegiance": "Rainbow 6",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 11,
+        "infected": "No"
+    },
+    "Frostleaf": {
+        "charId": "char_193_frostl",
+        "gender": "Female",
+        "race": "Vulpo",
+        "allegiance": "Rhodes Island",
+        "position": "Melee",
+        "rarity": 4,
+        "cost": 18,
+        "infected": "Yes"
+    },
+    "Gavial": {
+        "charId": "char_187_ccheal",
+        "gender": "Female",
+        "race": "Archosauria",
+        "allegiance": "Rhodes Island",
+        "position": "Ranged",
+        "rarity": 4,
+        "cost": 18,
+        "infected": "Yes"
+    },
+    "Gavial the Invincible": {
+        "charId": "char_1026_gvial2",
+        "gender": "Female",
+        "race": "Archosauria",
+        "allegiance": "Rhodes Island",
+        "position": "Melee",
+        "rarity": 6,
+        "cost": 24,
+        "infected": "Yes"
+    },
+    "Gitano": {
+        "charId": "char_109_fmout",
+        "gender": "Female",
+        "race": "Elafia",
+        "allegiance": "Sami",
+        "position": "Ranged",
+        "rarity": 4,
+        "cost": 32,
+        "infected": "Yes"
+    },
+    "Gladiia": {
+        "charId": "char_474_glady",
+        "gender": "Female",
+        "race": "Undisclosed",
+        "allegiance": "Abyssal Hunter",
+        "position": "Melee",
+        "rarity": 6,
+        "cost": 16,
+        "infected": "No"
+    },
+    "Glaucus": {
+        "charId": "char_326_glacus",
+        "gender": "Female",
+        "race": "Unknown",
+        "allegiance": "Iberia",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 15,
+        "infected": "No"
+    },
+    "Gnosis": {
+        "charId": "char_206_gnosis",
+        "gender": "Male",
+        "race": "Liberi",
+        "allegiance": "Karlan",
+        "position": "Ranged",
+        "rarity": 6,
+        "cost": 13,
+        "infected": "No"
+    },
+    "Goldenglow": {
+        "charId": "char_377_gdglow",
+        "gender": "Female",
+        "race": "Feline",
+        "allegiance": "Victoria",
+        "position": "Ranged",
+        "rarity": 6,
+        "cost": 22,
+        "infected": "Yes"
+    },
+    "Grani": {
+        "charId": "char_220_grani",
+        "gender": "Female",
+        "race": "Kuranta",
+        "allegiance": "Victoria",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 14,
+        "infected": "No"
+    },
+    "Gravel": {
+        "charId": "char_237_gravel",
+        "gender": "Female",
+        "race": "Zalak",
+        "allegiance": "Kazimierz",
+        "position": "Melee",
+        "rarity": 4,
+        "cost": 8,
+        "infected": "No"
+    },
+    "GreyThroat": {
+        "charId": "char_367_swllow",
+        "gender": "Female",
+        "race": "Liberi",
+        "allegiance": "Rhodes Island",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 13,
+        "infected": "No"
+    },
+    "Greyy": {
+        "charId": "char_253_greyy",
+        "gender": "Male",
+        "race": "Perro",
+        "allegiance": "Bolivar",
+        "position": "Ranged",
+        "rarity": 4,
+        "cost": 32,
+        "infected": "Yes"
+    },
+    "Greyy the Lightningbearer": {
+        "charId": "char_1027_greyy2",
+        "gender": "Male",
+        "race": "Perro",
+        "allegiance": "Rhodes Island",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 24,
+        "infected": "Yes"
+    },
+    "Gummy": {
+        "charId": "char_196_sunbr",
+        "gender": "Female",
+        "race": "Ursus",
+        "allegiance": "Students of Ursus",
+        "position": "Melee",
+        "rarity": 4,
+        "cost": 20,
+        "infected": "No"
+    },
+    "Harmonie": {
+        "charId": "char_297_hamoni",
+        "gender": "Female",
+        "race": "Feline",
+        "allegiance": "Dublinn",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 24,
+        "infected": "No"
+    },
+    "Haze": {
+        "charId": "char_141_nights",
+        "gender": "Female",
+        "race": "Feline",
+        "allegiance": "Victoria",
+        "position": "Ranged",
+        "rarity": 4,
+        "cost": 19,
+        "infected": "Yes"
+    },
+    "Heavyrain": {
+        "charId": "char_304_zebra",
+        "gender": "Female",
+        "race": "Kuranta",
+        "allegiance": "Rhodes Island",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 24,
+        "infected": "No"
+    },
+    "Heidi": {
+        "charId": "char_4045_heidi",
+        "gender": "Female",
+        "race": "Feline",
+        "allegiance": "Victoria",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 9,
+        "infected": "No"
+    },
+    "Hellagur": {
+        "charId": "char_188_helage",
+        "gender": "Male",
+        "race": "Liberi",
+        "allegiance": "Ursus",
+        "position": "Melee",
+        "rarity": 6,
+        "cost": 26,
+        "infected": "Yes"
+    },
+    "Hibiscus": {
+        "charId": "char_120_hibisc",
+        "gender": "Female",
+        "race": "Sarkaz",
+        "allegiance": "Reserve 1",
+        "position": "Ranged",
+        "rarity": 3,
+        "cost": 17,
+        "infected": "Yes"
+    },
+    "Hibiscus the Purifier": {
+        "charId": "char_1024_hbisc2",
+        "gender": "Female",
+        "race": "Sarkaz",
+        "allegiance": "Rhodes Island",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 17,
+        "infected": "Yes"
+    },
+    "Highmore": {
+        "charId": "char_4066_highmo",
+        "gender": "Female",
+        "race": "Ægir",
+        "allegiance": "Iberia",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 22,
+        "infected": "No"
+    },
+    "Honeyberry": {
+        "charId": "char_449_glider",
+        "gender": "Female",
+        "race": "Zalak",
+        "allegiance": "Rim Billiton",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 15,
+        "infected": "No"
+    },
+    "Horn": {
+        "charId": "char_4039_horn",
+        "gender": "Female",
+        "race": "Lupo",
+        "allegiance": "Victoria",
+        "position": "Melee",
+        "rarity": 6,
+        "cost": 28,
+        "infected": "No"
+    },
+    "Hoshiguma": {
+        "charId": "char_136_hsguma",
+        "gender": "Female",
+        "race": "Oni",
+        "allegiance": "LDG",
+        "position": "Melee",
+        "rarity": 6,
+        "cost": 23,
+        "infected": "No"
+    },
+    "Hung": {
+        "charId": "char_226_hmau",
+        "gender": "Male",
+        "race": "Perro",
+        "allegiance": "Lee's Detective Agency",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 21,
+        "infected": "No"
+    },
+    "Ifrit": {
+        "charId": "char_134_ifrit",
+        "gender": "Female",
+        "race": "Sarkaz",
+        "allegiance": "Rhine Lab",
+        "position": "Ranged",
+        "rarity": 6,
+        "cost": 34,
+        "infected": "Yes"
+    },
+    "Indigo": {
+        "charId": "char_469_indigo",
+        "gender": "Female",
+        "race": "Phidia",
+        "allegiance": "Iberia",
+        "position": "Ranged",
+        "rarity": 4,
+        "cost": 23,
+        "infected": "No"
+    },
+    "Indra": {
+        "charId": "char_155_tiger",
+        "gender": "Female",
+        "race": "Feline",
+        "allegiance": "Glasgow",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 10,
+        "infected": "No"
+    },
+    "Irene": {
+        "charId": "char_4009_irene",
+        "gender": "Female",
+        "race": "Liberi",
+        "allegiance": "Iberia",
+        "position": "Melee",
+        "rarity": 6,
+        "cost": 23,
+        "infected": "No"
+    },
+    "Iris": {
+        "charId": "char_338_iris",
+        "gender": "Female",
+        "race": "Feline",
+        "allegiance": "Victoria",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 24,
+        "infected": "No"
+    },
+    "Istina": {
+        "charId": "char_195_glassb",
+        "gender": "Female",
+        "race": "Ursus",
+        "allegiance": "Students of Ursus",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 15,
+        "infected": "No"
+    },
+    "Jackie": {
+        "charId": "char_347_jaksel",
+        "gender": "Female",
+        "race": "Perro",
+        "allegiance": "Columbia",
+        "position": "Melee",
+        "rarity": 4,
+        "cost": 9,
+        "infected": "Yes"
+    },
+    "Jaye": {
+        "charId": "char_272_strong",
+        "gender": "Male",
+        "race": "Ursus",
+        "allegiance": "Lungmen",
+        "position": "Melee",
+        "rarity": 4,
+        "cost": 7,
+        "infected": "No"
+    },
+    "Jessica": {
+        "charId": "char_235_jesica",
+        "gender": "Female",
+        "race": "Feline",
+        "allegiance": "Blacksteel",
+        "position": "Ranged",
+        "rarity": 4,
+        "cost": 12,
+        "infected": "No"
+    },
+    "Jieyun": {
+        "charId": "char_4078_bdhkgt",
+        "gender": "Female",
+        "race": "Anasa",
+        "allegiance": "Yan",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 30,
+        "infected": "Yes"
+    },
+    "Kafka": {
+        "charId": "char_214_kafka",
+        "gender": "Female",
+        "race": "Liberi",
+        "allegiance": "Columbia",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 9,
+        "infected": "Yes"
+    },
+    "Kal'tsit": {
+        "charId": "char_003_kalts",
+        "gender": "Female",
+        "race": "Feline",
+        "allegiance": "Rhodes Island",
+        "position": "Ranged",
+        "rarity": 6,
+        "cost": 20,
+        "infected": "Yes"
+    },
+    "Kazemaru": {
+        "charId": "char_4016_kazema",
+        "gender": "Female",
+        "race": "Feline",
+        "allegiance": "Higashi",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 15,
+        "infected": "No"
+    },
+    "Kirara": {
+        "charId": "char_478_kirara",
+        "gender": "Female",
+        "race": "Ægir",
+        "allegiance": "Higashi",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 20,
+        "infected": "Yes"
+    },
+    "Kirin R Yato": {
+        "charId": "char_1029_yato2",
+        "gender": "Female",
+        "race": "Oni",
+        "allegiance": "Action 4",
+        "position": "Melee",
+        "rarity": 6,
+        "cost": 10,
+        "infected": "Yes"
+    },
+    "Kjera": {
+        "charId": "char_4013_kjera",
+        "gender": "Female",
+        "race": "Undisclosed",
+        "allegiance": "Karlan",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 23,
+        "infected": "No"
+    },
+    "Kroos": {
+        "charId": "char_124_kroos",
+        "gender": "Female",
+        "race": "Cautus",
+        "allegiance": "Reserve 1",
+        "position": "Ranged",
+        "rarity": 3,
+        "cost": 11,
+        "infected": "Yes"
+    },
+    "Kroos the Keen Glint": {
+        "charId": "char_1021_kroos2",
+        "gender": "Female",
+        "race": "Cautus",
+        "allegiance": "Rhodes Island",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 15,
+        "infected": "Yes"
+    },
+    "La Pluma": {
+        "charId": "char_421_crow",
+        "gender": "Female",
+        "race": "Liberi",
+        "allegiance": "Bolivar",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 22,
+        "infected": "No"
+    },
+    "Lancet-2": {
+        "charId": "char_285_medic2",
+        "gender": "Female",
+        "race": "May 12",
+        "allegiance": "Rhodes Island",
+        "position": "Ranged",
+        "rarity": 1,
+        "cost": 3,
+        "infected": "N/A"
+    },
+    "Lappland": {
+        "charId": "char_140_whitew",
+        "gender": "Female",
+        "race": "Lupo",
+        "allegiance": "Siracusa",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 19,
+        "infected": "Yes"
+    },
+    "Lava": {
+        "charId": "char_121_lava",
+        "gender": "Female",
+        "race": "Sarkaz",
+        "allegiance": "Reserve 1",
+        "position": "Ranged",
+        "rarity": 3,
+        "cost": 30,
+        "infected": "Yes"
+    },
+    "Lava the Purgatory": {
+        "charId": "char_1011_lava2",
+        "gender": "Female",
+        "race": "Sarkaz",
+        "allegiance": "Rhodes Island",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 35,
+        "infected": "Yes"
+    },
+    "Lee": {
+        "charId": "char_322_lmlee",
+        "gender": "Male",
+        "race": "Lung",
+        "allegiance": "Lee's Detective Agency",
+        "position": "Melee",
+        "rarity": 6,
+        "cost": 9,
+        "infected": "No"
+    },
+    "Leizi": {
+        "charId": "char_306_leizi",
+        "gender": "Female",
+        "race": "Kylin",
+        "allegiance": "Yan",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 32,
+        "infected": "No"
+    },
+    "Leonhardt": {
+        "charId": "char_373_lionhd",
+        "gender": "Male",
+        "race": "Cautus",
+        "allegiance": "Rim Billiton",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 33,
+        "infected": "Yes"
+    },
+    "Lin": {
+        "charId": "char_4080_lin",
+        "gender": "Female",
+        "race": "Zalak",
+        "allegiance": "Lungmen",
+        "position": "Ranged",
+        "rarity": 6,
+        "cost": 24,
+        "infected": "No"
+    },
+    "Ling": {
+        "charId": "char_2023_ling",
+        "gender": "Female",
+        "race": "Undisclosed",
+        "allegiance": "Sui",
+        "position": "Ranged",
+        "rarity": 6,
+        "cost": 12,
+        "infected": "No"
+    },
+    "Liskarm": {
+        "charId": "char_107_liskam",
+        "gender": "Female",
+        "race": "Vouivre",
+        "allegiance": "Blacksteel",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 22,
+        "infected": "No"
+    },
+    "Lumen": {
+        "charId": "char_4042_lumen",
+        "gender": "Male",
+        "race": "Ægir",
+        "allegiance": "Iberia",
+        "position": "Ranged",
+        "rarity": 6,
+        "cost": 23,
+        "infected": "No"
+    },
+    "Lunacub": {
+        "charId": "char_4014_lunacu",
+        "gender": "Female",
+        "race": "Lupo",
+        "allegiance": "Siracusa",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 21,
+        "infected": "Yes"
+    },
+    "Luo Xiaohei": {
+        "charId": "char_4067_lolxh",
+        "gender": "Male",
+        "race": "Feline",
+        "allegiance": "Yan",
+        "position": "Melee",
+        "rarity": 4,
+        "cost": 17,
+        "infected": "No"
+    },
+    "Magallan": {
+        "charId": "char_248_mgllan",
+        "gender": "Female",
+        "race": "Liberi",
+        "allegiance": "Rhine Lab",
+        "position": "Ranged",
+        "rarity": 6,
+        "cost": 12,
+        "infected": "No"
+    },
+    "Manticore": {
+        "charId": "char_215_mantic",
+        "gender": "Female",
+        "race": "Manticore",
+        "allegiance": "Sargon",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 20,
+        "infected": "Yes"
+    },
+    "Matoimaru": {
+        "charId": "char_289_gyuki",
+        "gender": "Female",
+        "race": "Oni",
+        "allegiance": "Higashi",
+        "position": "Melee",
+        "rarity": 4,
+        "cost": 17,
+        "infected": "No"
+    },
+    "Matterhorn": {
+        "charId": "char_199_yak",
+        "gender": "Male",
+        "race": "Forte",
+        "allegiance": "Karlan",
+        "position": "Melee",
+        "rarity": 4,
+        "cost": 21,
+        "infected": "No"
+    },
+    "May": {
+        "charId": "char_133_mm",
+        "gender": "Female",
+        "race": "Liberi",
+        "allegiance": "Victoria",
+        "position": "Ranged",
+        "rarity": 4,
+        "cost": 12,
+        "infected": "No"
+    },
+    "Mayer": {
+        "charId": "char_242_otter",
+        "gender": "Female",
+        "race": "Anaty",
+        "allegiance": "Rhine Lab",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 11,
+        "infected": "No"
+    },
+    "Melantha": {
+        "charId": "char_208_melan",
+        "gender": "Female",
+        "race": "Feline",
+        "allegiance": "Reserve 4",
+        "position": "Melee",
+        "rarity": 3,
+        "cost": 15,
+        "infected": "Yes"
+    },
+    "Meteor": {
+        "charId": "char_126_shotst",
+        "gender": "Female",
+        "race": "Kuranta",
+        "allegiance": "Kazimierz",
+        "position": "Ranged",
+        "rarity": 4,
+        "cost": 12,
+        "infected": "Yes"
+    },
+    "Meteorite": {
+        "charId": "char_219_meteo",
+        "gender": "Female",
+        "race": "Sarkaz",
+        "allegiance": "Rhodes Island",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 28,
+        "infected": "Yes"
+    },
+    "Midnight": {
+        "charId": "char_283_midn",
+        "gender": "Male",
+        "race": "Sarkaz",
+        "allegiance": "Reserve 6",
+        "position": "Melee",
+        "rarity": 3,
+        "cost": 16,
+        "infected": "Yes"
+    },
+    "Minimalist": {
+        "charId": "char_4054_malist",
+        "gender": "Male",
+        "race": "Durin",
+        "allegiance": "Sargon",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 23,
+        "infected": "Yes"
+    },
+    "Mint": {
+        "charId": "char_388_mint",
+        "gender": "Female",
+        "race": "Feline",
+        "allegiance": "Victoria",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 25,
+        "infected": "Yes"
+    },
+    "Mizuki": {
+        "charId": "char_437_mizuki",
+        "gender": "Male",
+        "race": "Ægir",
+        "allegiance": "Higashi",
+        "position": "Melee",
+        "rarity": 6,
+        "cost": 21,
+        "infected": "No"
+    },
+    "Mostima": {
+        "charId": "char_213_mostma",
+        "gender": "Female",
+        "race": "Undisclosed",
+        "allegiance": "Laterano",
+        "position": "Ranged",
+        "rarity": 6,
+        "cost": 34,
+        "infected": "No"
+    },
+    "Mountain": {
+        "charId": "char_264_f12yin",
+        "gender": "Male",
+        "race": "Feline",
+        "allegiance": "Columbia",
+        "position": "Melee",
+        "rarity": 6,
+        "cost": 11,
+        "infected": "Yes"
+    },
+    "Mousse": {
+        "charId": "char_185_frncat",
+        "gender": "Female",
+        "race": "Feline",
+        "allegiance": "Victoria",
+        "position": "Melee",
+        "rarity": 4,
+        "cost": 20,
+        "infected": "Yes"
+    },
+    "Mr. Nothing": {
+        "charId": "char_455_nothin",
+        "gender": "Male",
+        "race": "Liberi",
+        "allegiance": "Yan",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 8,
+        "infected": "No"
+    },
+    "Mudrock": {
+        "charId": "char_311_mudrok",
+        "gender": "Female",
+        "race": "Sarkaz",
+        "allegiance": "Rhodes Island",
+        "position": "Melee",
+        "rarity": 6,
+        "cost": 36,
+        "infected": "Yes"
+    },
+    "Mulberry": {
+        "charId": "char_473_mberry",
+        "gender": "Female",
+        "race": "Liberi",
+        "allegiance": "Yan",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 15,
+        "infected": "Yes"
+    },
+    "Myrrh": {
+        "charId": "char_117_myrrh",
+        "gender": "Female",
+        "race": "Vulpo",
+        "allegiance": "Rhodes Island",
+        "position": "Ranged",
+        "rarity": 4,
+        "cost": 18,
+        "infected": "No"
+    },
+    "Myrtle": {
+        "charId": "char_151_myrtle",
+        "gender": "Female",
+        "race": "Durin",
+        "allegiance": "Rhodes Island",
+        "position": "Melee",
+        "rarity": 4,
+        "cost": 10,
+        "infected": "No"
+    },
+    "Młynar": {
+        "charId": "char_4064_mlynar",
+        "gender": "Male",
+        "race": "Kuranta",
+        "allegiance": "Kazimierz",
+        "position": "Melee",
+        "rarity": 6,
+        "cost": 12,
+        "infected": "No"
+    },
+    "Nearl": {
+        "charId": "char_148_nearl",
+        "gender": "Female",
+        "race": "Kuranta",
+        "allegiance": "Followers",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 21,
+        "infected": "Yes"
+    },
+    "Nearl the Radiant Knight": {
+        "charId": "char_1014_nearl2",
+        "gender": "Female",
+        "race": "Kuranta",
+        "allegiance": "Kazimierz",
+        "position": "Melee",
+        "rarity": 6,
+        "cost": 19,
+        "infected": "No"
+    },
+    "Nian": {
+        "charId": "char_2014_nian",
+        "gender": "Female",
+        "race": "Undisclosed",
+        "allegiance": "Sui",
+        "position": "Melee",
+        "rarity": 6,
+        "cost": 23,
+        "infected": "Undisclosed"
+    },
+    "Nightingale": {
+        "charId": "char_179_cgbird",
+        "gender": "Female",
+        "race": "Sarkaz",
+        "allegiance": "Followers",
+        "position": "Ranged",
+        "rarity": 6,
+        "cost": 18,
+        "infected": "Yes"
+    },
+    "Nightmare": {
+        "charId": "char_164_nightm",
+        "gender": "Female",
+        "race": "Feline",
+        "allegiance": "Victoria",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 20,
+        "infected": "Yes"
+    },
+    "Nine-Colored Deer": {
+        "charId": "char_4019_ncdeer",
+        "gender": "Female",
+        "race": "Elafia",
+        "allegiance": "Yan",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 11,
+        "infected": "No"
+    },
+    "Noir Corne": {
+        "charId": "char_500_noirc",
+        "gender": "Male",
+        "race": "Oni",
+        "allegiance": "Action 4",
+        "position": "Melee",
+        "rarity": 2,
+        "cost": 14,
+        "infected": "Yes"
+    },
+    "Orchid": {
+        "charId": "char_278_orchid",
+        "gender": "Female",
+        "race": "Liberi",
+        "allegiance": "Reserve 6",
+        "position": "Ranged",
+        "rarity": 3,
+        "cost": 12,
+        "infected": "Yes"
+    },
+    "Pallas": {
+        "charId": "char_485_pallas",
+        "gender": "Female",
+        "race": "Forte",
+        "allegiance": "Minos",
+        "position": "Melee",
+        "rarity": 6,
+        "cost": 17,
+        "infected": "Yes"
+    },
+    "Paprika": {
+        "charId": "char_4071_peper",
+        "gender": "Female",
+        "race": "Sarkaz",
+        "allegiance": "Rhodes Island",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 18,
+        "infected": "Yes"
+    },
+    "Passenger": {
+        "charId": "char_472_pasngr",
+        "gender": "Male",
+        "race": "Liberi",
+        "allegiance": "Sargon",
+        "position": "Ranged",
+        "rarity": 6,
+        "cost": 33,
+        "infected": "Yes"
+    },
+    "Penance": {
+        "charId": "char_4065_judge",
+        "gender": "Female",
+        "race": "Lupo",
+        "allegiance": "Siracusa",
+        "position": "Melee",
+        "rarity": 6,
+        "cost": 36,
+        "infected": "No"
+    },
+    "Perfumer": {
+        "charId": "char_181_flower",
+        "gender": "Female",
+        "race": "Vulpo",
+        "allegiance": "Rhodes Island",
+        "position": "Ranged",
+        "rarity": 4,
+        "cost": 16,
+        "infected": "Yes"
+    },
+    "Phantom": {
+        "charId": "char_250_phatom",
+        "gender": "Male",
+        "race": "Feline",
+        "allegiance": "Victoria",
+        "position": "Melee",
+        "rarity": 6,
+        "cost": 10,
+        "infected": "Yes"
+    },
+    "Pinecone": {
+        "charId": "char_440_pinecn",
+        "gender": "Female",
+        "race": "Liberi",
+        "allegiance": "Columbia",
+        "position": "Ranged",
+        "rarity": 4,
+        "cost": 30,
+        "infected": "No"
+    },
+    "Pith": {
+        "charId": "char_509_acast",
+        "gender": "Female",
+        "race": "Liberi",
+        "allegiance": "None",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 32,
+        "infected": "Yes"
+    },
+    "Platinum": {
+        "charId": "char_204_platnm",
+        "gender": "Female",
+        "race": "Kuranta",
+        "allegiance": "Kazimierz",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 13,
+        "infected": "No"
+    },
+    "Plume": {
+        "charId": "char_192_falco",
+        "gender": "Female",
+        "race": "Liberi",
+        "allegiance": "Laterano",
+        "position": "Melee",
+        "rarity": 3,
+        "cost": 10,
+        "infected": "No"
+    },
+    "Podenco": {
+        "charId": "char_258_podego",
+        "gender": "Female",
+        "race": "Perro",
+        "allegiance": "Rhodes Island",
+        "position": "Ranged",
+        "rarity": 4,
+        "cost": 14,
+        "infected": "No"
+    },
+    "Popukar": {
+        "charId": "char_281_popka",
+        "gender": "Female",
+        "race": "Cautus",
+        "allegiance": "Reserve 6",
+        "position": "Melee",
+        "rarity": 3,
+        "cost": 19,
+        "infected": "Yes"
+    },
+    "Pozëmka": {
+        "charId": "char_4055_bgsnow",
+        "gender": "Female",
+        "race": "Lupo",
+        "allegiance": "Rhodes Island",
+        "position": "Ranged",
+        "rarity": 6,
+        "cost": 20,
+        "infected": "No"
+    },
+    "Pramanix": {
+        "charId": "char_174_slbell",
+        "gender": "Female",
+        "race": "Feline",
+        "allegiance": "Karlan",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 12,
+        "infected": "No"
+    },
+    "Projekt Red": {
+        "charId": "char_144_red",
+        "gender": "Female",
+        "race": "Lupo",
+        "allegiance": "Sweep",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 9,
+        "infected": "No"
+    },
+    "Provence": {
+        "charId": "char_145_prove",
+        "gender": "Female",
+        "race": "Lupo",
+        "allegiance": "Siracusa",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 19,
+        "infected": "Yes"
+    },
+    "Proviso": {
+        "charId": "char_4032_provs",
+        "gender": "Female",
+        "race": "Kuranta",
+        "allegiance": "Kazimierz",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 15,
+        "infected": "No"
+    },
+    "Ptilopsis": {
+        "charId": "char_128_plosis",
+        "gender": "Female",
+        "race": "Liberi",
+        "allegiance": "Rhine Lab",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 17,
+        "infected": "Yes"
+    },
+    "Pudding": {
+        "charId": "char_4004_pudd",
+        "gender": "Female",
+        "race": "Ægir",
+        "allegiance": "Columbia",
+        "position": "Ranged",
+        "rarity": 4,
+        "cost": 31,
+        "infected": "Yes"
+    },
+    "Purestream": {
+        "charId": "char_385_finlpp",
+        "gender": "Female",
+        "race": "Ægir",
+        "allegiance": "Yan",
+        "position": "Ranged",
+        "rarity": 4,
+        "cost": 19,
+        "infected": "No"
+    },
+    "Puzzle": {
+        "charId": "char_4017_puzzle",
+        "gender": "Male",
+        "race": "Vouivre",
+        "allegiance": "Victoria",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 12,
+        "infected": "Yes"
+    },
+    "Qanipalaat": {
+        "charId": "char_466_qanik",
+        "gender": "Male",
+        "race": "Vulpo",
+        "allegiance": "Sami",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 20,
+        "infected": "No"
+    },
+    "Qiubai": {
+        "charId": "char_4082_qiubai",
+        "gender": "Female",
+        "race": "Elafia",
+        "allegiance": "Yan",
+        "position": "Melee",
+        "rarity": 6,
+        "cost": 20,
+        "infected": "No"
+    },
+    "Quartz": {
+        "charId": "char_4063_quartz",
+        "gender": "Female",
+        "race": "Lupo",
+        "allegiance": "Columbia",
+        "position": "Melee",
+        "rarity": 4,
+        "cost": 22,
+        "infected": "No"
+    },
+    "Quercus": {
+        "charId": "char_492_quercu",
+        "gender": "Female",
+        "race": "Feline",
+        "allegiance": "Rhodes Island",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 12,
+        "infected": "No"
+    },
+    "Rangers": {
+        "charId": "char_503_rang",
+        "gender": "Male",
+        "race": "Savra",
+        "allegiance": "Action 4",
+        "position": "Ranged",
+        "rarity": 2,
+        "cost": 7,
+        "infected": "No"
+    },
+    "Rathalos S Noir Corne": {
+        "charId": "char_1030_noirc2",
+        "gender": "Male",
+        "race": "Oni",
+        "allegiance": "Action 4",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 25,
+        "infected": "Yes"
+    },
+    "Reed": {
+        "charId": "char_261_sddrag",
+        "gender": "Female",
+        "race": "Draco",
+        "allegiance": "Victoria",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 12,
+        "infected": "Yes"
+    },
+    "Reed the Flame Shadow": {
+        "charId": "char_1020_reed2",
+        "gender": "Female",
+        "race": "Draco",
+        "allegiance": "Dublinn",
+        "position": "Ranged",
+        "rarity": 6,
+        "cost": 17,
+        "infected": "Yes"
+    },
+    "Roberta": {
+        "charId": "char_484_robrta",
+        "gender": "Female",
+        "race": "Anaty",
+        "allegiance": "Columbia",
+        "position": "Melee",
+        "rarity": 4,
+        "cost": 17,
+        "infected": "No"
+    },
+    "Robin": {
+        "charId": "char_451_robin",
+        "gender": "Female",
+        "race": "Anaty",
+        "allegiance": "Columbia",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 13,
+        "infected": "No"
+    },
+    "Rockrock": {
+        "charId": "char_4040_rockr",
+        "gender": "Female",
+        "race": "Feline",
+        "allegiance": "Victoria",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 21,
+        "infected": "No"
+    },
+    "Rope": {
+        "charId": "char_236_rope",
+        "gender": "Female",
+        "race": "Cautus",
+        "allegiance": "Lungmen",
+        "position": "Melee",
+        "rarity": 4,
+        "cost": 12,
+        "infected": "Yes"
+    },
+    "Rosa": {
+        "charId": "char_197_poca",
+        "gender": "Female",
+        "race": "Ursus",
+        "allegiance": "Students of Ursus",
+        "position": "Ranged",
+        "rarity": 6,
+        "cost": 24,
+        "infected": "No"
+    },
+    "Rosmontis": {
+        "charId": "char_391_rosmon",
+        "gender": "Female",
+        "race": "Feline",
+        "allegiance": "Elite Operators",
+        "position": "Ranged",
+        "rarity": 6,
+        "cost": 25,
+        "infected": "Yes"
+    },
+    "Saga": {
+        "charId": "char_362_saga",
+        "gender": "Female",
+        "race": "Perro",
+        "allegiance": "Higashi",
+        "position": "Melee",
+        "rarity": 6,
+        "cost": 14,
+        "infected": "No"
+    },
+    "Saileach": {
+        "charId": "char_479_sleach",
+        "gender": "Female",
+        "race": "Vouivre",
+        "allegiance": "Victoria",
+        "position": "Melee",
+        "rarity": 6,
+        "cost": 12,
+        "infected": "No"
+    },
+    "Saria": {
+        "charId": "char_202_demkni",
+        "gender": "Female",
+        "race": "Vouivre",
+        "allegiance": "Rhine Lab",
+        "position": "Melee",
+        "rarity": 6,
+        "cost": 22,
+        "infected": "No"
+    },
+    "Savage": {
+        "charId": "char_230_savage",
+        "gender": "Female",
+        "race": "Cautus",
+        "allegiance": "Rim Billiton",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 22,
+        "infected": "No"
+    },
+    "Scavenger": {
+        "charId": "char_149_scave",
+        "gender": "Female",
+        "race": "Zalak",
+        "allegiance": "Sweep",
+        "position": "Melee",
+        "rarity": 4,
+        "cost": 12,
+        "infected": "Yes"
+    },
+    "Scene": {
+        "charId": "char_336_folivo",
+        "gender": "Female",
+        "race": "Pilosa",
+        "allegiance": "Sargon",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 11,
+        "infected": "Yes"
+    },
+    "Schwarz": {
+        "charId": "char_340_shwaz",
+        "gender": "Female",
+        "race": "Feline",
+        "allegiance": "Siesta",
+        "position": "Ranged",
+        "rarity": 6,
+        "cost": 20,
+        "infected": "Yes"
+    },
+    "Sesa": {
+        "charId": "char_379_sesa",
+        "gender": "Male",
+        "race": "Vouivre",
+        "allegiance": "Sargon",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 28,
+        "infected": "No"
+    },
+    "Shalem": {
+        "charId": "char_4025_aprot2",
+        "gender": "Male",
+        "race": "Phidia",
+        "allegiance": "Victoria",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 25,
+        "infected": "Yes"
+    },
+    "Shamare": {
+        "charId": "char_254_vodfox",
+        "gender": "Female",
+        "race": "Vulpo",
+        "allegiance": "Siracusa",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 12,
+        "infected": "Yes"
+    },
+    "Sharp": {
+        "charId": "char_508_aguard",
+        "gender": "Male",
+        "race": "Phidia",
+        "allegiance": "None",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 17,
+        "infected": "Yes"
+    },
+    "Shaw": {
+        "charId": "char_277_sqrrel",
+        "gender": "Female",
+        "race": "Zalak",
+        "allegiance": "Lungmen",
+        "position": "Melee",
+        "rarity": 4,
+        "cost": 19,
+        "infected": "No"
+    },
+    "Shining": {
+        "charId": "char_147_shining",
+        "gender": "Female",
+        "race": "Sarkaz",
+        "allegiance": "Followers",
+        "position": "Ranged",
+        "rarity": 6,
+        "cost": 20,
+        "infected": "No"
+    },
+    "Shirayuki": {
+        "charId": "char_118_yuki",
+        "gender": "Female",
+        "race": "Anaty",
+        "allegiance": "Higashi",
+        "position": "Ranged",
+        "rarity": 4,
+        "cost": 27,
+        "infected": "No"
+    },
+    "Sideroca": {
+        "charId": "char_333_sidero",
+        "gender": "Female",
+        "race": "Forte",
+        "allegiance": "Minos",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 23,
+        "infected": "No"
+    },
+    "Siege": {
+        "charId": "char_112_siege",
+        "gender": "Female",
+        "race": "Aslan",
+        "allegiance": "Glasgow",
+        "position": "Melee",
+        "rarity": 6,
+        "cost": 14,
+        "infected": "No"
+    },
+    "Silence": {
+        "charId": "char_108_silent",
+        "gender": "Female",
+        "race": "Liberi",
+        "allegiance": "Rhine Lab",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 19,
+        "infected": "Yes"
+    },
+    "SilverAsh": {
+        "charId": "char_172_svrash",
+        "gender": "Male",
+        "race": "Feline",
+        "allegiance": "Karlan",
+        "position": "Melee",
+        "rarity": 6,
+        "cost": 20,
+        "infected": "No"
+    },
+    "Skadi": {
+        "charId": "char_263_skadi",
+        "gender": "Female",
+        "race": "Unknown",
+        "allegiance": "Abyssal Hunter",
+        "position": "Melee",
+        "rarity": 6,
+        "cost": 19,
+        "infected": "No"
+    },
+    "Skadi the Corrupting Heart": {
+        "charId": "char_1012_skadi2",
+        "gender": "Female",
+        "race": "Undisclosed",
+        "allegiance": "Aegir",
+        "position": "Ranged",
+        "rarity": 6,
+        "cost": 8,
+        "infected": "No"
+    },
+    "Skyfire": {
+        "charId": "char_166_skfire",
+        "gender": "Female",
+        "race": "Feline",
+        "allegiance": "Victoria",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 33,
+        "infected": "No"
+    },
+    "Snowsant": {
+        "charId": "char_383_snsant",
+        "gender": "Female",
+        "race": "Liberi",
+        "allegiance": "Lungmen",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 15,
+        "infected": "No"
+    },
+    "Sora": {
+        "charId": "char_101_sora",
+        "gender": "Female",
+        "race": "Unknown as requested by management agency",
+        "allegiance": "Penguin Logistics",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 7,
+        "infected": "No"
+    },
+    "Specter": {
+        "charId": "char_143_ghost",
+        "gender": "Female",
+        "race": "Undisclosed",
+        "allegiance": "Abyssal Hunter",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 23,
+        "infected": "Yes"
+    },
+    "Specter the Unchained": {
+        "charId": "char_1023_ghost2",
+        "gender": "Female",
+        "race": "Ægir",
+        "allegiance": "Abyssal Hunter",
+        "position": "Melee",
+        "rarity": 6,
+        "cost": 16,
+        "infected": "Yes"
+    },
+    "Spot": {
+        "charId": "char_284_spot",
+        "gender": "Male",
+        "race": "Rebbah",
+        "allegiance": "Reserve 6",
+        "position": "Melee",
+        "rarity": 3,
+        "cost": 17,
+        "infected": "Yes"
+    },
+    "Stainless": {
+        "charId": "char_4072_ironmn",
+        "gender": "Male",
+        "race": "Feline",
+        "allegiance": "Victoria",
+        "position": "Melee",
+        "rarity": 6,
+        "cost": 19,
+        "infected": "No"
+    },
+    "Steward": {
+        "charId": "char_210_stward",
+        "gender": "Male",
+        "race": "Vulpo",
+        "allegiance": "Reserve 4",
+        "position": "Ranged",
+        "rarity": 3,
+        "cost": 18,
+        "infected": "Yes"
+    },
+    "Stormeye": {
+        "charId": "char_511_asnipe",
+        "gender": "Male",
+        "race": "Sarkaz",
+        "allegiance": "None",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 12,
+        "infected": "Yes"
+    },
+    "Surtr": {
+        "charId": "char_350_surtr",
+        "gender": "Female",
+        "race": "Sarkaz",
+        "allegiance": "Rhodes Island",
+        "position": "Melee",
+        "rarity": 6,
+        "cost": 21,
+        "infected": "Yes"
+    },
+    "Sussurro": {
+        "charId": "char_298_susuro",
+        "gender": "Female",
+        "race": "Vulpo",
+        "allegiance": "Rhodes Island",
+        "position": "Ranged",
+        "rarity": 4,
+        "cost": 18,
+        "infected": "Yes"
+    },
+    "Suzuran": {
+        "charId": "char_358_lisa",
+        "gender": "Female",
+        "race": "Vulpo",
+        "allegiance": "Siracusa",
+        "position": "Ranged",
+        "rarity": 6,
+        "cost": 16,
+        "infected": "Yes"
+    },
+    "Swire": {
+        "charId": "char_308_swire",
+        "gender": "Female",
+        "race": "Feline",
+        "allegiance": "LDG",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 16,
+        "infected": "No"
+    },
+    "THRM-EX": {
+        "charId": "char_376_therex",
+        "gender": "Male",
+        "race": "Feb 15",
+        "allegiance": "Rhodes Island",
+        "position": "Melee",
+        "rarity": 1,
+        "cost": 3,
+        "infected": "N/A"
+    },
+    "Tachanka": {
+        "charId": "char_459_tachak",
+        "gender": "Male",
+        "race": "Unknown",
+        "allegiance": "Rainbow 6",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 24,
+        "infected": "No"
+    },
+    "Tequila": {
+        "charId": "char_486_takila",
+        "gender": "Male",
+        "race": "Perro",
+        "allegiance": "Bolivar",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 13,
+        "infected": "No"
+    },
+    "Terra Research Commission": {
+        "charId": "char_4077_palico",
+        "gender": "Unknown",
+        "race": "Undisclosed",
+        "allegiance": "Rhodes Island",
+        "position": "Ranged",
+        "rarity": 1,
+        "cost": 3,
+        "infected": "No"
+    },
+    "Texas": {
+        "charId": "char_102_texas",
+        "gender": "Female",
+        "race": "Lupo",
+        "allegiance": "Penguin Logistics",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 13,
+        "infected": "No"
+    },
+    "Texas the Omertosa": {
+        "charId": "char_1028_texas2",
+        "gender": "Female",
+        "race": "Lupo",
+        "allegiance": "Penguin Logistics",
+        "position": "Melee",
+        "rarity": 6,
+        "cost": 10,
+        "infected": "No"
+    },
+    "Thorns": {
+        "charId": "char_293_thorns",
+        "gender": "Male",
+        "race": "Ægir",
+        "allegiance": "Iberia",
+        "position": "Melee",
+        "rarity": 6,
+        "cost": 20,
+        "infected": "No"
+    },
+    "Toddifons": {
+        "charId": "char_363_toddi",
+        "gender": "Female",
+        "race": "Vouivre",
+        "allegiance": "Victoria",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 23,
+        "infected": "Yes"
+    },
+    "Tomimi": {
+        "charId": "char_411_tomimi",
+        "gender": "Female",
+        "race": "Archosauria",
+        "allegiance": "Sargon",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 22,
+        "infected": "No"
+    },
+    "Totter": {
+        "charId": "char_4062_totter",
+        "gender": "Male",
+        "race": "Liberi",
+        "allegiance": "Sargon",
+        "position": "Ranged",
+        "rarity": 4,
+        "cost": 22,
+        "infected": "Yes"
+    },
+    "Touch": {
+        "charId": "char_510_amedic",
+        "gender": "Female",
+        "race": "Caprinae",
+        "allegiance": "None",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 18,
+        "infected": "Yes"
+    },
+    "Tsukinogi": {
+        "charId": "char_343_tknogi",
+        "gender": "Female",
+        "race": "Elafia",
+        "allegiance": "Higashi",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 12,
+        "infected": "Yes"
+    },
+    "Tulip": {
+        "charId": "char_513_apionr",
+        "gender": "Female",
+        "race": "Phidia",
+        "allegiance": "None",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 12,
+        "infected": "Yes"
+    },
+    "Tuye": {
+        "charId": "char_402_tuye",
+        "gender": "Female",
+        "race": "Forte",
+        "allegiance": "Sargon",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 21,
+        "infected": "Yes"
+    },
+    "Utage": {
+        "charId": "char_337_utage",
+        "gender": "Female",
+        "race": "Unknown",
+        "allegiance": "Higashi",
+        "position": "Melee",
+        "rarity": 4,
+        "cost": 24,
+        "infected": "Yes"
+    },
+    "Vanilla": {
+        "charId": "char_240_wyvern",
+        "gender": "Female",
+        "race": "Vouivre",
+        "allegiance": "Blacksteel",
+        "position": "Melee",
+        "rarity": 3,
+        "cost": 11,
+        "infected": "No"
+    },
+    "Vermeil": {
+        "charId": "char_190_clour",
+        "gender": "Female",
+        "race": "Vulpo",
+        "allegiance": "Siracusa",
+        "position": "Ranged",
+        "rarity": 4,
+        "cost": 12,
+        "infected": "Yes"
+    },
+    "Vigil": {
+        "charId": "char_427_vigil",
+        "gender": "Male",
+        "race": "Lupo",
+        "allegiance": "Siracusa",
+        "position": "Ranged",
+        "rarity": 6,
+        "cost": 17,
+        "infected": "No"
+    },
+    "Vigna": {
+        "charId": "char_290_vigna",
+        "gender": "Female",
+        "race": "Sarkaz",
+        "allegiance": "Columbia",
+        "position": "Melee",
+        "rarity": 4,
+        "cost": 11,
+        "infected": "Yes"
+    },
+    "Vulcan": {
+        "charId": "char_163_hpsts",
+        "gender": "Female",
+        "race": "Forte",
+        "allegiance": "Minos",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 35,
+        "infected": "Yes"
+    },
+    "W": {
+        "charId": "char_113_cqbw",
+        "gender": "Female",
+        "race": "Sarkaz",
+        "allegiance": "Babel",
+        "position": "Ranged",
+        "rarity": 6,
+        "cost": 29,
+        "infected": "Yes"
+    },
+    "Waai Fu": {
+        "charId": "char_243_waaifu",
+        "gender": "Female",
+        "race": "Feline",
+        "allegiance": "Lee's Detective Agency",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 9,
+        "infected": "No"
+    },
+    "Warfarin": {
+        "charId": "char_171_bldsk",
+        "gender": "Female",
+        "race": "Sarkaz",
+        "allegiance": "Rhodes Island",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 19,
+        "infected": "No"
+    },
+    "Weedy": {
+        "charId": "char_400_weedy",
+        "gender": "Female",
+        "race": "Ægir",
+        "allegiance": "Rhodes Island",
+        "position": "Melee",
+        "rarity": 6,
+        "cost": 21,
+        "infected": "No"
+    },
+    "Whislash": {
+        "charId": "char_265_sophia",
+        "gender": "Female",
+        "race": "Kuranta",
+        "allegiance": "Kazimierz",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 18,
+        "infected": "No"
+    },
+    "Whisperain": {
+        "charId": "char_436_whispr",
+        "gender": "Female",
+        "race": "Ægir",
+        "allegiance": "Iberia",
+        "position": "Ranged",
+        "rarity": 5,
+        "cost": 20,
+        "infected": "No"
+    },
+    "Wild Mane": {
+        "charId": "char_496_wildmn",
+        "gender": "Female",
+        "race": "Kuranta",
+        "allegiance": "Pinus",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 14,
+        "infected": "Yes"
+    },
+    "Wind Chimes": {
+        "charId": "char_4083_chimes",
+        "gender": "Female",
+        "race": "Forte",
+        "allegiance": "Yan",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 23,
+        "infected": "Yes"
+    },
+    "Windflit": {
+        "charId": "char_433_windft",
+        "gender": "Male",
+        "race": "Perro",
+        "allegiance": "Columbia",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 18,
+        "infected": "No"
+    },
+    "Yato": {
+        "charId": "char_502_nblade",
+        "gender": "Female",
+        "race": "Oni",
+        "allegiance": "Action 4",
+        "position": "Melee",
+        "rarity": 2,
+        "cost": 7,
+        "infected": "Yes"
+    },
+    "Zima": {
+        "charId": "char_115_headbr",
+        "gender": "Female",
+        "race": "Ursus",
+        "allegiance": "Students of Ursus",
+        "position": "Melee",
+        "rarity": 5,
+        "cost": 13,
+        "infected": "No"
+    }
+}

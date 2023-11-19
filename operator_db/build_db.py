@@ -1,5 +1,4 @@
 import json
-import io
 from pprint import pprint 
 
 INFECTED_INDEX = 8
@@ -120,7 +119,7 @@ def main():
             "infected": infected,
         }
 
-    operators = dict(sorted(operators.items(), key=lambda item: item, reverse=True))
+    operators = dict(sorted(operators.items(), key=lambda item: item))
 
     # pprint(operators)
     # as of 19/11/2023, Mulsyse/Lone Trail isn't added to the Aceship Github
@@ -128,8 +127,11 @@ def main():
     # 290 ops total
     # Missing 8 operators + 5 Reserve operators which makes up the difference
     # Shalem has 2 entries
-    print(ignored)
+    print("Ignored operators: " + str(len(ignored)))
+    pprint(ignored)
     print(len(operators))
+    with open('operators.json', 'w', encoding='utf-8') as f:
+        json.dump(operators, f, ensure_ascii=False, indent=4)
 
 if __name__ == "__main__":
     main()
