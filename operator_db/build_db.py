@@ -33,9 +33,9 @@ def get_infected_status(profile_info, name):
     return infected
 
 def get_allegiance(info):
-    nation = "aegir" if info["nationId"] == "egir" else ("None" if info["nationId"] == None else info["nationId"])
+    nation = "Ægir" if info["nationId"] == "egir" else ("None" if info["nationId"] == None else info["nationId"])
     group = "None" if info["groupId"] == None else info["groupId"]
-    team = "aegir" if info["teamId"] == "egir" else ("None" if info["teamId"] == None else info["teamId"])
+    team = "Ægir" if info["teamId"] == "egir" else ("None" if info["teamId"] == None else info["teamId"])
 
     # if group then no team. If team then no group.
     if group != "None":
