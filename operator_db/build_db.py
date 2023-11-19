@@ -130,7 +130,7 @@ def main():
     print("Ignored operators: " + str(len(ignored)))
     pprint(ignored)
     print(len(operators))
-    with open('operators.json', 'w', encoding='utf-8') as f:
+    with open('./operator_db/operator_db.json', 'w', encoding='utf-8') as f:
         json.dump(operators, f, ensure_ascii=False, indent=4)
 
 if __name__ == "__main__":
