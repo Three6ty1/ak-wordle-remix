@@ -1,6 +1,6 @@
 import re
 import urllib.request
-
+import itertools
 
 # https://stackoverflow.com/a/16187955
 url = "https://gamepress.gg/arknights/tools/interactive-operator-list"
@@ -28,4 +28,5 @@ with urllib.request.urlopen(request) as response:
             if (operatorName):
                 operators[operatorName] = operatorUrl + operatorName
 
-    print(len(operators))
+    operators = dict(list(operators.items())[len(operators) - 290:])
+    print(operators)
