@@ -3,7 +3,8 @@ import db from '../../operator_db/operator_db.json'
 
 // To run
 // "npx prisma db seed"
-
+// dumb shit prisma seeding
+// https://github.com/prisma/prisma/issues/7053#issuecomment-1679880184
 interface Dictionary<T> {
     [Key: string]: T;
 }
