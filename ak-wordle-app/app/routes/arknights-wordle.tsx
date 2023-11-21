@@ -20,6 +20,12 @@ export default function ArknightsWordle() {
      *      copy and paste thing for results
      */
 
+    async function test() {
+        const res = await fetch('/feed');
+    }
+
+    test()
+
     return (
         <main className="justify-center align-middle items-center content-center text-center">
             <h1>Arknights Wordle</h1>
