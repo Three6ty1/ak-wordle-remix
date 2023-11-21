@@ -103,8 +103,10 @@ def main():
         infected = get_infected_status(profile_info, name)
         gender = profile_info[1].split(']')[1].strip()
         race = profile_info[5].split(']')[1].strip()
+        if "unknown" in race.lower() or "undisclosed" in race.lower():
+            race = "Unknown/Undisclosed"
         allegiance = get_allegiance(info)
-        position = info["position"].lower().capitalize()
+        profession = info["profession"].lower().capitalize()
         rarity = info["rarity"] + 1
         cost = info["phases"][-1]["attributesKeyFrames"][0]["data"]["cost"]
 
@@ -113,7 +115,7 @@ def main():
             "gender": gender,
             "race": race,
             "allegiance": allegiance,
-            "position": position,
+            "profession": profession,
             "rarity": rarity,
             "cost": cost,
             "infected": infected,
