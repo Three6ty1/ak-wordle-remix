@@ -4,7 +4,7 @@
         "gender": "Female",
         "race": "Jan 21",
         "allegiance": "Pinus",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 1,
         "cost": 3,
         "infected": "N/A"
@@ -14,7 +14,7 @@
         "gender": "Male",
         "race": "Savra",
         "allegiance": "Rhodes Island",
-        "position": "Ranged",
+        "profession": "Caster",
         "rarity": 2,
         "cost": 24,
         "infected": "No"
@@ -24,7 +24,7 @@
         "gender": "Male",
         "race": "Feline",
         "allegiance": "Lee's Detective Agency",
-        "position": "Ranged",
+        "profession": "Special",
         "rarity": 6,
         "cost": 13,
         "infected": "No"
@@ -34,7 +34,7 @@
         "gender": "Female",
         "race": "Ursus",
         "allegiance": "Ursus",
-        "position": "Ranged",
+        "profession": "Caster",
         "rarity": 5,
         "cost": 22,
         "infected": "No"
@@ -44,7 +44,7 @@
         "gender": "Female",
         "race": "Liberi",
         "allegiance": "Columbia",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 4,
         "cost": 18,
         "infected": "Yes"
@@ -54,7 +54,7 @@
         "gender": "Male",
         "race": "Sankta",
         "allegiance": "Reserve 4",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 3,
         "cost": 11,
         "infected": "Yes"
@@ -64,7 +64,7 @@
         "gender": "Female",
         "race": "Ægir",
         "allegiance": "Higashi",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 5,
         "cost": 25,
         "infected": "No"
@@ -74,7 +74,7 @@
         "gender": "Female",
         "race": "Sankta",
         "allegiance": "Laterano",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 4,
         "cost": 20,
         "infected": "No"
@@ -84,7 +84,7 @@
         "gender": "Female",
         "race": "Cautus/Chimera",
         "allegiance": "Rhodes Island",
-        "position": "Ranged",
+        "profession": "Caster",
         "rarity": 5,
         "cost": 20,
         "infected": "Yes"
@@ -94,7 +94,7 @@
         "gender": "Female",
         "race": "Ægir",
         "allegiance": "Abyssal Hunter",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 5,
         "cost": 21,
         "infected": "No"
@@ -104,7 +104,7 @@
         "gender": "Female",
         "race": "Vulpo",
         "allegiance": "Siracusa",
-        "position": "Ranged",
+        "profession": "Support",
         "rarity": 6,
         "cost": 16,
         "infected": "Yes"
@@ -114,7 +114,7 @@
         "gender": "Male",
         "race": "Cautus",
         "allegiance": "Reserve 4",
-        "position": "Ranged",
+        "profession": "Medic",
         "rarity": 3,
         "cost": 17,
         "infected": "No"
@@ -124,7 +124,7 @@
         "gender": "Male",
         "race": "Lupo",
         "allegiance": "Chiave",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 5,
         "cost": 31,
         "infected": "Yes"
@@ -134,7 +134,7 @@
         "gender": "Female",
         "race": "Cautus",
         "allegiance": "Rim Billiton",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 5,
         "cost": 13,
         "infected": "Yes"
@@ -144,7 +144,7 @@
         "gender": "Female",
         "race": "Liberi",
         "allegiance": "Laterano",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 6,
         "cost": 14,
         "infected": "No"
@@ -154,7 +154,7 @@
         "gender": "Male",
         "race": "Sankta",
         "allegiance": "Laterano",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 4,
         "cost": 18,
         "infected": "Yes"
@@ -164,7 +164,7 @@
         "gender": "Female",
         "race": "Savra",
         "allegiance": "Rim Billiton",
-        "position": "Melee",
+        "profession": "Tank",
         "rarity": 5,
         "cost": 25,
         "infected": "Yes"
@@ -172,9 +172,9 @@
     "Ash": {
         "charId": "char_456_ash",
         "gender": "Female",
-        "race": "Unknown",
+        "race": "Unknown/Undisclosed",
         "allegiance": "Rainbow 6",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 6,
         "cost": 14,
         "infected": "No"
@@ -184,7 +184,7 @@
         "gender": "Female",
         "race": "Zalak",
         "allegiance": "Pinus",
-        "position": "Melee",
+        "profession": "Tank",
         "rarity": 5,
         "cost": 27,
         "infected": "Yes"
@@ -194,7 +194,7 @@
         "gender": "Female",
         "race": "Liberi",
         "allegiance": "Columbia",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 5,
         "cost": 21,
         "infected": "Yes"
@@ -204,7 +204,7 @@
         "gender": "Female",
         "race": "Liberi",
         "allegiance": "Rhine Lab",
-        "position": "Ranged",
+        "profession": "Caster",
         "rarity": 5,
         "cost": 34,
         "infected": "Yes"
@@ -214,7 +214,7 @@
         "gender": "Female",
         "race": "Ursus",
         "allegiance": "Karlan",
-        "position": "Melee",
+        "profession": "Tank",
         "rarity": 5,
         "cost": 32,
         "infected": "Yes"
@@ -224,7 +224,7 @@
         "gender": "Male",
         "race": "Cautus",
         "allegiance": "Rim Billiton",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 5,
         "cost": 19,
         "infected": "No"
@@ -234,7 +234,7 @@
         "gender": "Female",
         "race": "Vouivre",
         "allegiance": "Victoria",
-        "position": "Melee",
+        "profession": "Pioneer",
         "rarity": 6,
         "cost": 13,
         "infected": "No"
@@ -244,7 +244,7 @@
         "gender": "Female",
         "race": "Perro",
         "allegiance": "Reserve 1",
-        "position": "Melee",
+        "profession": "Tank",
         "rarity": 3,
         "cost": 18,
         "infected": "Yes"
@@ -254,7 +254,7 @@
         "gender": "Female",
         "race": "Reproba",
         "allegiance": "Columbia",
-        "position": "Ranged",
+        "profession": "Pioneer",
         "rarity": 4,
         "cost": 13,
         "infected": "No"
@@ -264,7 +264,7 @@
         "gender": "Female",
         "race": "Ursus",
         "allegiance": "Ursus",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 4,
         "cost": 9,
         "infected": "Yes"
@@ -274,7 +274,7 @@
         "gender": "Female",
         "race": "Caprinae",
         "allegiance": "Sargon",
-        "position": "Ranged",
+        "profession": "Caster",
         "rarity": 5,
         "cost": 23,
         "infected": "No"
@@ -284,7 +284,7 @@
         "gender": "Female",
         "race": "Caprinae",
         "allegiance": "Victoria",
-        "position": "Melee",
+        "profession": "Special",
         "rarity": 5,
         "cost": 17,
         "infected": "No"
@@ -294,7 +294,7 @@
         "gender": "Female",
         "race": "Liberi",
         "allegiance": "Sami",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 5,
         "cost": 22,
         "infected": "Yes"
@@ -304,7 +304,7 @@
         "gender": "Male",
         "race": "Forte",
         "allegiance": "Lungmen",
-        "position": "Melee",
+        "profession": "Tank",
         "rarity": 5,
         "cost": 24,
         "infected": "No"
@@ -314,7 +314,7 @@
         "gender": "Female",
         "race": "Savra",
         "allegiance": "Rim Billiton",
-        "position": "Ranged",
+        "profession": "Pioneer",
         "rarity": 5,
         "cost": 14,
         "infected": "Yes"
@@ -324,7 +324,7 @@
         "gender": "Female",
         "race": "Feline",
         "allegiance": "Elite Operators",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 6,
         "cost": 24,
         "infected": "Yes"
@@ -334,7 +334,7 @@
         "gender": "Female",
         "race": "Kuranta",
         "allegiance": "Kazimierz",
-        "position": "Melee",
+        "profession": "Tank",
         "rarity": 6,
         "cost": 22,
         "infected": "No"
@@ -342,9 +342,9 @@
     "Blitz": {
         "charId": "char_457_blitz",
         "gender": "Male",
-        "race": "Unknown",
+        "race": "Unknown/Undisclosed",
         "allegiance": "Rainbow 6",
-        "position": "Melee",
+        "profession": "Tank",
         "rarity": 5,
         "cost": 22,
         "infected": "No"
@@ -354,7 +354,7 @@
         "gender": "Female",
         "race": "Anura",
         "allegiance": "Iberia",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 5,
         "cost": 13,
         "infected": "No"
@@ -364,7 +364,7 @@
         "gender": "Female",
         "race": "Vulpo",
         "allegiance": "Victoria",
-        "position": "Ranged",
+        "profession": "Medic",
         "rarity": 5,
         "cost": 17,
         "infected": "Yes"
@@ -374,7 +374,7 @@
         "gender": "Male",
         "race": "Feline",
         "allegiance": "Chiave",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 5,
         "cost": 23,
         "infected": "Yes"
@@ -384,7 +384,7 @@
         "gender": "Female",
         "race": "Cerato",
         "allegiance": "Sargon",
-        "position": "Melee",
+        "profession": "Tank",
         "rarity": 4,
         "cost": 21,
         "infected": "Yes"
@@ -394,7 +394,7 @@
         "gender": "Female",
         "race": "Liberi",
         "allegiance": "Rhodes Island",
-        "position": "Melee",
+        "profession": "Pioneer",
         "rarity": 5,
         "cost": 10,
         "infected": "Yes"
@@ -404,7 +404,7 @@
         "gender": "Female",
         "race": "Perro",
         "allegiance": "Reserve 4",
-        "position": "Melee",
+        "profession": "Tank",
         "rarity": 3,
         "cost": 18,
         "infected": "No"
@@ -414,7 +414,7 @@
         "gender": "Female",
         "race": "Caprinae",
         "allegiance": "Leithanien",
-        "position": "Ranged",
+        "profession": "Caster",
         "rarity": 6,
         "cost": 24,
         "infected": "No"
@@ -424,7 +424,7 @@
         "gender": "Male",
         "race": "Dec. 10",
         "allegiance": "Rhodes Island",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 1,
         "cost": 3,
         "infected": "N/A"
@@ -434,7 +434,7 @@
         "gender": "Female",
         "race": "Kuranta",
         "allegiance": "Reserve 6",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 3,
         "cost": 23,
         "infected": "Yes"
@@ -444,7 +444,7 @@
         "gender": "Female",
         "race": "Perro",
         "allegiance": "Rhodes Island",
-        "position": "Ranged",
+        "profession": "Caster",
         "rarity": 6,
         "cost": 21,
         "infected": "Yes"
@@ -454,7 +454,7 @@
         "gender": "Female",
         "race": "Liberi",
         "allegiance": "Siesta",
-        "position": "Ranged",
+        "profession": "Medic",
         "rarity": 5,
         "cost": 22,
         "infected": "No"
@@ -464,7 +464,7 @@
         "gender": "Female",
         "race": "Lung",
         "allegiance": "LDG",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 6,
         "cost": 23,
         "infected": "Undisclosed"
@@ -474,7 +474,7 @@
         "gender": "Female",
         "race": "Lung",
         "allegiance": "Rhodes Island",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 6,
         "cost": 32,
         "infected": "Yes"
@@ -484,7 +484,7 @@
         "gender": "Male",
         "race": "Durin",
         "allegiance": "Rhodes Island",
-        "position": "Ranged",
+        "profession": "Medic",
         "rarity": 4,
         "cost": 14,
         "infected": "No"
@@ -494,7 +494,7 @@
         "gender": "Male",
         "race": "Vulpo",
         "allegiance": "Chiave",
-        "position": "Melee",
+        "profession": "Pioneer",
         "rarity": 5,
         "cost": 13,
         "infected": "Yes"
@@ -502,9 +502,9 @@
     "Chongyue": {
         "charId": "char_2024_chyue",
         "gender": "Male",
-        "race": "Undisclosed",
+        "race": "Unknown/Undisclosed",
         "allegiance": "Sui",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 6,
         "cost": 11,
         "infected": "No"
@@ -514,7 +514,7 @@
         "gender": "Female",
         "race": "Zalak",
         "allegiance": "Rhodes Island",
-        "position": "Ranged",
+        "profession": "Caster",
         "rarity": 4,
         "cost": 20,
         "infected": "No"
@@ -524,7 +524,7 @@
         "gender": "Female",
         "race": "Feline",
         "allegiance": "Karlan",
-        "position": "Melee",
+        "profession": "Special",
         "rarity": 5,
         "cost": 13,
         "infected": "Yes"
@@ -532,9 +532,9 @@
     "Conviction": {
         "charId": "char_159_peacok",
         "gender": "Conviction",
-        "race": "Unknown (Suspected Liberi)",
+        "race": "Unknown/Undisclosed",
         "allegiance": "Minos",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 4,
         "cost": 16,
         "infected": "Yes"
@@ -544,7 +544,7 @@
         "gender": "Male",
         "race": "Phidia",
         "allegiance": "Columbia",
-        "position": "Ranged",
+        "profession": "Caster",
         "rarity": 5,
         "cost": 33,
         "infected": "No"
@@ -554,7 +554,7 @@
         "gender": "Male",
         "race": "Itra",
         "allegiance": "Karlan",
-        "position": "Melee",
+        "profession": "Pioneer",
         "rarity": 4,
         "cost": 12,
         "infected": "No"
@@ -564,7 +564,7 @@
         "gender": "Female",
         "race": "Forte",
         "allegiance": "Penguin Logistics",
-        "position": "Melee",
+        "profession": "Tank",
         "rarity": 5,
         "cost": 22,
         "infected": "No"
@@ -574,7 +574,7 @@
         "gender": "Female",
         "race": "Petram",
         "allegiance": "Columbia",
-        "position": "Melee",
+        "profession": "Tank",
         "rarity": 4,
         "cost": 21,
         "infected": "Yes"
@@ -584,7 +584,7 @@
         "gender": "Female",
         "race": "Vulpo",
         "allegiance": "Columbia",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 4,
         "cost": 21,
         "infected": "Yes"
@@ -594,7 +594,7 @@
         "gender": "Male",
         "race": "Elafia",
         "allegiance": "Leithanien",
-        "position": "Melee",
+        "profession": "Tank",
         "rarity": 5,
         "cost": 27,
         "infected": "Yes"
@@ -604,7 +604,7 @@
         "gender": "Female",
         "race": "Feline",
         "allegiance": "Glasgow",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 5,
         "cost": 12,
         "infected": "No"
@@ -612,9 +612,9 @@
     "Deepcolor": {
         "charId": "char_110_deepcl",
         "gender": "Female",
-        "race": "Undisclosed",
+        "race": "Unknown/Undisclosed",
         "allegiance": "Ægir",
-        "position": "Ranged",
+        "profession": "Support",
         "rarity": 4,
         "cost": 10,
         "infected": "No"
@@ -624,7 +624,7 @@
         "gender": "Female",
         "race": "Perro",
         "allegiance": "Rhodes Island",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 4,
         "cost": 15,
         "infected": "Yes"
@@ -634,7 +634,7 @@
         "gender": "Female",
         "race": "Zalak",
         "allegiance": "Rhine Lab",
-        "position": "Ranged",
+        "profession": "Special",
         "rarity": 6,
         "cost": 12,
         "infected": "No"
@@ -644,7 +644,7 @@
         "gender": "Female",
         "race": "Vulpo",
         "allegiance": "Rhodes Island",
-        "position": "Melee",
+        "profession": "Tank",
         "rarity": 4,
         "cost": 24,
         "infected": "No"
@@ -654,7 +654,7 @@
         "gender": "Female",
         "race": "Durin",
         "allegiance": "Action 4",
-        "position": "Ranged",
+        "profession": "Caster",
         "rarity": 2,
         "cost": 12,
         "infected": "No"
@@ -662,9 +662,9 @@
     "Dusk": {
         "charId": "char_2015_dusk",
         "gender": "Female",
-        "race": "Undisclosed",
+        "race": "Unknown/Undisclosed",
         "allegiance": "Sui",
-        "position": "Ranged",
+        "profession": "Caster",
         "rarity": 6,
         "cost": 34,
         "infected": "No"
@@ -674,7 +674,7 @@
         "gender": "Female",
         "race": "Caprinae",
         "allegiance": "Leithanien",
-        "position": "Ranged",
+        "profession": "Support",
         "rarity": 4,
         "cost": 14,
         "infected": "Yes"
@@ -684,7 +684,7 @@
         "gender": "Male",
         "race": "Caprinae",
         "allegiance": "Leithanien",
-        "position": "Ranged",
+        "profession": "Caster",
         "rarity": 6,
         "cost": 25,
         "infected": "Yes"
@@ -694,7 +694,7 @@
         "gender": "Male",
         "race": "Liberi",
         "allegiance": "Rhodes Island",
-        "position": "Melee",
+        "profession": "Pioneer",
         "rarity": 5,
         "cost": 11,
         "infected": "Yes"
@@ -704,7 +704,7 @@
         "gender": "Male",
         "race": "Sankta",
         "allegiance": "Laterano",
-        "position": "Melee",
+        "profession": "Special",
         "rarity": 5,
         "cost": 22,
         "infected": "No"
@@ -714,7 +714,7 @@
         "gender": "Female",
         "race": "Liberi",
         "allegiance": "Minos",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 5,
         "cost": 23,
         "infected": "No"
@@ -724,7 +724,7 @@
         "gender": "Female",
         "race": "Archosauria",
         "allegiance": "Sargon",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 4,
         "cost": 22,
         "infected": "Yes"
@@ -734,7 +734,7 @@
         "gender": "Male",
         "race": "Savra",
         "allegiance": "Rhodes Island",
-        "position": "Melee",
+        "profession": "Special",
         "rarity": 4,
         "cost": 19,
         "infected": "Yes"
@@ -744,7 +744,7 @@
         "gender": "Female",
         "race": "Pythia",
         "allegiance": "Sargon",
-        "position": "Melee",
+        "profession": "Tank",
         "rarity": 6,
         "cost": 33,
         "infected": "Yes"
@@ -754,7 +754,7 @@
         "gender": "Male",
         "race": "Sankta",
         "allegiance": "Laterano",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 5,
         "cost": 31,
         "infected": "No"
@@ -764,7 +764,7 @@
         "gender": "Female",
         "race": "Sankta",
         "allegiance": "Penguin Logistics",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 6,
         "cost": 14,
         "infected": "No"
@@ -774,7 +774,7 @@
         "gender": "Female",
         "race": "Caprinae",
         "allegiance": "Leithanien",
-        "position": "Ranged",
+        "profession": "Caster",
         "rarity": 6,
         "cost": 21,
         "infected": "Yes"
@@ -784,7 +784,7 @@
         "gender": "Female",
         "race": "Ursus",
         "allegiance": "Lungmen",
-        "position": "Melee",
+        "profession": "Special",
         "rarity": 5,
         "cost": 20,
         "infected": "Yes"
@@ -794,7 +794,7 @@
         "gender": "Female",
         "race": "Kuranta",
         "allegiance": "Reserve 1",
-        "position": "Melee",
+        "profession": "Pioneer",
         "rarity": 3,
         "cost": 11,
         "infected": "Yes"
@@ -804,7 +804,7 @@
         "gender": "Female",
         "race": "Liberi",
         "allegiance": "Pinus",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 6,
         "cost": 22,
         "infected": "Yes"
@@ -814,7 +814,7 @@
         "gender": "Female",
         "race": "Liberi",
         "allegiance": "Laterano",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 6,
         "cost": 29,
         "infected": "No"
@@ -824,7 +824,7 @@
         "gender": "Female",
         "race": "Elafia",
         "allegiance": "Rhodes Island",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 5,
         "cost": 21,
         "infected": "No"
@@ -834,7 +834,7 @@
         "gender": "Female",
         "race": "Liberi",
         "allegiance": "Rim Billiton",
-        "position": "Melee",
+        "profession": "Tank",
         "rarity": 5,
         "cost": 27,
         "infected": "No"
@@ -844,7 +844,7 @@
         "gender": "Male",
         "race": "Sarkaz",
         "allegiance": "Rhodes Island",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 5,
         "cost": 20,
         "infected": "Yes"
@@ -854,7 +854,7 @@
         "gender": "Female",
         "race": "Zalak",
         "allegiance": "Pinus",
-        "position": "Melee",
+        "profession": "Pioneer",
         "rarity": 6,
         "cost": 14,
         "infected": "Yes"
@@ -864,7 +864,7 @@
         "gender": "Female",
         "race": "Liberi",
         "allegiance": "Sargon",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 5,
         "cost": 10,
         "infected": "No"
@@ -874,7 +874,7 @@
         "gender": "Female",
         "race": "Feline",
         "allegiance": "Rhodes Island",
-        "position": "Ranged",
+        "profession": "Medic",
         "rarity": 5,
         "cost": 21,
         "infected": "Yes"
@@ -884,7 +884,7 @@
         "gender": "Female",
         "race": "Vulpo",
         "allegiance": "Blacksteel",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 5,
         "cost": 18,
         "infected": "Yes"
@@ -892,9 +892,9 @@
     "Frost": {
         "charId": "char_458_rfrost",
         "gender": "Female",
-        "race": "Unknown",
+        "race": "Unknown/Undisclosed",
         "allegiance": "Rainbow 6",
-        "position": "Ranged",
+        "profession": "Special",
         "rarity": 5,
         "cost": 11,
         "infected": "No"
@@ -904,7 +904,7 @@
         "gender": "Female",
         "race": "Vulpo",
         "allegiance": "Rhodes Island",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 4,
         "cost": 18,
         "infected": "Yes"
@@ -914,7 +914,7 @@
         "gender": "Female",
         "race": "Archosauria",
         "allegiance": "Rhodes Island",
-        "position": "Ranged",
+        "profession": "Medic",
         "rarity": 4,
         "cost": 18,
         "infected": "Yes"
@@ -924,7 +924,7 @@
         "gender": "Female",
         "race": "Archosauria",
         "allegiance": "Rhodes Island",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 6,
         "cost": 24,
         "infected": "Yes"
@@ -934,7 +934,7 @@
         "gender": "Female",
         "race": "Elafia",
         "allegiance": "Sami",
-        "position": "Ranged",
+        "profession": "Caster",
         "rarity": 4,
         "cost": 32,
         "infected": "Yes"
@@ -942,9 +942,9 @@
     "Gladiia": {
         "charId": "char_474_glady",
         "gender": "Female",
-        "race": "Undisclosed",
+        "race": "Unknown/Undisclosed",
         "allegiance": "Abyssal Hunter",
-        "position": "Melee",
+        "profession": "Special",
         "rarity": 6,
         "cost": 16,
         "infected": "No"
@@ -952,9 +952,9 @@
     "Glaucus": {
         "charId": "char_326_glacus",
         "gender": "Female",
-        "race": "Unknown",
+        "race": "Unknown/Undisclosed",
         "allegiance": "Iberia",
-        "position": "Ranged",
+        "profession": "Support",
         "rarity": 5,
         "cost": 15,
         "infected": "No"
@@ -964,7 +964,7 @@
         "gender": "Male",
         "race": "Liberi",
         "allegiance": "Karlan",
-        "position": "Ranged",
+        "profession": "Support",
         "rarity": 6,
         "cost": 13,
         "infected": "No"
@@ -974,7 +974,7 @@
         "gender": "Female",
         "race": "Feline",
         "allegiance": "Victoria",
-        "position": "Ranged",
+        "profession": "Caster",
         "rarity": 6,
         "cost": 22,
         "infected": "Yes"
@@ -984,7 +984,7 @@
         "gender": "Female",
         "race": "Kuranta",
         "allegiance": "Victoria",
-        "position": "Melee",
+        "profession": "Pioneer",
         "rarity": 5,
         "cost": 14,
         "infected": "No"
@@ -994,7 +994,7 @@
         "gender": "Female",
         "race": "Zalak",
         "allegiance": "Kazimierz",
-        "position": "Melee",
+        "profession": "Special",
         "rarity": 4,
         "cost": 8,
         "infected": "No"
@@ -1004,7 +1004,7 @@
         "gender": "Female",
         "race": "Liberi",
         "allegiance": "Rhodes Island",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 5,
         "cost": 13,
         "infected": "No"
@@ -1014,7 +1014,7 @@
         "gender": "Male",
         "race": "Perro",
         "allegiance": "Bolivar",
-        "position": "Ranged",
+        "profession": "Caster",
         "rarity": 4,
         "cost": 32,
         "infected": "Yes"
@@ -1024,7 +1024,7 @@
         "gender": "Male",
         "race": "Perro",
         "allegiance": "Rhodes Island",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 5,
         "cost": 24,
         "infected": "Yes"
@@ -1034,7 +1034,7 @@
         "gender": "Female",
         "race": "Ursus",
         "allegiance": "Students of Ursus",
-        "position": "Melee",
+        "profession": "Tank",
         "rarity": 4,
         "cost": 20,
         "infected": "No"
@@ -1044,7 +1044,7 @@
         "gender": "Female",
         "race": "Feline",
         "allegiance": "Dublinn",
-        "position": "Ranged",
+        "profession": "Caster",
         "rarity": 5,
         "cost": 24,
         "infected": "No"
@@ -1054,7 +1054,7 @@
         "gender": "Female",
         "race": "Feline",
         "allegiance": "Victoria",
-        "position": "Ranged",
+        "profession": "Caster",
         "rarity": 4,
         "cost": 19,
         "infected": "Yes"
@@ -1064,7 +1064,7 @@
         "gender": "Female",
         "race": "Kuranta",
         "allegiance": "Rhodes Island",
-        "position": "Melee",
+        "profession": "Tank",
         "rarity": 5,
         "cost": 24,
         "infected": "No"
@@ -1074,7 +1074,7 @@
         "gender": "Female",
         "race": "Feline",
         "allegiance": "Victoria",
-        "position": "Ranged",
+        "profession": "Support",
         "rarity": 5,
         "cost": 9,
         "infected": "No"
@@ -1084,7 +1084,7 @@
         "gender": "Male",
         "race": "Liberi",
         "allegiance": "Ursus",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 6,
         "cost": 26,
         "infected": "Yes"
@@ -1094,7 +1094,7 @@
         "gender": "Female",
         "race": "Sarkaz",
         "allegiance": "Reserve 1",
-        "position": "Ranged",
+        "profession": "Medic",
         "rarity": 3,
         "cost": 17,
         "infected": "Yes"
@@ -1104,7 +1104,7 @@
         "gender": "Female",
         "race": "Sarkaz",
         "allegiance": "Rhodes Island",
-        "position": "Ranged",
+        "profession": "Medic",
         "rarity": 5,
         "cost": 17,
         "infected": "Yes"
@@ -1114,7 +1114,7 @@
         "gender": "Female",
         "race": "Ægir",
         "allegiance": "Iberia",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 5,
         "cost": 22,
         "infected": "No"
@@ -1124,7 +1124,7 @@
         "gender": "Female",
         "race": "Zalak",
         "allegiance": "Rim Billiton",
-        "position": "Ranged",
+        "profession": "Medic",
         "rarity": 5,
         "cost": 15,
         "infected": "No"
@@ -1134,7 +1134,7 @@
         "gender": "Female",
         "race": "Lupo",
         "allegiance": "Victoria",
-        "position": "Melee",
+        "profession": "Tank",
         "rarity": 6,
         "cost": 28,
         "infected": "No"
@@ -1144,7 +1144,7 @@
         "gender": "Female",
         "race": "Oni",
         "allegiance": "LDG",
-        "position": "Melee",
+        "profession": "Tank",
         "rarity": 6,
         "cost": 23,
         "infected": "No"
@@ -1154,7 +1154,7 @@
         "gender": "Male",
         "race": "Perro",
         "allegiance": "Lee's Detective Agency",
-        "position": "Melee",
+        "profession": "Tank",
         "rarity": 5,
         "cost": 21,
         "infected": "No"
@@ -1164,7 +1164,7 @@
         "gender": "Female",
         "race": "Sarkaz",
         "allegiance": "Rhine Lab",
-        "position": "Ranged",
+        "profession": "Caster",
         "rarity": 6,
         "cost": 34,
         "infected": "Yes"
@@ -1174,7 +1174,7 @@
         "gender": "Female",
         "race": "Phidia",
         "allegiance": "Iberia",
-        "position": "Ranged",
+        "profession": "Caster",
         "rarity": 4,
         "cost": 23,
         "infected": "No"
@@ -1184,7 +1184,7 @@
         "gender": "Female",
         "race": "Feline",
         "allegiance": "Glasgow",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 5,
         "cost": 10,
         "infected": "No"
@@ -1194,7 +1194,7 @@
         "gender": "Female",
         "race": "Liberi",
         "allegiance": "Iberia",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 6,
         "cost": 23,
         "infected": "No"
@@ -1204,7 +1204,7 @@
         "gender": "Female",
         "race": "Feline",
         "allegiance": "Victoria",
-        "position": "Ranged",
+        "profession": "Caster",
         "rarity": 5,
         "cost": 24,
         "infected": "No"
@@ -1214,7 +1214,7 @@
         "gender": "Female",
         "race": "Ursus",
         "allegiance": "Students of Ursus",
-        "position": "Ranged",
+        "profession": "Support",
         "rarity": 5,
         "cost": 15,
         "infected": "No"
@@ -1224,7 +1224,7 @@
         "gender": "Female",
         "race": "Perro",
         "allegiance": "Columbia",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 4,
         "cost": 9,
         "infected": "Yes"
@@ -1234,7 +1234,7 @@
         "gender": "Male",
         "race": "Ursus",
         "allegiance": "Lungmen",
-        "position": "Melee",
+        "profession": "Special",
         "rarity": 4,
         "cost": 7,
         "infected": "No"
@@ -1244,7 +1244,7 @@
         "gender": "Female",
         "race": "Feline",
         "allegiance": "Blacksteel",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 4,
         "cost": 12,
         "infected": "No"
@@ -1254,7 +1254,7 @@
         "gender": "Female",
         "race": "Anasa",
         "allegiance": "Yan",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 5,
         "cost": 30,
         "infected": "Yes"
@@ -1264,7 +1264,7 @@
         "gender": "Female",
         "race": "Liberi",
         "allegiance": "Columbia",
-        "position": "Melee",
+        "profession": "Special",
         "rarity": 5,
         "cost": 9,
         "infected": "Yes"
@@ -1274,7 +1274,7 @@
         "gender": "Female",
         "race": "Feline",
         "allegiance": "Rhodes Island",
-        "position": "Ranged",
+        "profession": "Medic",
         "rarity": 6,
         "cost": 20,
         "infected": "Yes"
@@ -1284,7 +1284,7 @@
         "gender": "Female",
         "race": "Feline",
         "allegiance": "Higashi",
-        "position": "Melee",
+        "profession": "Special",
         "rarity": 5,
         "cost": 15,
         "infected": "No"
@@ -1294,7 +1294,7 @@
         "gender": "Female",
         "race": "Ægir",
         "allegiance": "Higashi",
-        "position": "Melee",
+        "profession": "Special",
         "rarity": 5,
         "cost": 20,
         "infected": "Yes"
@@ -1304,7 +1304,7 @@
         "gender": "Female",
         "race": "Oni",
         "allegiance": "Action 4",
-        "position": "Melee",
+        "profession": "Special",
         "rarity": 6,
         "cost": 10,
         "infected": "Yes"
@@ -1312,9 +1312,9 @@
     "Kjera": {
         "charId": "char_4013_kjera",
         "gender": "Female",
-        "race": "Undisclosed",
+        "race": "Unknown/Undisclosed",
         "allegiance": "Karlan",
-        "position": "Ranged",
+        "profession": "Caster",
         "rarity": 5,
         "cost": 23,
         "infected": "No"
@@ -1324,7 +1324,7 @@
         "gender": "Female",
         "race": "Cautus",
         "allegiance": "Reserve 1",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 3,
         "cost": 11,
         "infected": "Yes"
@@ -1334,7 +1334,7 @@
         "gender": "Female",
         "race": "Cautus",
         "allegiance": "Rhodes Island",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 5,
         "cost": 15,
         "infected": "Yes"
@@ -1344,7 +1344,7 @@
         "gender": "Female",
         "race": "Liberi",
         "allegiance": "Bolivar",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 5,
         "cost": 22,
         "infected": "No"
@@ -1354,7 +1354,7 @@
         "gender": "Female",
         "race": "May 12",
         "allegiance": "Rhodes Island",
-        "position": "Ranged",
+        "profession": "Medic",
         "rarity": 1,
         "cost": 3,
         "infected": "N/A"
@@ -1364,7 +1364,7 @@
         "gender": "Female",
         "race": "Lupo",
         "allegiance": "Siracusa",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 5,
         "cost": 19,
         "infected": "Yes"
@@ -1374,7 +1374,7 @@
         "gender": "Female",
         "race": "Sarkaz",
         "allegiance": "Reserve 1",
-        "position": "Ranged",
+        "profession": "Caster",
         "rarity": 3,
         "cost": 30,
         "infected": "Yes"
@@ -1384,7 +1384,7 @@
         "gender": "Female",
         "race": "Sarkaz",
         "allegiance": "Rhodes Island",
-        "position": "Ranged",
+        "profession": "Caster",
         "rarity": 5,
         "cost": 35,
         "infected": "Yes"
@@ -1394,7 +1394,7 @@
         "gender": "Male",
         "race": "Lung",
         "allegiance": "Lee's Detective Agency",
-        "position": "Melee",
+        "profession": "Special",
         "rarity": 6,
         "cost": 9,
         "infected": "No"
@@ -1404,7 +1404,7 @@
         "gender": "Female",
         "race": "Kylin",
         "allegiance": "Yan",
-        "position": "Ranged",
+        "profession": "Caster",
         "rarity": 5,
         "cost": 32,
         "infected": "No"
@@ -1414,7 +1414,7 @@
         "gender": "Male",
         "race": "Cautus",
         "allegiance": "Rim Billiton",
-        "position": "Ranged",
+        "profession": "Caster",
         "rarity": 5,
         "cost": 33,
         "infected": "Yes"
@@ -1424,7 +1424,7 @@
         "gender": "Female",
         "race": "Zalak",
         "allegiance": "Lungmen",
-        "position": "Ranged",
+        "profession": "Caster",
         "rarity": 6,
         "cost": 24,
         "infected": "No"
@@ -1432,9 +1432,9 @@
     "Ling": {
         "charId": "char_2023_ling",
         "gender": "Female",
-        "race": "Undisclosed",
+        "race": "Unknown/Undisclosed",
         "allegiance": "Sui",
-        "position": "Ranged",
+        "profession": "Support",
         "rarity": 6,
         "cost": 12,
         "infected": "No"
@@ -1444,7 +1444,7 @@
         "gender": "Female",
         "race": "Vouivre",
         "allegiance": "Blacksteel",
-        "position": "Melee",
+        "profession": "Tank",
         "rarity": 5,
         "cost": 22,
         "infected": "No"
@@ -1454,7 +1454,7 @@
         "gender": "Male",
         "race": "Ægir",
         "allegiance": "Iberia",
-        "position": "Ranged",
+        "profession": "Medic",
         "rarity": 6,
         "cost": 23,
         "infected": "No"
@@ -1464,7 +1464,7 @@
         "gender": "Female",
         "race": "Lupo",
         "allegiance": "Siracusa",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 5,
         "cost": 21,
         "infected": "Yes"
@@ -1474,7 +1474,7 @@
         "gender": "Male",
         "race": "Feline",
         "allegiance": "Yan",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 4,
         "cost": 17,
         "infected": "No"
@@ -1484,7 +1484,7 @@
         "gender": "Female",
         "race": "Liberi",
         "allegiance": "Rhine Lab",
-        "position": "Ranged",
+        "profession": "Support",
         "rarity": 6,
         "cost": 12,
         "infected": "No"
@@ -1494,7 +1494,7 @@
         "gender": "Female",
         "race": "Manticore",
         "allegiance": "Sargon",
-        "position": "Melee",
+        "profession": "Special",
         "rarity": 5,
         "cost": 20,
         "infected": "Yes"
@@ -1504,7 +1504,7 @@
         "gender": "Female",
         "race": "Oni",
         "allegiance": "Higashi",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 4,
         "cost": 17,
         "infected": "No"
@@ -1514,7 +1514,7 @@
         "gender": "Male",
         "race": "Forte",
         "allegiance": "Karlan",
-        "position": "Melee",
+        "profession": "Tank",
         "rarity": 4,
         "cost": 21,
         "infected": "No"
@@ -1524,7 +1524,7 @@
         "gender": "Female",
         "race": "Liberi",
         "allegiance": "Victoria",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 4,
         "cost": 12,
         "infected": "No"
@@ -1534,7 +1534,7 @@
         "gender": "Female",
         "race": "Anaty",
         "allegiance": "Rhine Lab",
-        "position": "Ranged",
+        "profession": "Support",
         "rarity": 5,
         "cost": 11,
         "infected": "No"
@@ -1544,7 +1544,7 @@
         "gender": "Female",
         "race": "Feline",
         "allegiance": "Reserve 4",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 3,
         "cost": 15,
         "infected": "Yes"
@@ -1554,7 +1554,7 @@
         "gender": "Female",
         "race": "Kuranta",
         "allegiance": "Kazimierz",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 4,
         "cost": 12,
         "infected": "Yes"
@@ -1564,7 +1564,7 @@
         "gender": "Female",
         "race": "Sarkaz",
         "allegiance": "Rhodes Island",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 5,
         "cost": 28,
         "infected": "Yes"
@@ -1574,7 +1574,7 @@
         "gender": "Male",
         "race": "Sarkaz",
         "allegiance": "Reserve 6",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 3,
         "cost": 16,
         "infected": "Yes"
@@ -1584,7 +1584,7 @@
         "gender": "Male",
         "race": "Durin",
         "allegiance": "Sargon",
-        "position": "Ranged",
+        "profession": "Caster",
         "rarity": 5,
         "cost": 23,
         "infected": "Yes"
@@ -1594,7 +1594,7 @@
         "gender": "Female",
         "race": "Feline",
         "allegiance": "Victoria",
-        "position": "Ranged",
+        "profession": "Caster",
         "rarity": 5,
         "cost": 25,
         "infected": "Yes"
@@ -1604,7 +1604,7 @@
         "gender": "Male",
         "race": "Ægir",
         "allegiance": "Higashi",
-        "position": "Melee",
+        "profession": "Special",
         "rarity": 6,
         "cost": 21,
         "infected": "No"
@@ -1612,9 +1612,9 @@
     "Mostima": {
         "charId": "char_213_mostma",
         "gender": "Female",
-        "race": "Undisclosed",
+        "race": "Unknown/Undisclosed",
         "allegiance": "Laterano",
-        "position": "Ranged",
+        "profession": "Caster",
         "rarity": 6,
         "cost": 34,
         "infected": "No"
@@ -1624,7 +1624,7 @@
         "gender": "Male",
         "race": "Feline",
         "allegiance": "Columbia",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 6,
         "cost": 11,
         "infected": "Yes"
@@ -1634,7 +1634,7 @@
         "gender": "Female",
         "race": "Feline",
         "allegiance": "Victoria",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 4,
         "cost": 20,
         "infected": "Yes"
@@ -1644,7 +1644,7 @@
         "gender": "Male",
         "race": "Liberi",
         "allegiance": "Yan",
-        "position": "Melee",
+        "profession": "Special",
         "rarity": 5,
         "cost": 8,
         "infected": "No"
@@ -1654,7 +1654,7 @@
         "gender": "Female",
         "race": "Sarkaz",
         "allegiance": "Rhodes Island",
-        "position": "Melee",
+        "profession": "Tank",
         "rarity": 6,
         "cost": 36,
         "infected": "Yes"
@@ -1664,7 +1664,7 @@
         "gender": "Female",
         "race": "Liberi",
         "allegiance": "Yan",
-        "position": "Ranged",
+        "profession": "Medic",
         "rarity": 5,
         "cost": 15,
         "infected": "Yes"
@@ -1674,7 +1674,7 @@
         "gender": "Female",
         "race": "Vulpo",
         "allegiance": "Rhodes Island",
-        "position": "Ranged",
+        "profession": "Medic",
         "rarity": 4,
         "cost": 18,
         "infected": "No"
@@ -1684,7 +1684,7 @@
         "gender": "Female",
         "race": "Durin",
         "allegiance": "Rhodes Island",
-        "position": "Melee",
+        "profession": "Pioneer",
         "rarity": 4,
         "cost": 10,
         "infected": "No"
@@ -1694,7 +1694,7 @@
         "gender": "Male",
         "race": "Kuranta",
         "allegiance": "Kazimierz",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 6,
         "cost": 12,
         "infected": "No"
@@ -1704,7 +1704,7 @@
         "gender": "Female",
         "race": "Kuranta",
         "allegiance": "Followers",
-        "position": "Melee",
+        "profession": "Tank",
         "rarity": 5,
         "cost": 21,
         "infected": "Yes"
@@ -1714,7 +1714,7 @@
         "gender": "Female",
         "race": "Kuranta",
         "allegiance": "Kazimierz",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 6,
         "cost": 19,
         "infected": "No"
@@ -1722,9 +1722,9 @@
     "Nian": {
         "charId": "char_2014_nian",
         "gender": "Female",
-        "race": "Undisclosed",
+        "race": "Unknown/Undisclosed",
         "allegiance": "Sui",
-        "position": "Melee",
+        "profession": "Tank",
         "rarity": 6,
         "cost": 23,
         "infected": "Undisclosed"
@@ -1734,7 +1734,7 @@
         "gender": "Female",
         "race": "Sarkaz",
         "allegiance": "Followers",
-        "position": "Ranged",
+        "profession": "Medic",
         "rarity": 6,
         "cost": 18,
         "infected": "Yes"
@@ -1744,7 +1744,7 @@
         "gender": "Female",
         "race": "Feline",
         "allegiance": "Victoria",
-        "position": "Ranged",
+        "profession": "Caster",
         "rarity": 5,
         "cost": 20,
         "infected": "Yes"
@@ -1754,7 +1754,7 @@
         "gender": "Female",
         "race": "Elafia",
         "allegiance": "Yan",
-        "position": "Ranged",
+        "profession": "Support",
         "rarity": 5,
         "cost": 11,
         "infected": "No"
@@ -1764,7 +1764,7 @@
         "gender": "Male",
         "race": "Oni",
         "allegiance": "Action 4",
-        "position": "Melee",
+        "profession": "Tank",
         "rarity": 2,
         "cost": 14,
         "infected": "Yes"
@@ -1774,7 +1774,7 @@
         "gender": "Female",
         "race": "Liberi",
         "allegiance": "Reserve 6",
-        "position": "Ranged",
+        "profession": "Support",
         "rarity": 3,
         "cost": 12,
         "infected": "Yes"
@@ -1784,7 +1784,7 @@
         "gender": "Female",
         "race": "Forte",
         "allegiance": "Minos",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 6,
         "cost": 17,
         "infected": "Yes"
@@ -1794,7 +1794,7 @@
         "gender": "Female",
         "race": "Sarkaz",
         "allegiance": "Rhodes Island",
-        "position": "Ranged",
+        "profession": "Medic",
         "rarity": 5,
         "cost": 18,
         "infected": "Yes"
@@ -1804,7 +1804,7 @@
         "gender": "Male",
         "race": "Liberi",
         "allegiance": "Sargon",
-        "position": "Ranged",
+        "profession": "Caster",
         "rarity": 6,
         "cost": 33,
         "infected": "Yes"
@@ -1814,7 +1814,7 @@
         "gender": "Female",
         "race": "Lupo",
         "allegiance": "Siracusa",
-        "position": "Melee",
+        "profession": "Tank",
         "rarity": 6,
         "cost": 36,
         "infected": "No"
@@ -1824,7 +1824,7 @@
         "gender": "Female",
         "race": "Vulpo",
         "allegiance": "Rhodes Island",
-        "position": "Ranged",
+        "profession": "Medic",
         "rarity": 4,
         "cost": 16,
         "infected": "Yes"
@@ -1834,7 +1834,7 @@
         "gender": "Male",
         "race": "Feline",
         "allegiance": "Victoria",
-        "position": "Melee",
+        "profession": "Special",
         "rarity": 6,
         "cost": 10,
         "infected": "Yes"
@@ -1844,7 +1844,7 @@
         "gender": "Female",
         "race": "Liberi",
         "allegiance": "Columbia",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 4,
         "cost": 30,
         "infected": "No"
@@ -1854,7 +1854,7 @@
         "gender": "Female",
         "race": "Liberi",
         "allegiance": "None",
-        "position": "Ranged",
+        "profession": "Caster",
         "rarity": 5,
         "cost": 32,
         "infected": "Yes"
@@ -1864,7 +1864,7 @@
         "gender": "Female",
         "race": "Kuranta",
         "allegiance": "Kazimierz",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 5,
         "cost": 13,
         "infected": "No"
@@ -1874,7 +1874,7 @@
         "gender": "Female",
         "race": "Liberi",
         "allegiance": "Laterano",
-        "position": "Melee",
+        "profession": "Pioneer",
         "rarity": 3,
         "cost": 10,
         "infected": "No"
@@ -1884,7 +1884,7 @@
         "gender": "Female",
         "race": "Perro",
         "allegiance": "Rhodes Island",
-        "position": "Ranged",
+        "profession": "Support",
         "rarity": 4,
         "cost": 14,
         "infected": "No"
@@ -1894,7 +1894,7 @@
         "gender": "Female",
         "race": "Cautus",
         "allegiance": "Reserve 6",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 3,
         "cost": 19,
         "infected": "Yes"
@@ -1904,7 +1904,7 @@
         "gender": "Female",
         "race": "Lupo",
         "allegiance": "Rhodes Island",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 6,
         "cost": 20,
         "infected": "No"
@@ -1914,7 +1914,7 @@
         "gender": "Female",
         "race": "Feline",
         "allegiance": "Karlan",
-        "position": "Ranged",
+        "profession": "Support",
         "rarity": 5,
         "cost": 12,
         "infected": "No"
@@ -1924,7 +1924,7 @@
         "gender": "Female",
         "race": "Lupo",
         "allegiance": "Sweep",
-        "position": "Melee",
+        "profession": "Special",
         "rarity": 5,
         "cost": 9,
         "infected": "No"
@@ -1934,7 +1934,7 @@
         "gender": "Female",
         "race": "Lupo",
         "allegiance": "Siracusa",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 5,
         "cost": 19,
         "infected": "Yes"
@@ -1944,7 +1944,7 @@
         "gender": "Female",
         "race": "Kuranta",
         "allegiance": "Kazimierz",
-        "position": "Ranged",
+        "profession": "Support",
         "rarity": 5,
         "cost": 15,
         "infected": "No"
@@ -1954,7 +1954,7 @@
         "gender": "Female",
         "race": "Liberi",
         "allegiance": "Rhine Lab",
-        "position": "Ranged",
+        "profession": "Medic",
         "rarity": 5,
         "cost": 17,
         "infected": "Yes"
@@ -1964,7 +1964,7 @@
         "gender": "Female",
         "race": "Ægir",
         "allegiance": "Columbia",
-        "position": "Ranged",
+        "profession": "Caster",
         "rarity": 4,
         "cost": 31,
         "infected": "Yes"
@@ -1974,7 +1974,7 @@
         "gender": "Female",
         "race": "Ægir",
         "allegiance": "Yan",
-        "position": "Ranged",
+        "profession": "Medic",
         "rarity": 4,
         "cost": 19,
         "infected": "No"
@@ -1984,7 +1984,7 @@
         "gender": "Male",
         "race": "Vouivre",
         "allegiance": "Victoria",
-        "position": "Melee",
+        "profession": "Pioneer",
         "rarity": 5,
         "cost": 12,
         "infected": "Yes"
@@ -1994,7 +1994,7 @@
         "gender": "Male",
         "race": "Vulpo",
         "allegiance": "Sami",
-        "position": "Ranged",
+        "profession": "Caster",
         "rarity": 5,
         "cost": 20,
         "infected": "No"
@@ -2004,7 +2004,7 @@
         "gender": "Female",
         "race": "Elafia",
         "allegiance": "Yan",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 6,
         "cost": 20,
         "infected": "No"
@@ -2014,7 +2014,7 @@
         "gender": "Female",
         "race": "Lupo",
         "allegiance": "Columbia",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 4,
         "cost": 22,
         "infected": "No"
@@ -2024,7 +2024,7 @@
         "gender": "Female",
         "race": "Feline",
         "allegiance": "Rhodes Island",
-        "position": "Ranged",
+        "profession": "Support",
         "rarity": 5,
         "cost": 12,
         "infected": "No"
@@ -2034,7 +2034,7 @@
         "gender": "Male",
         "race": "Savra",
         "allegiance": "Action 4",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 2,
         "cost": 7,
         "infected": "No"
@@ -2044,7 +2044,7 @@
         "gender": "Male",
         "race": "Oni",
         "allegiance": "Action 4",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 5,
         "cost": 25,
         "infected": "Yes"
@@ -2054,7 +2054,7 @@
         "gender": "Female",
         "race": "Draco",
         "allegiance": "Victoria",
-        "position": "Melee",
+        "profession": "Pioneer",
         "rarity": 5,
         "cost": 12,
         "infected": "Yes"
@@ -2064,7 +2064,7 @@
         "gender": "Female",
         "race": "Draco",
         "allegiance": "Dublinn",
-        "position": "Ranged",
+        "profession": "Medic",
         "rarity": 6,
         "cost": 17,
         "infected": "Yes"
@@ -2074,7 +2074,7 @@
         "gender": "Female",
         "race": "Anaty",
         "allegiance": "Columbia",
-        "position": "Melee",
+        "profession": "Support",
         "rarity": 4,
         "cost": 17,
         "infected": "No"
@@ -2084,7 +2084,7 @@
         "gender": "Female",
         "race": "Anaty",
         "allegiance": "Columbia",
-        "position": "Ranged",
+        "profession": "Special",
         "rarity": 5,
         "cost": 13,
         "infected": "No"
@@ -2094,7 +2094,7 @@
         "gender": "Female",
         "race": "Feline",
         "allegiance": "Victoria",
-        "position": "Ranged",
+        "profession": "Caster",
         "rarity": 5,
         "cost": 21,
         "infected": "No"
@@ -2104,7 +2104,7 @@
         "gender": "Female",
         "race": "Cautus",
         "allegiance": "Lungmen",
-        "position": "Melee",
+        "profession": "Special",
         "rarity": 4,
         "cost": 12,
         "infected": "Yes"
@@ -2114,7 +2114,7 @@
         "gender": "Female",
         "race": "Ursus",
         "allegiance": "Students of Ursus",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 6,
         "cost": 24,
         "infected": "No"
@@ -2124,7 +2124,7 @@
         "gender": "Female",
         "race": "Feline",
         "allegiance": "Elite Operators",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 6,
         "cost": 25,
         "infected": "Yes"
@@ -2134,7 +2134,7 @@
         "gender": "Female",
         "race": "Perro",
         "allegiance": "Higashi",
-        "position": "Melee",
+        "profession": "Pioneer",
         "rarity": 6,
         "cost": 14,
         "infected": "No"
@@ -2144,7 +2144,7 @@
         "gender": "Female",
         "race": "Vouivre",
         "allegiance": "Victoria",
-        "position": "Melee",
+        "profession": "Pioneer",
         "rarity": 6,
         "cost": 12,
         "infected": "No"
@@ -2154,7 +2154,7 @@
         "gender": "Female",
         "race": "Vouivre",
         "allegiance": "Rhine Lab",
-        "position": "Melee",
+        "profession": "Tank",
         "rarity": 6,
         "cost": 22,
         "infected": "No"
@@ -2164,7 +2164,7 @@
         "gender": "Female",
         "race": "Cautus",
         "allegiance": "Rim Billiton",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 5,
         "cost": 22,
         "infected": "No"
@@ -2174,7 +2174,7 @@
         "gender": "Female",
         "race": "Zalak",
         "allegiance": "Sweep",
-        "position": "Melee",
+        "profession": "Pioneer",
         "rarity": 4,
         "cost": 12,
         "infected": "Yes"
@@ -2184,7 +2184,7 @@
         "gender": "Female",
         "race": "Pilosa",
         "allegiance": "Sargon",
-        "position": "Ranged",
+        "profession": "Support",
         "rarity": 5,
         "cost": 11,
         "infected": "Yes"
@@ -2194,7 +2194,7 @@
         "gender": "Female",
         "race": "Feline",
         "allegiance": "Siesta",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 6,
         "cost": 20,
         "infected": "Yes"
@@ -2204,7 +2204,7 @@
         "gender": "Male",
         "race": "Vouivre",
         "allegiance": "Sargon",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 5,
         "cost": 28,
         "infected": "No"
@@ -2214,7 +2214,7 @@
         "gender": "Male",
         "race": "Phidia",
         "allegiance": "Victoria",
-        "position": "Melee",
+        "profession": "Tank",
         "rarity": 5,
         "cost": 25,
         "infected": "Yes"
@@ -2224,7 +2224,7 @@
         "gender": "Female",
         "race": "Vulpo",
         "allegiance": "Siracusa",
-        "position": "Ranged",
+        "profession": "Support",
         "rarity": 5,
         "cost": 12,
         "infected": "Yes"
@@ -2234,7 +2234,7 @@
         "gender": "Male",
         "race": "Phidia",
         "allegiance": "None",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 5,
         "cost": 17,
         "infected": "Yes"
@@ -2244,7 +2244,7 @@
         "gender": "Female",
         "race": "Zalak",
         "allegiance": "Lungmen",
-        "position": "Melee",
+        "profession": "Special",
         "rarity": 4,
         "cost": 19,
         "infected": "No"
@@ -2254,7 +2254,7 @@
         "gender": "Female",
         "race": "Sarkaz",
         "allegiance": "Followers",
-        "position": "Ranged",
+        "profession": "Medic",
         "rarity": 6,
         "cost": 20,
         "infected": "No"
@@ -2264,7 +2264,7 @@
         "gender": "Female",
         "race": "Anaty",
         "allegiance": "Higashi",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 4,
         "cost": 27,
         "infected": "No"
@@ -2274,7 +2274,7 @@
         "gender": "Female",
         "race": "Forte",
         "allegiance": "Minos",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 5,
         "cost": 23,
         "infected": "No"
@@ -2284,7 +2284,7 @@
         "gender": "Female",
         "race": "Aslan",
         "allegiance": "Glasgow",
-        "position": "Melee",
+        "profession": "Pioneer",
         "rarity": 6,
         "cost": 14,
         "infected": "No"
@@ -2294,7 +2294,7 @@
         "gender": "Female",
         "race": "Liberi",
         "allegiance": "Rhine Lab",
-        "position": "Ranged",
+        "profession": "Medic",
         "rarity": 5,
         "cost": 19,
         "infected": "Yes"
@@ -2304,7 +2304,7 @@
         "gender": "Male",
         "race": "Feline",
         "allegiance": "Karlan",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 6,
         "cost": 20,
         "infected": "No"
@@ -2312,9 +2312,9 @@
     "Skadi": {
         "charId": "char_263_skadi",
         "gender": "Female",
-        "race": "Unknown",
+        "race": "Unknown/Undisclosed",
         "allegiance": "Abyssal Hunter",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 6,
         "cost": 19,
         "infected": "No"
@@ -2322,9 +2322,9 @@
     "Skadi the Corrupting Heart": {
         "charId": "char_1012_skadi2",
         "gender": "Female",
-        "race": "Undisclosed",
+        "race": "Unknown/Undisclosed",
         "allegiance": "Ægir",
-        "position": "Ranged",
+        "profession": "Support",
         "rarity": 6,
         "cost": 8,
         "infected": "No"
@@ -2334,7 +2334,7 @@
         "gender": "Female",
         "race": "Feline",
         "allegiance": "Victoria",
-        "position": "Ranged",
+        "profession": "Caster",
         "rarity": 5,
         "cost": 33,
         "infected": "No"
@@ -2344,7 +2344,7 @@
         "gender": "Female",
         "race": "Liberi",
         "allegiance": "Lungmen",
-        "position": "Melee",
+        "profession": "Special",
         "rarity": 5,
         "cost": 15,
         "infected": "No"
@@ -2352,9 +2352,9 @@
     "Sora": {
         "charId": "char_101_sora",
         "gender": "Female",
-        "race": "Unknown as requested by management agency",
+        "race": "Unknown/Undisclosed",
         "allegiance": "Penguin Logistics",
-        "position": "Ranged",
+        "profession": "Support",
         "rarity": 5,
         "cost": 7,
         "infected": "No"
@@ -2362,9 +2362,9 @@
     "Specter": {
         "charId": "char_143_ghost",
         "gender": "Female",
-        "race": "Undisclosed",
+        "race": "Unknown/Undisclosed",
         "allegiance": "Abyssal Hunter",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 5,
         "cost": 23,
         "infected": "Yes"
@@ -2374,7 +2374,7 @@
         "gender": "Female",
         "race": "Ægir",
         "allegiance": "Abyssal Hunter",
-        "position": "Melee",
+        "profession": "Special",
         "rarity": 6,
         "cost": 16,
         "infected": "Yes"
@@ -2384,7 +2384,7 @@
         "gender": "Male",
         "race": "Rebbah",
         "allegiance": "Reserve 6",
-        "position": "Melee",
+        "profession": "Tank",
         "rarity": 3,
         "cost": 17,
         "infected": "Yes"
@@ -2394,7 +2394,7 @@
         "gender": "Male",
         "race": "Feline",
         "allegiance": "Victoria",
-        "position": "Melee",
+        "profession": "Support",
         "rarity": 6,
         "cost": 19,
         "infected": "No"
@@ -2404,7 +2404,7 @@
         "gender": "Male",
         "race": "Vulpo",
         "allegiance": "Reserve 4",
-        "position": "Ranged",
+        "profession": "Caster",
         "rarity": 3,
         "cost": 18,
         "infected": "Yes"
@@ -2414,7 +2414,7 @@
         "gender": "Male",
         "race": "Sarkaz",
         "allegiance": "None",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 5,
         "cost": 12,
         "infected": "Yes"
@@ -2424,7 +2424,7 @@
         "gender": "Female",
         "race": "Sarkaz",
         "allegiance": "Rhodes Island",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 6,
         "cost": 21,
         "infected": "Yes"
@@ -2434,7 +2434,7 @@
         "gender": "Female",
         "race": "Vulpo",
         "allegiance": "Rhodes Island",
-        "position": "Ranged",
+        "profession": "Medic",
         "rarity": 4,
         "cost": 18,
         "infected": "Yes"
@@ -2444,7 +2444,7 @@
         "gender": "Female",
         "race": "Vulpo",
         "allegiance": "Siracusa",
-        "position": "Ranged",
+        "profession": "Support",
         "rarity": 6,
         "cost": 16,
         "infected": "Yes"
@@ -2454,7 +2454,7 @@
         "gender": "Female",
         "race": "Feline",
         "allegiance": "LDG",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 5,
         "cost": 16,
         "infected": "No"
@@ -2464,7 +2464,7 @@
         "gender": "Male",
         "race": "Feb 15",
         "allegiance": "Rhodes Island",
-        "position": "Melee",
+        "profession": "Special",
         "rarity": 1,
         "cost": 3,
         "infected": "N/A"
@@ -2472,9 +2472,9 @@
     "Tachanka": {
         "charId": "char_459_tachak",
         "gender": "Male",
-        "race": "Unknown",
+        "race": "Unknown/Undisclosed",
         "allegiance": "Rainbow 6",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 5,
         "cost": 24,
         "infected": "No"
@@ -2484,7 +2484,7 @@
         "gender": "Male",
         "race": "Perro",
         "allegiance": "Bolivar",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 5,
         "cost": 13,
         "infected": "No"
@@ -2492,9 +2492,9 @@
     "Terra Research Commission": {
         "charId": "char_4077_palico",
         "gender": "Unknown",
-        "race": "Undisclosed",
+        "race": "Unknown/Undisclosed",
         "allegiance": "Rhodes Island",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 1,
         "cost": 3,
         "infected": "No"
@@ -2504,7 +2504,7 @@
         "gender": "Female",
         "race": "Lupo",
         "allegiance": "Penguin Logistics",
-        "position": "Melee",
+        "profession": "Pioneer",
         "rarity": 5,
         "cost": 13,
         "infected": "No"
@@ -2514,7 +2514,7 @@
         "gender": "Female",
         "race": "Lupo",
         "allegiance": "Penguin Logistics",
-        "position": "Melee",
+        "profession": "Special",
         "rarity": 6,
         "cost": 10,
         "infected": "No"
@@ -2524,7 +2524,7 @@
         "gender": "Male",
         "race": "Ægir",
         "allegiance": "Iberia",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 6,
         "cost": 20,
         "infected": "No"
@@ -2534,7 +2534,7 @@
         "gender": "Female",
         "race": "Vouivre",
         "allegiance": "Victoria",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 5,
         "cost": 23,
         "infected": "Yes"
@@ -2544,7 +2544,7 @@
         "gender": "Female",
         "race": "Archosauria",
         "allegiance": "Sargon",
-        "position": "Ranged",
+        "profession": "Caster",
         "rarity": 5,
         "cost": 22,
         "infected": "No"
@@ -2554,7 +2554,7 @@
         "gender": "Male",
         "race": "Liberi",
         "allegiance": "Sargon",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 4,
         "cost": 22,
         "infected": "Yes"
@@ -2564,7 +2564,7 @@
         "gender": "Female",
         "race": "Caprinae",
         "allegiance": "None",
-        "position": "Ranged",
+        "profession": "Medic",
         "rarity": 5,
         "cost": 18,
         "infected": "Yes"
@@ -2574,7 +2574,7 @@
         "gender": "Female",
         "race": "Elafia",
         "allegiance": "Higashi",
-        "position": "Ranged",
+        "profession": "Support",
         "rarity": 5,
         "cost": 12,
         "infected": "Yes"
@@ -2584,7 +2584,7 @@
         "gender": "Female",
         "race": "Phidia",
         "allegiance": "None",
-        "position": "Melee",
+        "profession": "Pioneer",
         "rarity": 5,
         "cost": 12,
         "infected": "Yes"
@@ -2594,7 +2594,7 @@
         "gender": "Female",
         "race": "Forte",
         "allegiance": "Sargon",
-        "position": "Ranged",
+        "profession": "Medic",
         "rarity": 5,
         "cost": 21,
         "infected": "Yes"
@@ -2602,9 +2602,9 @@
     "Utage": {
         "charId": "char_337_utage",
         "gender": "Female",
-        "race": "Unknown",
+        "race": "Unknown/Undisclosed",
         "allegiance": "Higashi",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 4,
         "cost": 24,
         "infected": "Yes"
@@ -2614,7 +2614,7 @@
         "gender": "Female",
         "race": "Vouivre",
         "allegiance": "Blacksteel",
-        "position": "Melee",
+        "profession": "Pioneer",
         "rarity": 3,
         "cost": 11,
         "infected": "No"
@@ -2624,7 +2624,7 @@
         "gender": "Female",
         "race": "Vulpo",
         "allegiance": "Siracusa",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 4,
         "cost": 12,
         "infected": "Yes"
@@ -2634,7 +2634,7 @@
         "gender": "Male",
         "race": "Lupo",
         "allegiance": "Siracusa",
-        "position": "Ranged",
+        "profession": "Pioneer",
         "rarity": 6,
         "cost": 17,
         "infected": "No"
@@ -2644,7 +2644,7 @@
         "gender": "Female",
         "race": "Sarkaz",
         "allegiance": "Columbia",
-        "position": "Melee",
+        "profession": "Pioneer",
         "rarity": 4,
         "cost": 11,
         "infected": "Yes"
@@ -2654,7 +2654,7 @@
         "gender": "Female",
         "race": "Forte",
         "allegiance": "Minos",
-        "position": "Melee",
+        "profession": "Tank",
         "rarity": 5,
         "cost": 35,
         "infected": "Yes"
@@ -2664,7 +2664,7 @@
         "gender": "Female",
         "race": "Sarkaz",
         "allegiance": "Babel",
-        "position": "Ranged",
+        "profession": "Sniper",
         "rarity": 6,
         "cost": 29,
         "infected": "Yes"
@@ -2674,7 +2674,7 @@
         "gender": "Female",
         "race": "Feline",
         "allegiance": "Lee's Detective Agency",
-        "position": "Melee",
+        "profession": "Special",
         "rarity": 5,
         "cost": 9,
         "infected": "No"
@@ -2684,7 +2684,7 @@
         "gender": "Female",
         "race": "Sarkaz",
         "allegiance": "Rhodes Island",
-        "position": "Ranged",
+        "profession": "Medic",
         "rarity": 5,
         "cost": 19,
         "infected": "No"
@@ -2694,7 +2694,7 @@
         "gender": "Female",
         "race": "Ægir",
         "allegiance": "Rhodes Island",
-        "position": "Melee",
+        "profession": "Special",
         "rarity": 6,
         "cost": 21,
         "infected": "No"
@@ -2704,7 +2704,7 @@
         "gender": "Female",
         "race": "Kuranta",
         "allegiance": "Kazimierz",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 5,
         "cost": 18,
         "infected": "No"
@@ -2714,7 +2714,7 @@
         "gender": "Female",
         "race": "Ægir",
         "allegiance": "Iberia",
-        "position": "Ranged",
+        "profession": "Medic",
         "rarity": 5,
         "cost": 20,
         "infected": "No"
@@ -2724,7 +2724,7 @@
         "gender": "Female",
         "race": "Kuranta",
         "allegiance": "Pinus",
-        "position": "Melee",
+        "profession": "Pioneer",
         "rarity": 5,
         "cost": 14,
         "infected": "Yes"
@@ -2734,7 +2734,7 @@
         "gender": "Female",
         "race": "Forte",
         "allegiance": "Yan",
-        "position": "Melee",
+        "profession": "Warrior",
         "rarity": 5,
         "cost": 23,
         "infected": "Yes"
@@ -2744,7 +2744,7 @@
         "gender": "Male",
         "race": "Perro",
         "allegiance": "Columbia",
-        "position": "Melee",
+        "profession": "Support",
         "rarity": 5,
         "cost": 18,
         "infected": "No"
@@ -2754,7 +2754,7 @@
         "gender": "Female",
         "race": "Oni",
         "allegiance": "Action 4",
-        "position": "Melee",
+        "profession": "Pioneer",
         "rarity": 2,
         "cost": 7,
         "infected": "Yes"
@@ -2764,7 +2764,7 @@
         "gender": "Female",
         "race": "Ursus",
         "allegiance": "Students of Ursus",
-        "position": "Melee",
+        "profession": "Pioneer",
         "rarity": 5,
         "cost": 13,
         "infected": "No"

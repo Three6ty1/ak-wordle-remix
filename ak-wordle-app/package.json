@@ -2,13 +2,11 @@
   "name": "ak-wordle-app",
   "private": true,
   "sideEffects": false,
-  "type": "module",
   "scripts": {
     "build": "remix build",
     "dev": "remix dev --manual",
     "start": "remix-serve ./build/index.js",
-    "typecheck": "tsc",
-    "seed": "ts-node prisma/seed.ts"
+    "typecheck": "tsc"
   },
   "dependencies": {
     "@prisma/client": "^5.6.0",
@@ -33,5 +31,8 @@
   },
   "engines": {
     "node": ">=18.0.0"
+  },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
   }
 }

@@ -1,6 +1,9 @@
 // This is your Prisma schema file,
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
+// To update
+// npx prisma migrate dev
+
 generator client {
   provider = "prisma-client-js"
 }
@@ -21,7 +24,7 @@ model Operator {
   allegiance String
   profession String
   // 1-6 inc
-  rarity String
+  rarity Int
   // 0 - however?
   cost Int
   // yes, no, N/A, undisclosed.
