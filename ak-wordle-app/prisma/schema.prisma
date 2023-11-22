@@ -13,6 +13,14 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+// 7 Categories
+// gender
+// race
+// allegiance
+// profession
+// rarity
+// cost
+// infected status
 model Operator {
   // Char id based on in game charid
   charId String @id
