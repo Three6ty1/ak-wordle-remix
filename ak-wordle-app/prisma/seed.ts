@@ -45,7 +45,7 @@ async function main() {
         amt += 1
     }
     console.log(amt + ' operators seeded into db');
-    console.log('Removed all chosen ops');
+    console.log(`Removed all chosen ops (${await prisma.chosenOperators.count()})`);
     
     await prisma.chosenOperators.deleteMany()
 
