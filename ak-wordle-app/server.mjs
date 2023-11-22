@@ -13,3 +13,19 @@ app.all("*", createRequestHandler({ build }));
 app.listen(3611, () => {
   console.log("App listening on http://localhost:3611");
 });
+
+/**
+ * Compare the guess of a user to the operator of the day
+ * 
+ */
+app.post('/compare', function(req, res){
+  console.log(req)
+});
+
+/**
+ * Get the stats of todays operator of the day
+ */
+app.get('/stats', function(req, res){
+
+});
+
