@@ -85,14 +85,6 @@ export const getOperatorStats = async() => {
     return await getTodayOperator();
 }
 
-// 7 Categories
-// gender
-// race
-// allegiance
-// profession
-// rarity
-// cost
-// infected status
 const compareGuessLogic = (answer: Operator, guess: Operator):GuessResult => {
     return {
         gender: answer.gender == guess.gender,
@@ -112,8 +104,8 @@ export const compareGuess = async(guess: string) => {
     })
 
     if (!guessOp) {
-        return { status: "404", error: `Not a valid operator name: ${guess}`}
+        return { error: `Not a valid operator name: ${guess}`}
     }
 
-    return compareGuessLogic(compareOp, guessOp);
+    return { operator: guessOp, result: compareGuessLogic(compareOp, guessOp)};
 }

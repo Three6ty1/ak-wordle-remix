@@ -1,8 +1,22 @@
-import { getOperatorStats } from '~/wordle.server';
-import { useLoaderData } from '@remix-run/react';
+import { getOperatorStats, compareGuess } from '~/wordle.server';
+import { useLoaderData, useFetcher, useActionData } from '@remix-run/react';
 import { ChosenOperators } from '@prisma/client';
-export const loader = async () => { 
+import { ActionFunction } from '@remix-run/node';
+
+export const loader = async() => { 
     return await getOperatorStats();
+}
+
+export const action: ActionFunction = async({ request }) => {
+    const form = await request.formData();
+    const guess = String(form.get('operator-guess'));
+    if (guess) {   
+        const res = await compareGuess(guess);
+        console.log(res)
+        return res;
+    } 
+    
+    return { error: 'Please enter an operator name' }
 }
 
 export default function ArknightsWordle() {
@@ -26,11 +40,21 @@ export default function ArknightsWordle() {
      */
 
     const stats:ChosenOperators = useLoaderData()
+    const actionData = useActionData<typeof action>();
 
     return (
-        <main className="justify-center align-middle items-center content-center text-center">
+        <main className='justify-center align-middle items-center content-center text-center'>
             <h1>Arknights Wordle</h1>
             <p>{`${stats.gameId} ${stats.date} ${stats.operatorId} ${stats.timesGuessed}`}</p>
+            <br/>
+            <br/>
+            {actionData?.error ? (
+                <p className='text-red-500'>{actionData.error}</p>
+            ) : null}
+            <form method='post' className='items-center flex flex-col'>
+                <input name='operator-guess' className='border-solid border-black border-2' type='text' />
+                <button type='submit' name="_action">Search</button>
+            </form>
         </main>
         
     );
