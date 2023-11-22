@@ -1,6 +1,6 @@
 import { PrismaClient } from '@prisma/client'
 import db from '../../operator_db/operator_db.json'
-
+import { ChosenOperators, Operator } from '@prisma/client';
 // To run
 // "npx prisma db seed"
 // dumb shit prisma seeding
@@ -9,6 +9,7 @@ interface Dictionary<T> {
     [Key: string]: T;
 }
 
+/*
 interface Operator {
     charId: string;
     gender: string;
@@ -18,7 +19,9 @@ interface Operator {
     rarity: number;
     cost: number;
     infected: string;
+    chosen: [ChosenOperators];
 }
+*/
 
 const prisma = new PrismaClient()
 async function main() {
@@ -45,6 +48,10 @@ async function main() {
         amt += 1
     }
     console.log(amt + ' operators seeded into db');
+    console.log('Removed all chosen ops');
+    
+    await prisma.chosenOperators.deleteMany()
+
 }
 
 main()

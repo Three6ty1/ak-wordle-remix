@@ -40,9 +40,9 @@ model Operator {
   chosen ChosenOperators[]
 }
 
-// Deal with days not times. make it simpler
 model ChosenOperators {
-  gameId Int @id
+  gameId Int @id @default(autoincrement())
+  date Int
   operator Operator @relation(fields: [operatorId], references: [charId])
   operatorId String
   timesGuessed Int @default(0)

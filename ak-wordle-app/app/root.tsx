@@ -13,6 +13,9 @@ export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
 ];
 
+// run server with npx remix-serve build/index.js
+// run front end with npm run dev
+
 export default function App() {
   return (
     <html lang="en">

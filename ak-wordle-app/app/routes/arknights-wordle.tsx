@@ -1,6 +1,11 @@
+import { getOperatorStats } from '~/wordle.server';
+import { useLoaderData } from '@remix-run/react';
+import { ChosenOperators } from '@prisma/client';
+export const loader = async () => { 
+    return await getOperatorStats();
+}
+
 export default function ArknightsWordle() {
-
-
     /**
      * Logic
      * type answer
@@ -20,15 +25,12 @@ export default function ArknightsWordle() {
      *      copy and paste thing for results
      */
 
-    async function test() {
-        const res = await fetch('/feed');
-    }
-
-    test()
+    const stats:ChosenOperators = useLoaderData()
 
     return (
         <main className="justify-center align-middle items-center content-center text-center">
             <h1>Arknights Wordle</h1>
+            <p>{`${stats.gameId} ${stats.date} ${stats.operatorId} ${stats.timesGuessed}`}</p>
         </main>
         
     );
