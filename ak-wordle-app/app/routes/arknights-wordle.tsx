@@ -5,6 +5,7 @@ import { ActionFunction } from '@remix-run/node';
 import React from 'react';
 
 export const loader = async() => {
+    console.log("Getting operator stats")
     return await getOperatorStats();
 }
 
@@ -18,7 +19,9 @@ export const action: ActionFunction = async({ request, }) => {
             return { error: 'Operator already guessed previously'};
         }
 
+        console.log("Comparing guess")
         const res = await compareGuess(guess);
+        console.log("Got result")
         return res;
     } 
     
@@ -45,41 +48,58 @@ export default function ArknightsWordle() {
      *      copy and paste thing for results
      */
 
-    const stats:ChosenOperators = useLoaderData();
+    const stats: ChosenOperators = useLoaderData();
     let submit = useSubmit();
     const actionData = useActionData<typeof action>();
-
-    const isGuesses = localStorage.getItem('guesses')
-    const guesses:string[] = isGuesses ? JSON.parse(isGuesses) : [];
+    const [guesses, setGuesses] = React.useState<string[]>();
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
 
         let $form = event.currentTarget;
         let formData = new FormData($form);
-        let guesses  = localStorage.getItem('guesses')
+        const guesses  = localStorage.getItem('guesses');
         formData.set('guesses', guesses ? guesses : JSON.stringify([]));
         submit(formData, {method: 'POST'});
     }
 
-    React.useEffect(() => {
+    React.useEffect(() => { 
         const updateGuesses = () => {
             if (actionData?.operator) {
                 const isGuesses = localStorage.getItem('guesses');
                 const guesses = (isGuesses) ? JSON.parse(isGuesses) : [];
-                guesses.push(actionData.operator.name)
-                localStorage.setItem('guesses', JSON.stringify(guesses));
-                
+                localStorage.setItem('guesses', JSON.stringify([...guesses, actionData.operator.name]));
+                const newGuesses = [...guesses, actionData.operator.name];
+                setGuesses(newGuesses);
             }
         }
 
-        const now = new Date().toDateString()
-        if (stats.date != now) {
-            localStorage.setItem('guesses', JSON.stringify([]));
-            localStorage.setItem('lastPlayed', now);
+        const checkResetGuesses = () => {
+            const now = new Date().toDateString()
+            if (stats.date != now) {
+                localStorage.setItem('guesses', JSON.stringify([]));
+                localStorage.setItem('lastPlayed', now);
+                setGuesses([]);
+            } else {
+                // The reason for storing on both localstorage and state
+                // is to make sure state persists through refresh
+                // and that the page updates when a guess is made
+                // because localstorage cannot be accessed server side
+                const isGuesses = localStorage.getItem('guesses');
+                const guesses = (isGuesses) ? JSON.parse(isGuesses) : [];
+                setGuesses(guesses);
+            }
         }
 
+        console.log("Checking data")
+        checkResetGuesses();
         updateGuesses();
+
+        /*
+        window.addEventListener('storage', checkData);
+        return () => {
+            window.removeEventListener('storage', checkData);
+        }*/
     }, [actionData])
 
     return (
@@ -88,11 +108,10 @@ export default function ArknightsWordle() {
             <p>{`${stats.gameId} ${stats.date} ${stats.operatorId} ${stats.timesGuessed}`}</p>
             <br/>
             
-            {guesses.length > 0 ? 
+            {guesses ? (guesses.length) > 0 ? 
                 guesses.map((guess, index) => (
                     <p key={index}>{guess}</p>
-                ))
-                    : null
+                )) : null : null
             }
 
             <br/>
