@@ -8,14 +8,16 @@ enum Range {
     Higher = "Higher",
 }
 
-interface GuessResult {
-    gender: boolean,
-    race: boolean,
-    allegiance: boolean,
-    profession: boolean,
-    rarity: Range,
-    cost: Range,
-    infected: boolean,
+export interface GuessResult {
+    charId: string,
+    name: string,
+    gender: {guess: string, result: boolean},
+    race: {guess: string, result: boolean},
+    allegiance: {guess: string, result: boolean},
+    profession: {guess: string, result: boolean},
+    rarity: {guess: number, result: Range},
+    cost: {guess: number, result: Range},
+    infected: {guess: string, result: boolean},
     correct: boolean,
 }
 
@@ -87,19 +89,26 @@ export const getOperatorStats = async() => {
 }
 
 const compareGuessLogic = (answer: Operator, guess: Operator):GuessResult => {
-    let result = {
-        gender: answer.gender === guess.gender,
-        race: answer.race === guess.race,
-        allegiance: answer.allegiance === guess.allegiance,
-        profession: answer.profession === guess.profession,
-        rarity: ((answer.rarity < guess.rarity) ? Range.Lower : (answer.rarity > guess.rarity) ? Range.Higher : Range.Correct),
-        cost: ((answer.cost < guess.cost) ? Range.Lower : (answer.cost > guess.cost) ? Range.Higher : Range.Correct),
-        infected: answer.infected === guess.infected,
+    let res = {
+        gender: {guess: guess.gender, result: answer.gender === guess.gender},
+        race: {guess: guess.race, result: answer.race === guess.race},
+        allegiance: {guess: guess.allegiance, result: answer.allegiance === guess.allegiance},
+        profession: {guess: guess.profession, result: answer.profession === guess.profession},
+        rarity: {guess: guess.rarity, result: ((answer.rarity < guess.rarity) ? Range.Lower : (answer.rarity > guess.rarity) ? Range.Higher : Range.Correct)},
+        cost: {guess: guess.cost, result: ((answer.cost < guess.cost) ? Range.Lower : (answer.cost > guess.cost) ? Range.Higher : Range.Correct)},
+        infected: {guess: guess.infected, result: answer.infected === guess.infected},
     }
-
     return {
-        ...result,
-        correct: result.gender && result.race && result.allegiance && result.profession && result.rarity == Range.Correct && result.cost == Range.Correct && result.infected,
+        charId: guess.charId,
+        name: guess.name,
+        ...res,
+        correct: res.gender.result &&
+        res.race.result &&
+        res.allegiance.result &&
+        res.profession.result &&
+        res.rarity.result == Range.Correct &&
+        res.cost.result == Range.Correct &&
+        res.infected.result,
     }
 }
 
@@ -114,7 +123,7 @@ export const compareGuess = async(guess: string) => {
         return { error: `Not a valid operator name: ${guess}`}
     }
 
-    return { operator: guessOp, result: compareGuessLogic(compareOp, guessOp)};
+    return { result: compareGuessLogic(compareOp, guessOp) };
 }
 
 // Get a list of all the operator names in the database
