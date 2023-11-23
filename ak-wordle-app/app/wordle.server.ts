@@ -16,13 +16,14 @@ interface GuessResult {
     rarity: Range,
     cost: Range,
     infected: boolean,
+    correct: boolean,
 }
 
 // Chooses a new operator for today
 // Restrains the new operator to not have been picked in the last TOTAL_OPERATORS/2 days
 const chooseNewOperator = async() => {
     const prev = await prisma.chosenOperators.findFirst({
-        where: { date: Number(new Date(new Date().getDate() - 1).toLocaleDateString().replaceAll('/', ''))}
+        where: { date: new Date().toDateString()}
     });
 
     const operators = await prisma.operator.findMany();
@@ -50,7 +51,7 @@ const chooseNewOperator = async() => {
     } 
 }
 
-const handleNewDay = async(date: number) => {
+const handleNewDay = async(date: string) => {
     const chosen = await chooseNewOperator();
     
     const res = await prisma.chosenOperators.create({
@@ -66,8 +67,7 @@ const handleNewDay = async(date: number) => {
 }
 
 const getTodayOperator = async() => {
-    const now = new Date();
-    const date = Number(now.toLocaleDateString().replaceAll('/', ''));
+    const date = new Date().toDateString();
 
     // Is there a game created for today?
     let res = await prisma.chosenOperators.findFirst({
@@ -87,14 +87,19 @@ export const getOperatorStats = async() => {
 }
 
 const compareGuessLogic = (answer: Operator, guess: Operator):GuessResult => {
-    return {
-        gender: answer.gender == guess.gender,
-        race: answer.race == guess.race,
-        allegiance: answer.allegiance == guess.allegiance,
-        profession: answer.profession == guess.profession,
+    let result = {
+        gender: answer.gender === guess.gender,
+        race: answer.race === guess.race,
+        allegiance: answer.allegiance === guess.allegiance,
+        profession: answer.profession === guess.profession,
         rarity: ((answer.rarity < guess.rarity) ? Range.Lower : (answer.rarity > guess.rarity) ? Range.Higher : Range.Correct),
         cost: ((answer.cost < guess.cost) ? Range.Lower : (answer.cost > guess.cost) ? Range.Higher : Range.Correct),
-        infected: answer.infected == guess.infected,
+        infected: answer.infected === guess.infected,
+    }
+
+    return {
+        ...result,
+        correct: result.gender && result.race && result.allegiance && result.profession && result.rarity == Range.Correct && result.cost == Range.Correct && result.infected,
     }
 }
 
