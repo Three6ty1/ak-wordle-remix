@@ -81,6 +81,7 @@ const getTodayOperator = async() => {
     return res
 }
 
+// Get the stats of the currently chosen operator
 export const getOperatorStats = async() => {
     return await getTodayOperator();
 }
@@ -97,6 +98,7 @@ const compareGuessLogic = (answer: Operator, guess: Operator):GuessResult => {
     }
 }
 
+// Compare the guess with the operator of the day
 export const compareGuess = async(guess: string) => {
     const compareOp = await prisma.operator.findFirstOrThrow({ where: { charId: (await getTodayOperator()).operatorId } })
     const guessOp = await prisma.operator.findFirst({
@@ -108,4 +110,11 @@ export const compareGuess = async(guess: string) => {
     }
 
     return { operator: guessOp, result: compareGuessLogic(compareOp, guessOp)};
+}
+
+// Get a list of all the operator names in the database
+export const getAllOperators = async() => {
+    const ops = await prisma.operator.findMany()
+    const names = ops.map(op => op.name)
+    return names;
 }
