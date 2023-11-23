@@ -42,7 +42,7 @@ model Operator {
 
 model ChosenOperators {
   gameId Int @id @default(autoincrement())
-  date Int
+  date String
   operator Operator @relation(fields: [operatorId], references: [charId])
   operatorId String
   timesGuessed Int @default(0)
