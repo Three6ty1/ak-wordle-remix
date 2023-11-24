@@ -17,10 +17,10 @@ datasource db {
 // gender
 // race
 // allegiance
+// infected status
 // profession
 // rarity
 // cost
-// infected status
 model Operator {
   // Char id based on in game charid
   charId String @id
@@ -31,12 +31,12 @@ model Operator {
   // Group/Team takes priority over Nation
   allegiance String
   profession String
+  // yes, no, N/A, undisclosed.
+  infected String
   // 1-6 inc
   rarity Int
   // 0 - however?
   cost Int
-  // yes, no, N/A, undisclosed.
-  infected String
   chosen ChosenOperators[]
 }
 
