@@ -44,7 +44,27 @@ async function main() {
         });
         amt += 1
     }
+    
+    // Remove the 's from the Justice knight just for indexing
+    try {
+        await prisma.operator.update({
+            where: {
+                name: "'Justice Knight'",
+            },
+            data: {
+                name: 'Justice Knight'
+            }
+        });
+    }
+    catch {
+        console.log('Justice Knight name change??/')
+    }
+
     console.log(amt + ' operators seeded into db');
+    console.log(`Removed all chosen ops (${await prisma.chosenOperators.count()})`);
+    
+    await prisma.chosenOperators.deleteMany()
+
 }
 
 main()

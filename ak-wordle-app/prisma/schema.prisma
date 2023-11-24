@@ -17,10 +17,10 @@ datasource db {
 // gender
 // race
 // allegiance
+// infected status
 // profession
 // rarity
 // cost
-// infected status
 model Operator {
   // Char id based on in game charid
   charId String @id
@@ -31,18 +31,18 @@ model Operator {
   // Group/Team takes priority over Nation
   allegiance String
   profession String
+  // yes, no, N/A, undisclosed.
+  infected String
   // 1-6 inc
   rarity Int
   // 0 - however?
   cost Int
-  // yes, no, N/A, undisclosed.
-  infected String
   chosen ChosenOperators[]
 }
 
-// Deal with days not times. make it simpler
 model ChosenOperators {
-  gameId Int @id
+  gameId Int @id @default(autoincrement())
+  date String
   operator Operator @relation(fields: [operatorId], references: [charId])
   operatorId String
   timesGuessed Int @default(0)
