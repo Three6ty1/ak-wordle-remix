@@ -4,6 +4,7 @@ import { ChosenOperators } from '@prisma/client';
 import { ActionFunction } from '@remix-run/node';
 import React from 'react';
 import AnswerRow from '~/components/arknights-wordle/answerRow';
+import { GUESS_CATEGORIES } from '~/helper/helper';
 
 export const loader = async() => {
     console.log("Getting operator stats")
@@ -115,14 +116,6 @@ export default function ArknightsWordle() {
             <h1>Arknights Wordle</h1>
             <p>{`${stats.gameId} ${stats.date} ${stats.operatorId} ${stats.timesGuessed}`}</p>
             <br/>
-            
-            {guesses ? (guesses.length) > 0 ? 
-                guesses.map((guess, index) => (
-                    <AnswerRow key={index} props={{guess}}/>
-                )) : null : null
-            }
-
-            <br/>
             {actionData?.error ? (
                 <p className='text-red-500'>{actionData.error}</p>
             ) : null}
@@ -130,7 +123,18 @@ export default function ArknightsWordle() {
                 <input name='operator-guess' className='border-solid border-black border-2' type='text' />
                 <button type='submit' name="_action">Search</button>
             </form>
+            <br/>
             
+            {guesses && (guesses.length) > 0 ?
+                GUESS_CATEGORIES.map((category, index) => (
+                    <span key={index} className='m-2'>{category}</span>
+                )) : null
+            }
+            {guesses && (guesses.length) > 0 ? 
+                guesses.map((guess: GuessResult, index) => (
+                    <AnswerRow key={index} guess={guess}/>
+                )) : null
+            }
         </main>
         
     );

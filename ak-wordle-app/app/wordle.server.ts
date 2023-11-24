@@ -2,22 +2,22 @@ import { prisma } from '~/prisma.server';
 import { randomInteger } from '~/helper/helper';
 import { Operator } from '@prisma/client';
 
-enum Range {
+export enum Range {
     Lower = "Lower",
     Correct = "Correct",
     Higher = "Higher",
 }
 
-export interface GuessResult {
+export type GuessResult = {
     charId: string,
     name: string,
     gender: {guess: string, result: boolean},
     race: {guess: string, result: boolean},
     allegiance: {guess: string, result: boolean},
+    infected: {guess: string, result: boolean},
     profession: {guess: string, result: boolean},
     rarity: {guess: number, result: Range},
     cost: {guess: number, result: Range},
-    infected: {guess: string, result: boolean},
     correct: boolean,
 }
 
@@ -93,10 +93,10 @@ const compareGuessLogic = (answer: Operator, guess: Operator):GuessResult => {
         gender: {guess: guess.gender, result: answer.gender === guess.gender},
         race: {guess: guess.race, result: answer.race === guess.race},
         allegiance: {guess: guess.allegiance, result: answer.allegiance === guess.allegiance},
+        infected: {guess: guess.infected, result: answer.infected === guess.infected},
         profession: {guess: guess.profession, result: answer.profession === guess.profession},
         rarity: {guess: guess.rarity, result: ((answer.rarity < guess.rarity) ? Range.Lower : (answer.rarity > guess.rarity) ? Range.Higher : Range.Correct)},
         cost: {guess: guess.cost, result: ((answer.cost < guess.cost) ? Range.Lower : (answer.cost > guess.cost) ? Range.Higher : Range.Correct)},
-        infected: {guess: guess.infected, result: answer.infected === guess.infected},
     }
     return {
         charId: guess.charId,
