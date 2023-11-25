@@ -6,7 +6,7 @@ type Props = {
     hasGuessed: boolean,
 }
 
-export default function SearchResult({op, hasGuessed}: Props) {
+export default function Result({op, hasGuessed}: Props) {
     let submit = useSubmit();
     const [_hasGuessed, setHasGuessed] = React.useState(hasGuessed);
 
