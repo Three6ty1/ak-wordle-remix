@@ -132,3 +132,21 @@ export const getAllOperatorNames = async() => {
     const names = ops.map(op => op.name)
     return names;
 }
+
+export const updateWins = async() => {
+    const date = new Date().toDateString();
+
+    // Need transaction here to prevenot race condition on updating the wins.
+    await prisma.$transaction(async (tx) => {
+        const chosenOperator = await tx.chosenOperators.findFirst({
+            where: { date: date },
+        })
+
+        await tx.chosenOperators.update({
+            where: { gameId: chosenOperator?.gameId },
+            data: {timesGuessed: {
+                increment: 1,
+            }}
+        })
+    })
+}
