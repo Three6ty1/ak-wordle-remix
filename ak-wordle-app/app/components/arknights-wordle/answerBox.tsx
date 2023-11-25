@@ -2,7 +2,6 @@ import React from 'react';
 import { Range } from '~/wordle.server';
 
 export default function AnswerBox(props: {category: string, guess: string | number | boolean, result: boolean | Range }) {
-    console.log(props);
     const result = props.result;
     const guess = props.guess;
 

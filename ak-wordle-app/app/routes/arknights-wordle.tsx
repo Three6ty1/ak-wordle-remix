@@ -1,14 +1,15 @@
-import { getOperatorStats, compareGuess, getAllOperators, GuessResult } from '~/wordle.server';
-import { useLoaderData, useFetcher, useActionData, useSubmit } from '@remix-run/react';
+import { getOperatorStats, compareGuess, GuessResult, getAllOperatorNames } from '~/wordle.server';
+import { useLoaderData, useFetcher, useActionData } from '@remix-run/react';
 import { ChosenOperators } from '@prisma/client';
 import { ActionFunction } from '@remix-run/node';
 import React from 'react';
 import AnswerRow from '~/components/arknights-wordle/answerRow';
 import { GUESS_CATEGORIES } from '~/helper/helper';
+import Search from '~/components/arknights-wordle/search';
 
 export const loader = async() => {
-    console.log("Getting operator stats")
-    return await getOperatorStats();
+    console.log("Getting operator stats and all operators")
+    return {stats: await getOperatorStats(), allOperators: await getAllOperatorNames()}
 }
 
 export const action: ActionFunction = async({ request, }) => {
@@ -16,9 +17,7 @@ export const action: ActionFunction = async({ request, }) => {
     const guess = String(form.get('operator-guess'));
 
     if (guess) {   
-        console.log("WHAT")
         const formGuesses = JSON.parse(String(form.get('guesses')));
-        console.log(formGuesses)
         if (formGuesses.length > 0) {
             const guesses = formGuesses.map((x: { name: string; }) => x.name);
             if (guesses.includes(guess)) {   
@@ -56,20 +55,10 @@ export default function ArknightsWordle() {
      *      copy and paste thing for results
      */
 
-    const stats: ChosenOperators = useLoaderData();
-    let submit = useSubmit();
+    const loaderData: any = useLoaderData();
+    const stats: ChosenOperators = loaderData?.stats;
     const actionData = useActionData<typeof action>();
-    const [guesses, setGuesses] = React.useState<GuessResult[]>();
-
-    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-        event.preventDefault();
-
-        let $form = event.currentTarget;
-        let formData = new FormData($form);
-        const guesses  = localStorage.getItem('guesses');
-        formData.set('guesses', guesses ? guesses : JSON.stringify([]));
-        submit(formData, {method: 'POST'});
-    }
+    const [guesses, setGuesses] = React.useState<GuessResult[]>([]);
 
     React.useEffect(() => { 
         const updateGuesses = () => {
@@ -77,8 +66,8 @@ export default function ArknightsWordle() {
                 const isGuesses = localStorage.getItem('guesses');
                 const guesses = (isGuesses) ? JSON.parse(isGuesses) : [];
                 console.log("Action data proc")
-                localStorage.setItem('guesses', JSON.stringify([...guesses, actionData.result]));
                 const newGuesses = [...guesses, actionData.result];
+                localStorage.setItem('guesses', JSON.stringify(newGuesses));
                 setGuesses(newGuesses);
             }
         }
@@ -119,10 +108,8 @@ export default function ArknightsWordle() {
             {actionData?.error ? (
                 <p className='text-red-500'>{actionData.error}</p>
             ) : null}
-            <form method='post' onSubmit={handleSubmit}className='items-center flex flex-row justify-center'>
-                <input name='operator-guess' className='border-solid border-black border-2' type='text' />
-                <button type='submit' name="_action">Search</button>
-            </form>
+            
+            <Search guesses={guesses} />
             <br/>
             
             {guesses && (guesses.length) > 0 ?
