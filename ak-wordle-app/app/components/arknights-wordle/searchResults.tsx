@@ -1,33 +1,19 @@
 
-import React from 'react';
+import SearchResult from './searchResult';
 
 type Props = {
     results: string[];
+    guesses: string[];
 }
 
-export default function SearchResults({results} : Props) {
-    const [guesses, setGuesses] = React.useState<string[]>([]);
-
-    React.useEffect(() => {
-        const isGuesses = localStorage.getItem('guesses');
-        const guesses = (isGuesses) ? JSON.parse(isGuesses) : [];
-
-        let newGuesses: string[] = [];
-        
-        for (const guess of guesses) {
-            newGuesses.push(guess.name);
-        }
-        console.log(newGuesses);
-        setGuesses(newGuesses);
-    }, [])
-
+export default function SearchResults({results, guesses} : Props) {
     return (
-        <div>
+        <div className='flex flex-col max-h-40 overflow-y-scroll'>
             {results.map((op, index) => {
                 if (guesses.includes(op)) {
-                    return <span key={index} className='text-red-200 italic'>{op}</span>
+                    return <SearchResult key={index} op={op} hasGuessed={true}/>
                 } else {
-                    return <span key={index}>{op}</span>
+                    return <SearchResult key={index} op={op} hasGuessed={false}/>
                 }
             })}
         </div>

@@ -58,7 +58,7 @@ export default function ArknightsWordle() {
     const loaderData: any = useLoaderData();
     const stats: ChosenOperators = loaderData?.stats;
     const actionData = useActionData<typeof action>();
-    const [guesses, setGuesses] = React.useState<GuessResult[]>();
+    const [guesses, setGuesses] = React.useState<GuessResult[]>([]);
 
     React.useEffect(() => { 
         const updateGuesses = () => {
@@ -66,8 +66,8 @@ export default function ArknightsWordle() {
                 const isGuesses = localStorage.getItem('guesses');
                 const guesses = (isGuesses) ? JSON.parse(isGuesses) : [];
                 console.log("Action data proc")
-                localStorage.setItem('guesses', JSON.stringify([...guesses, actionData.result]));
                 const newGuesses = [...guesses, actionData.result];
+                localStorage.setItem('guesses', JSON.stringify(newGuesses));
                 setGuesses(newGuesses);
             }
         }
@@ -109,7 +109,7 @@ export default function ArknightsWordle() {
                 <p className='text-red-500'>{actionData.error}</p>
             ) : null}
             
-            <Search />
+            <Search guesses={guesses} />
             <br/>
             
             {guesses && (guesses.length) > 0 ?
