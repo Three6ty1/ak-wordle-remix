@@ -1,17 +1,18 @@
 import { GuessResult } from "~/wordle.server";
 import React from 'react';
+import { ChosenOperators } from "@prisma/client";
 type Props = {
     guesses: GuessResult[];
+    gameInfo: ChosenOperators;
 }
 
-export default function ShareBox({ guesses }: Props) { 
-    const [shareArray, setShareArray] = React.useState<string[]>([])
+export default function ShareBox({ guesses, gameInfo }: Props) { 
+    const [shareString, setShareString] = React.useState('')
 
     React.useEffect(() => {
-        const generateShareArray = () => {
-            let newShareArray = []
+        const generateshareString = () => {
+            let newString = '';
             for(const guess of guesses) {
-                let newString = '';
                 for (const category in guess) {
                     if (category === 'charId' || category === 'name' || category === 'correct') { continue }
         
@@ -25,21 +26,26 @@ export default function ShareBox({ guesses }: Props) {
                         newString += compare.result === 'Higher' ? '⬆️' : '⬆️';
                     }
                 }
-                newShareArray.push(newString);
+                newString += '\n';
             }
 
-            setShareArray(newShareArray);
+            setShareString(newString);
         }
 
-        generateShareArray();
+        generateshareString();
     }, [])
+
+    const handleShare = () => {
+        const newString = `Arknights Wordle #${gameInfo.gameId}\n` + shareString;
+        navigator.clipboard.writeText(newString);
+    }
    
     return (
         <div className='justify-center flex flex-col'>
-            <span>Share your results!</span>
-            {shareArray.map((guess, index) => (
-                <span key={index}>{guess}</span>
-            ))}
+            <span className='underline hover:cursor-pointer' onClick={() => handleShare()}>
+                Share your results!
+            </span>
+            <span className='whitespace-pre-line'>{shareString}</span>
         </div>
     );
 }

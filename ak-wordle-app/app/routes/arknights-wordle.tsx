@@ -131,7 +131,7 @@ export default function ArknightsWordle() {
                     <span>You guessed the operator!</span>
                     <br />
                     <br />
-                    <ShareBox guesses={guesses} />
+                    <ShareBox guesses={guesses} gameInfo={stats}/>
                 </>
             }
             
