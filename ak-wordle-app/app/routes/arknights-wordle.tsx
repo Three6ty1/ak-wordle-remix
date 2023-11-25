@@ -6,6 +6,7 @@ import React from 'react';
 import AnswerRow from '~/components/arknights-wordle/answerRow';
 import { GUESS_CATEGORIES } from '~/helper/helper';
 import Search from '~/components/arknights-wordle/search';
+import ShareBox from '~/components/arknights-wordle/shareBox';
 
 export const loader = async() => {
     console.log("Getting operator stats and all operators")
@@ -129,6 +130,8 @@ export default function ArknightsWordle() {
                 <>
                     <span>You guessed the operator!</span>
                     <br />
+                    <br />
+                    <ShareBox guesses={guesses} />
                 </>
             }
             
