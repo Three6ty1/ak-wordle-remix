@@ -129,7 +129,7 @@ export const compareGuess = async(guess: string) => {
 // Get a list of all the operator names in the database
 export const getAllOperatorNames = async() => {
     const ops = await prisma.operator.findMany()
-    const names = ops.map(op => [op.name, op.charId])
+    const names = ops.map(op => [op.name, op.charId, op.rarity])
     return names;
 }
 

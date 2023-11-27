@@ -3,7 +3,7 @@ import React from 'react';
 import { ICON_DIR } from "~/helper/helper";
 
 type Props = {
-    op: string,
+    op: [string, string, number],
     hasGuessed: boolean,
 }
 
@@ -28,9 +28,10 @@ export default function Result({op, hasGuessed}: Props) {
 
     React.useEffect(() => {
         const fetchIcons = async() => {
-            let res = await fetch(ICON_DIR + op[1] + '_2.png');
-
-            if (res.status === 404) {
+            let res;
+            if (op[2] > 3) {
+                res = await fetch(ICON_DIR + op[1] + '_2.png');
+            } else {
                 res = await fetch(ICON_DIR + op[1] + '.png');
             }
 
