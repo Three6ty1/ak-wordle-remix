@@ -28,7 +28,12 @@ export default function Result({op, hasGuessed}: Props) {
 
     React.useEffect(() => {
         const fetchIcons = async() => {
-            const res = await fetch(ICON_DIR + op[1] + '_2.png');
+            let res = await fetch(ICON_DIR + op[1] + '_2.png');
+
+            if (res.status === 404) {
+                res = await fetch(ICON_DIR + op[1] + '.png');
+            }
+
             const iconBlob = await res.blob();
             const iconObjectURL = URL.createObjectURL(iconBlob);
             setIcon(iconObjectURL);
