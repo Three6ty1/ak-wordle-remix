@@ -1,5 +1,6 @@
 import { useSubmit } from "@remix-run/react";
 import React from 'react';
+import { ICON_DIR } from "~/helper/helper";
 
 type Props = {
     op: string,
@@ -9,6 +10,7 @@ type Props = {
 export default function Result({op, hasGuessed}: Props) {
     let submit = useSubmit();
     const [_hasGuessed, setHasGuessed] = React.useState(hasGuessed);
+    const [icon, setIcon] = React.useState<string>();
 
     const handleSubmit = (event: React.MouseEvent) => {
         event.preventDefault();
@@ -24,7 +26,22 @@ export default function Result({op, hasGuessed}: Props) {
         submit(data, {method: 'POST'});
     }
 
+    React.useEffect(() => {
+        const fetchIcons = async() => {
+            const res = await fetch(ICON_DIR + op[1] + '_2.png');
+            const iconBlob = await res.blob();
+            const iconObjectURL = URL.createObjectURL(iconBlob);
+            setIcon(iconObjectURL);
+        }
+        
+        fetchIcons();
+    }, [])
+
     return (
-        <div style={{'color': hasGuessed ? 'pink' : 'black'}} onClick={(e) => handleSubmit(e)}>{op}</div> 
+        <div className='flex flex-row self-center'>
+            <img src={icon} alt={`${op[0]} operator icon`} width={25} height={25}></img>
+            <div style={{'color': hasGuessed ? 'pink' : 'black'}} onClick={(e) => handleSubmit(e)}>{op[0]}</div> 
+        </div>
+        
     );
 }

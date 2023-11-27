@@ -40,25 +40,6 @@ export const action: ActionFunction = async({ request, }) => {
 }
 
 export default function ArknightsWordle() {
-    /**
-     * Logic
-     * type answer
-     *      every time the user types, autocorrect to the closest champion.
-     *      autocorrect from start? or autocorrect from middle of word?
-     *      have a grid of all the operators that exist with mini icons?
-     *      grey out all the operators that have already been guessed
-     * submit answer
-     *      fetch to the server
-     *      return back the diff of each category
-     * get result of guess
-     *      animation to show the diff of each category loop back to type answer in logic
-     * correct guess
-     *      show animation for getting all correct
-     * show results
-     *      based on the guesses and the correctness of each guess, make a unicode viable and discord viable
-     *      copy and paste thing for results
-     */
-
     const loaderData: any = useLoaderData();
     const stats: ChosenOperators = loaderData?.stats;
     const actionData = useActionData<typeof action>();
@@ -101,21 +82,13 @@ export default function ArknightsWordle() {
                 const isPlaying = localStorage.getItem('playing');
                 const playing = (isPlaying) ? JSON.parse(isPlaying) as number: 0;
 
-                console.log(playing)
                 setPlaying(playing);
                 setGuesses(guesses);
             }
         }
-
-        console.log("Checking data")
         initGuesses();
         updateGuesses();
 
-        /*
-        window.addEventListener('storage', checkData);
-        return () => {
-            window.removeEventListener('storage', checkData);
-        }*/
     }, [actionData])
 
     return (
