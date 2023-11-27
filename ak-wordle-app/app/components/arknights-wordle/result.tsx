@@ -1,6 +1,6 @@
 import { useSubmit } from "@remix-run/react";
 import React from 'react';
-import { ICON_DIR } from "~/helper/helper";
+import { ICON_DIR, OPERATOR_RESULTS } from "~/helper/helper";
 
 type Props = {
     op: [string, string, number],
@@ -29,10 +29,10 @@ export default function Result({op, hasGuessed}: Props) {
     React.useEffect(() => {
         const fetchIcons = async() => {
             let res;
-            if (op[2] > 3) {
-                res = await fetch(ICON_DIR + op[1] + '_2.png');
+            if (op[OPERATOR_RESULTS.rarity] > 3) {
+                res = await fetch(ICON_DIR + op[OPERATOR_RESULTS.charId] + '_2.png');
             } else {
-                res = await fetch(ICON_DIR + op[1] + '.png');
+                res = await fetch(ICON_DIR + op[OPERATOR_RESULTS.charId] + '.png');
             }
 
             const iconBlob = await res.blob();
@@ -46,8 +46,7 @@ export default function Result({op, hasGuessed}: Props) {
     return (
         <div className='flex flex-row self-center'>
             <img src={icon} alt={`${op[0]} operator icon`} width={25} height={25}></img>
-            <div style={{'color': hasGuessed ? 'pink' : 'black'}} onClick={(e) => handleSubmit(e)}>{op[0]}</div> 
+            <div style={{'color': hasGuessed ? 'pink' : 'black'}} onClick={(e) => handleSubmit(e)}>{op[OPERATOR_RESULTS.name]}</div> 
         </div>
-        
     );
 }

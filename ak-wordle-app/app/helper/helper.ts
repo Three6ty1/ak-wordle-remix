@@ -5,3 +5,9 @@ export function randomInteger(min: number, max: number) {
 }
 
 export const ICON_DIR = 'https://raw.githubusercontent.com/Three6ty1/ak-wordle-icons/main/avatars/'
+
+export enum OPERATOR_RESULTS {
+    name = 0,
+    charId = 1,
+    rarity = 2,
+}
