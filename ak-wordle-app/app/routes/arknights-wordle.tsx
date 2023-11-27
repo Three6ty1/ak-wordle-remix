@@ -83,10 +83,13 @@ export default function ArknightsWordle() {
 
         const initGuesses = () => {
             const now = new Date().toDateString()
-            if (stats.date != now) {
+
+            const lastPlayed = localStorage.getItem('lastPlayed');
+            if (now != lastPlayed) {
                 localStorage.setItem('guesses', JSON.stringify([]));
                 localStorage.setItem('lastPlayed', now);
                 localStorage.setItem('playing', '0');
+                setPlaying(0);
                 setGuesses([]);
             } else {
                 // The reason for storing on both localstorage and state

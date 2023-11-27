@@ -23,8 +23,8 @@ export default function SearchBar({setResults} : Props) {
         const results = allOperators.filter((op) => {
             return (
                 op && 
-                (op.toLowerCase().includes(lower) || 
-                op.toLowerCase().replace("'", "").includes(lower)));
+                (op.toLowerCase().startsWith(lower) || 
+                op.toLowerCase().replace("'", "").startsWith(lower)));
         })
         setResults(results);
     }
