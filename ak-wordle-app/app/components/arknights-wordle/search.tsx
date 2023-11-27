@@ -1,7 +1,7 @@
 
 import SearchBar from "./searchBar";
 import React from 'react'
-import SearchResults from "./searchResults";
+import ResultsBox from "./resultsBox";
 import { GuessResult } from "~/wordle.server";
 
 type Props = {
@@ -20,7 +20,7 @@ export default function Search({ guesses, }: Props) {
     return (
         <div>
             <SearchBar setResults={setResults} />
-            <SearchResults results={results} guesses={newGuesses} />
+            <ResultsBox results={results} guesses={newGuesses} />
         </div>
     );
 }
