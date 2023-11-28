@@ -14,7 +14,7 @@ export default function AnswerBox(props: {category: string, guess: string | numb
         if (result === 'Lower') {
             bg = 'yellow'
         } else { // result === Range.Higher
-            bg = 'blue'
+            bg = 'cyan'
         }
     }
 
