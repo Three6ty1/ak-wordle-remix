@@ -25,7 +25,8 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="bg-[url('../public/2Q.png')] text-white">
+      {/**<body className="bg-[url('../public/2Q.png')] text-white">**/}
+      <body>
         <Outlet />
         <ScrollRestoration />
         <Scripts />
