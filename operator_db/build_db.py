@@ -77,6 +77,23 @@ def get_allegiance(info):
 
     return allegiance
 
+def get_class(info):
+    _class = info["profession"].lower()
+    if _class == "pioneer":
+        _class = "Vanguard"
+    elif _class == "tank":
+        _class = "Defender"
+    elif _class == "warrior":
+        _class = "Guard"
+    elif _class == "special":
+        _class = "Specialist"
+    elif _class == "support":
+        _class = "Supporter"
+    else:
+        _class = _class.lower().capitalize()
+
+    return _class
+
 def main():
     ignored = []
     with open('./operator_db/character_table.json', 'r', encoding="utf-8") as f:
@@ -106,7 +123,7 @@ def main():
         if "unknown" in race.lower() or "undisclosed" in race.lower():
             race = "Unknown/Undisclosed"
         allegiance = get_allegiance(info)
-        profession = info["profession"].lower().capitalize()
+        profession = get_class(info)
         rarity = info["rarity"] + 1
         cost = info["phases"][-1]["attributesKeyFrames"][0]["data"]["cost"]
 
