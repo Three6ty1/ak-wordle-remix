@@ -32,50 +32,52 @@ def get_infected_status(profile_info, name):
 
     return infected
 
-def get_allegiance(info):
-    nation = "Ægir" if info["nationId"] == "egir" else ("None" if info["nationId"] == None else info["nationId"])
+def get_group(info):
     group = "None" if info["groupId"] == None else info["groupId"]
     team = "Ægir" if info["teamId"] == "egir" else ("None" if info["teamId"] == None else info["teamId"])
 
+    if team == "Ægir":
+        print(info["name"])
+
     # if group then no team. If team then no group.
     if group != "None":
-        allegiance = group
+        group = group
     elif team != "None":
-        allegiance = team
+        group = team
     else:
-        allegiance = nation
+        return ''
 
-    allegiance = allegiance.strip()
+    group = group.strip()
 
     # Format
-    if allegiance == "rhodes":
-        allegiance = "Rhodes Island"
-    elif allegiance == "student":
-        allegiance = "Students of Ursus"
-    elif allegiance == "lee":
-        allegiance = "Lee's Detective Agency"
-    elif allegiance == "penguin":
-        allegiance = "Penguin Logistics"    
-    elif allegiance == "rainbow":
-        allegiance = "Rainbow 6" 
-    elif allegiance == "lgd":
-        allegiance = "LDG"
-    elif allegiance == "abyssal":
-        allegiance = "Abyssal Hunter"
-    elif allegiance == "rhine":
-        allegiance = "Rhine Lab"
-    elif allegiance == "rim":
-        allegiance = "Rim Billiton"
-    elif allegiance == "elite":
-        allegiance = "Elite Operators"
-    elif allegiance == "action4":
-        allegiance = "Action 4"
-    elif "reserve" in allegiance:
-        allegiance = "Reserve " + allegiance[-1]
+    if group == "rhodes":
+        group = "Rhodes Island"
+    elif group == "student":
+        group = "Students of Ursus"
+    elif group == "lee":
+        group = "Lee's Detective Agency"
+    elif group == "penguin":
+        group = "Penguin Logistics"    
+    elif group == "rainbow":
+        group = "Rainbow 6" 
+    elif group == "lgd":
+        group = "LDG"
+    elif group == "abyssal":
+        group = "Abyssal Hunter"
+    elif group == "rhine":
+        group = "Rhine Lab"
+    elif group == "rim":
+        group = "Rim Billiton"
+    elif group == "elite":
+        group = "Elite Operators"
+    elif group == "action4":
+        group = "Action 4"
+    elif "reserve" in group:
+        group = "Reserve " + group[-1]
     else:
-        allegiance = allegiance.capitalize()
+        group = group.capitalize()
 
-    return allegiance
+    return group
 
 def get_class(info):
     _class = info["profession"].lower()
@@ -96,6 +98,7 @@ def get_class(info):
 
 def main():
     ignored = []
+    allegiance_list = []
     with open('./operator_db/character_table.json', 'r', encoding="utf-8") as f:
         char_data = json.load(f)
 
@@ -122,7 +125,13 @@ def main():
         race = profile_info[5].split(']')[1].strip()
         if "unknown" in race.lower() or "undisclosed" in race.lower():
             race = "Unknown/Undisclosed"
-        allegiance = get_allegiance(info)
+        group = get_group(info)
+        if group not in allegiance_list: allegiance_list.append(group)
+
+        nation = "Ægir" if info["nationId"] == "egir" else ("None" if info["nationId"] == None else info["nationId"])
+        nation = nation.capitalize()
+        if nation not in allegiance_list: allegiance_list.append(nation)
+
         profession = get_class(info)
         rarity = info["rarity"] + 1
         cost = info["phases"][-1]["attributesKeyFrames"][0]["data"]["cost"]
@@ -131,7 +140,8 @@ def main():
             "charId": id,
             "gender": gender,
             "race": race,
-            "allegiance": allegiance,
+            "group": group,
+            "nation": nation,
             "profession": profession,
             "rarity": rarity,
             "cost": cost,
@@ -148,6 +158,7 @@ def main():
     # Shalem has 2 entries
     print("Ignored operators: " + str(len(ignored)))
     pprint(ignored)
+    pprint(allegiance_list)
     print(len(operators))
     with open('./operator_db/operator_db.json', 'w', encoding='utf-8') as f:
         json.dump(operators, f, ensure_ascii=False, indent=4)
