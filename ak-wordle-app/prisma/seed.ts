@@ -13,7 +13,8 @@ interface Operator {
     charId: string;
     gender: string;
     race: string;
-    allegiance: string;
+    group?: string;
+    nation: string;
     profession: string;
     rarity: number;
     cost: number;
@@ -34,7 +35,7 @@ async function main() {
                 name: key,
                 gender: operator.gender,
                 race: operator.race,
-                allegiance: operator.allegiance,
+                nation: operator.nation,
                 profession: operator.profession,
                 rarity: operator.rarity,
                 cost: operator.cost,
@@ -42,6 +43,18 @@ async function main() {
             },
             update: {},
         });
+
+        if (operator.group !== '') {
+            await prisma.operator.update({
+                where: {
+                    charId: operator.charId
+                },
+                data: {
+                    group: operator.group
+                }
+            })
+        }
+
         amt += 1
     }
     
