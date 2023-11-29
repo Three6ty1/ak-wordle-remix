@@ -42,7 +42,7 @@ async function main() {
                 archetype: operator.archetype,
                 position: operator.position,
                 rarity: operator.rarity,
-                costE1: operator.cost[0],
+                costE0: operator.cost[0],
                 costE2: operator.cost[1],
                 infected: operator.infected,
             },

@@ -41,7 +41,7 @@ model Operator {
   // 1-6 inc
   rarity Int
   // 0 - however?
-  costE1 Int
+  costE0 Int
   costE2 Int
   chosen ChosenOperators[]
 }

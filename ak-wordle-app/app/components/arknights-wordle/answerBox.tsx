@@ -1,6 +1,6 @@
 import { Range, Correctness } from "~/helper/helper";
 
-export default function AnswerBox(props: {category: string, guess: string | number | boolean, result: boolean | Range | Correctness }) {
+export default function AnswerBox(props: {category: string, guess: string | number | boolean | number[], result: boolean | Range | Correctness }) {
     const result = props.result;
     const guess = props.guess;
     const category = props.category;
@@ -25,7 +25,14 @@ export default function AnswerBox(props: {category: string, guess: string | numb
 
     return (
         <div className='flex flex-col mx-2 my-1 h-16 w-20 p-1 leading-2 break-all justify-center' style={{'backgroundColor': bg}}>
-            <span>{guess}</span>
+            {category === 'cost' ?
+                <div className='flex flex-col leading-tight'>
+                    <span>{`E0: ${guess[0 as keyof typeof guess]}`}</span>
+                    <span>{`E2: ${guess[1 as keyof typeof guess]}`}</span>
+                </div>
+            :
+                <span>{guess}</span>
+            }
             {showResult && <span>{result}</span>}
         </div>
     );

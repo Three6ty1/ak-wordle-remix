@@ -12,7 +12,7 @@ export type GuessResult = {
     infected: {guess: string, result: boolean},
     profession: {guess: string, result: boolean},
     rarity: {guess: number, result: Range},
-    cost: {guess: number, result: Range},
+    cost: {guess: number[], result: Range},
     correct: boolean,
 }
 
@@ -114,7 +114,7 @@ const compareGuessLogic = (answer: Operator, guess: Operator):GuessResult => {
         infected: {guess: guess.infected, result: answer.infected === guess.infected},
         profession: {guess: guess.profession, result: answer.profession === guess.profession},
         rarity: {guess: guess.rarity, result: ((answer.rarity < guess.rarity) ? Range.Lower : (answer.rarity > guess.rarity) ? Range.Higher : Range.Correct)},
-        cost: {guess: guess.cost, result: ((answer.cost < guess.cost) ? Range.Lower : (answer.cost > guess.cost) ? Range.Higher : Range.Correct)},
+        cost: {guess: [guess.costE0, guess.costE2], result: ((answer.costE2 < guess.costE2) ? Range.Lower : (answer.costE2 > guess.costE2) ? Range.Higher : Range.Correct)},
     }
     return {
         charId: guess.charId,

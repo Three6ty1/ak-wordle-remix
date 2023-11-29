@@ -132,7 +132,7 @@ def main():
         nation = nation.capitalize()
         if nation not in allegiance_list: allegiance_list.append(nation)
 
-        position = info["position"]
+        position = info["position"].lower().capitalize()
 
         profession = get_class(info)
         archetype = info["subProfessionId"].capitalize()
