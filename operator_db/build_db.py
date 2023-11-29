@@ -132,9 +132,13 @@ def main():
         nation = nation.capitalize()
         if nation not in allegiance_list: allegiance_list.append(nation)
 
+        position = info["position"]
+
         profession = get_class(info)
+        archetype = info["subProfessionId"].capitalize()
         rarity = info["rarity"] + 1
-        cost = info["phases"][-1]["attributesKeyFrames"][0]["data"]["cost"]
+        e0_cost = info["phases"][0]["attributesKeyFrames"][0]["data"]["cost"]
+        e2_cost = info["phases"][-1]["attributesKeyFrames"][0]["data"]["cost"]
 
         operators[name] = {
             "charId": id,
@@ -142,9 +146,11 @@ def main():
             "race": race,
             "group": group,
             "nation": nation,
+            "position": position,
             "profession": profession,
+            "archetype": archetype,
             "rarity": rarity,
-            "cost": cost,
+            "cost": (e0_cost, e2_cost),
             "infected": infected,
         }
 
