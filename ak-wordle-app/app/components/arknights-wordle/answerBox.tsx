@@ -24,7 +24,7 @@ export default function AnswerBox(props: {category: string, guess: string | numb
     }
 
     return (
-        <div className='flex flex-col mx-2 my-1 h-16 w-16 p-1 leading-2 break-all' style={{'backgroundColor': bg}}>
+        <div className='flex flex-col mx-2 my-1 h-16 w-20 p-1 leading-2 break-all justify-center' style={{'backgroundColor': bg}}>
             <span>{guess}</span>
             {showResult && <span>{result}</span>}
         </div>

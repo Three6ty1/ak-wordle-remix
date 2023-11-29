@@ -94,8 +94,9 @@ export default function ArknightsWordle() {
     return (
         <main className='justify-center align-middle items-center content-center text-center'>
             <h1>Arknights Wordle</h1>
-            {true &&
-                <p>{`Game number: ${stats.gameId} Date: ${stats.date} Operator Id: ${stats.operatorId} Times guessed: ${stats.timesGuessed}`}</p>
+            <p>{`Game number: ${stats.gameId} Date: ${stats.date} Times guessed: ${stats.timesGuessed}`}</p>
+            {false &&
+                <p>{`Operator Id: ${stats.operatorId}`}</p>
             }
             
             <br/>
@@ -119,7 +120,7 @@ export default function ArknightsWordle() {
             <div className='flex flex-row font-bold justify-center break-all'>
                 {guesses && (guesses.length) > 0 ?
                     GUESS_CATEGORIES.map((category, index) => (
-                        <span key={index} className='w-16 m-2'>{category}</span>
+                        <span key={index} className='flex w-20 m-2 items-center justify-center'>{category}</span>
                     )) : null
                 }
             </div>
