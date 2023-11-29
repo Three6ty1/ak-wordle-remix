@@ -34,12 +34,15 @@ model Operator {
   group String?
   nation String
   profession String
+  archetype String
+  position String
   // yes, no, N/A, undisclosed.
   infected String
   // 1-6 inc
   rarity Int
   // 0 - however?
-  cost Int
+  costE1 Int
+  costE2 Int
   chosen ChosenOperators[]
 }
 

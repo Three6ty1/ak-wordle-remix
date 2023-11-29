@@ -16,8 +16,10 @@ interface Operator {
     group?: string;
     nation: string;
     profession: string;
+    archetype: string;
+    position: string;
     rarity: number;
-    cost: number;
+    cost: number[];
     infected: string;
 }
 
@@ -37,8 +39,11 @@ async function main() {
                 race: operator.race,
                 nation: operator.nation,
                 profession: operator.profession,
+                archetype: operator.archetype,
+                position: operator.position,
                 rarity: operator.rarity,
-                cost: operator.cost,
+                costE1: operator.cost[0],
+                costE2: operator.cost[1],
                 infected: operator.infected,
             },
             update: {},
