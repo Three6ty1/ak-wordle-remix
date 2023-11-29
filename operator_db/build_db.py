@@ -47,12 +47,10 @@ def get_group(info):
     else:
         return ''
 
-    group = group.strip()
+    group = group.strip().lower()
 
     # Format
-    if group == "rhodes":
-        group = "Rhodes Island"
-    elif group == "student":
+    if group == "student":
         group = "Students of Ursus"
     elif group == "lee":
         group = "Lee's Detective Agency"
@@ -66,8 +64,6 @@ def get_group(info):
         group = "Abyssal Hunter"
     elif group == "rhine":
         group = "Rhine Lab"
-    elif group == "rim":
-        group = "Rim Billiton"
     elif group == "elite":
         group = "Elite Operators"
     elif group == "action4":
@@ -78,6 +74,22 @@ def get_group(info):
         group = group.capitalize()
 
     return group
+
+def get_nation(info):
+    nation = info["nationId"]
+    
+    if nation == None:
+        nation = "None"
+    elif nation == "rhodes":
+        nation = "Rhodes Island"
+    elif nation == "rim":
+        nation = "Rim Billiton"
+    elif nation == "egir":
+        nation = 'Ægir'
+    else:
+        nation = nation.capitalize()
+
+    return nation
 
 def get_class(info):
     _class = info["profession"].lower()
@@ -128,8 +140,7 @@ def main():
         group = get_group(info)
         if group not in allegiance_list: allegiance_list.append(group)
 
-        nation = "Ægir" if info["nationId"] == "egir" else ("None" if info["nationId"] == None else info["nationId"])
-        nation = nation.capitalize()
+        nation = get_nation(info)
         if nation not in allegiance_list: allegiance_list.append(nation)
 
         position = info["position"].lower().capitalize()
