@@ -24,7 +24,7 @@
         "gender": "Male",
         "race": "Feline",
         "allegiance": "Lee's Detective Agency",
-        "profession": "Special",
+        "profession": "Specialist",
         "rarity": 6,
         "cost": 13,
         "infected": "No"
@@ -64,7 +64,7 @@
         "gender": "Female",
         "race": "Ægir",
         "allegiance": "Higashi",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 5,
         "cost": 25,
         "infected": "No"
@@ -104,7 +104,7 @@
         "gender": "Female",
         "race": "Vulpo",
         "allegiance": "Siracusa",
-        "profession": "Support",
+        "profession": "Supporter",
         "rarity": 6,
         "cost": 16,
         "infected": "Yes"
@@ -154,7 +154,7 @@
         "gender": "Male",
         "race": "Sankta",
         "allegiance": "Laterano",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 4,
         "cost": 18,
         "infected": "Yes"
@@ -164,7 +164,7 @@
         "gender": "Female",
         "race": "Savra",
         "allegiance": "Rim Billiton",
-        "profession": "Tank",
+        "profession": "Defender",
         "rarity": 5,
         "cost": 25,
         "infected": "Yes"
@@ -184,7 +184,7 @@
         "gender": "Female",
         "race": "Zalak",
         "allegiance": "Pinus",
-        "profession": "Tank",
+        "profession": "Defender",
         "rarity": 5,
         "cost": 27,
         "infected": "Yes"
@@ -194,7 +194,7 @@
         "gender": "Female",
         "race": "Liberi",
         "allegiance": "Columbia",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 5,
         "cost": 21,
         "infected": "Yes"
@@ -214,7 +214,7 @@
         "gender": "Female",
         "race": "Ursus",
         "allegiance": "Karlan",
-        "profession": "Tank",
+        "profession": "Defender",
         "rarity": 5,
         "cost": 32,
         "infected": "Yes"
@@ -224,7 +224,7 @@
         "gender": "Male",
         "race": "Cautus",
         "allegiance": "Rim Billiton",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 5,
         "cost": 19,
         "infected": "No"
@@ -234,7 +234,7 @@
         "gender": "Female",
         "race": "Vouivre",
         "allegiance": "Victoria",
-        "profession": "Pioneer",
+        "profession": "Vanguard",
         "rarity": 6,
         "cost": 13,
         "infected": "No"
@@ -244,7 +244,7 @@
         "gender": "Female",
         "race": "Perro",
         "allegiance": "Reserve 1",
-        "profession": "Tank",
+        "profession": "Defender",
         "rarity": 3,
         "cost": 18,
         "infected": "Yes"
@@ -254,7 +254,7 @@
         "gender": "Female",
         "race": "Reproba",
         "allegiance": "Columbia",
-        "profession": "Pioneer",
+        "profession": "Vanguard",
         "rarity": 4,
         "cost": 13,
         "infected": "No"
@@ -264,7 +264,7 @@
         "gender": "Female",
         "race": "Ursus",
         "allegiance": "Ursus",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 4,
         "cost": 9,
         "infected": "Yes"
@@ -284,7 +284,7 @@
         "gender": "Female",
         "race": "Caprinae",
         "allegiance": "Victoria",
-        "profession": "Special",
+        "profession": "Specialist",
         "rarity": 5,
         "cost": 17,
         "infected": "No"
@@ -294,7 +294,7 @@
         "gender": "Female",
         "race": "Liberi",
         "allegiance": "Sami",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 5,
         "cost": 22,
         "infected": "Yes"
@@ -304,7 +304,7 @@
         "gender": "Male",
         "race": "Forte",
         "allegiance": "Lungmen",
-        "profession": "Tank",
+        "profession": "Defender",
         "rarity": 5,
         "cost": 24,
         "infected": "No"
@@ -314,7 +314,7 @@
         "gender": "Female",
         "race": "Savra",
         "allegiance": "Rim Billiton",
-        "profession": "Pioneer",
+        "profession": "Vanguard",
         "rarity": 5,
         "cost": 14,
         "infected": "Yes"
@@ -324,7 +324,7 @@
         "gender": "Female",
         "race": "Feline",
         "allegiance": "Elite Operators",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 6,
         "cost": 24,
         "infected": "Yes"
@@ -334,7 +334,7 @@
         "gender": "Female",
         "race": "Kuranta",
         "allegiance": "Kazimierz",
-        "profession": "Tank",
+        "profession": "Defender",
         "rarity": 6,
         "cost": 22,
         "infected": "No"
@@ -344,7 +344,7 @@
         "gender": "Male",
         "race": "Unknown/Undisclosed",
         "allegiance": "Rainbow 6",
-        "profession": "Tank",
+        "profession": "Defender",
         "rarity": 5,
         "cost": 22,
         "infected": "No"
@@ -374,7 +374,7 @@
         "gender": "Male",
         "race": "Feline",
         "allegiance": "Chiave",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 5,
         "cost": 23,
         "infected": "Yes"
@@ -384,7 +384,7 @@
         "gender": "Female",
         "race": "Cerato",
         "allegiance": "Sargon",
-        "profession": "Tank",
+        "profession": "Defender",
         "rarity": 4,
         "cost": 21,
         "infected": "Yes"
@@ -394,7 +394,7 @@
         "gender": "Female",
         "race": "Liberi",
         "allegiance": "Rhodes Island",
-        "profession": "Pioneer",
+        "profession": "Vanguard",
         "rarity": 5,
         "cost": 10,
         "infected": "Yes"
@@ -404,7 +404,7 @@
         "gender": "Female",
         "race": "Perro",
         "allegiance": "Reserve 4",
-        "profession": "Tank",
+        "profession": "Defender",
         "rarity": 3,
         "cost": 18,
         "infected": "No"
@@ -424,7 +424,7 @@
         "gender": "Male",
         "race": "Dec. 10",
         "allegiance": "Rhodes Island",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 1,
         "cost": 3,
         "infected": "N/A"
@@ -464,7 +464,7 @@
         "gender": "Female",
         "race": "Lung",
         "allegiance": "LDG",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 6,
         "cost": 23,
         "infected": "Undisclosed"
@@ -494,7 +494,7 @@
         "gender": "Male",
         "race": "Vulpo",
         "allegiance": "Chiave",
-        "profession": "Pioneer",
+        "profession": "Vanguard",
         "rarity": 5,
         "cost": 13,
         "infected": "Yes"
@@ -504,7 +504,7 @@
         "gender": "Male",
         "race": "Unknown/Undisclosed",
         "allegiance": "Sui",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 6,
         "cost": 11,
         "infected": "No"
@@ -524,7 +524,7 @@
         "gender": "Female",
         "race": "Feline",
         "allegiance": "Karlan",
-        "profession": "Special",
+        "profession": "Specialist",
         "rarity": 5,
         "cost": 13,
         "infected": "Yes"
@@ -534,7 +534,7 @@
         "gender": "Conviction",
         "race": "Unknown/Undisclosed",
         "allegiance": "Minos",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 4,
         "cost": 16,
         "infected": "Yes"
@@ -554,7 +554,7 @@
         "gender": "Male",
         "race": "Itra",
         "allegiance": "Karlan",
-        "profession": "Pioneer",
+        "profession": "Vanguard",
         "rarity": 4,
         "cost": 12,
         "infected": "No"
@@ -564,7 +564,7 @@
         "gender": "Female",
         "race": "Forte",
         "allegiance": "Penguin Logistics",
-        "profession": "Tank",
+        "profession": "Defender",
         "rarity": 5,
         "cost": 22,
         "infected": "No"
@@ -574,7 +574,7 @@
         "gender": "Female",
         "race": "Petram",
         "allegiance": "Columbia",
-        "profession": "Tank",
+        "profession": "Defender",
         "rarity": 4,
         "cost": 21,
         "infected": "Yes"
@@ -584,7 +584,7 @@
         "gender": "Female",
         "race": "Vulpo",
         "allegiance": "Columbia",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 4,
         "cost": 21,
         "infected": "Yes"
@@ -594,7 +594,7 @@
         "gender": "Male",
         "race": "Elafia",
         "allegiance": "Leithanien",
-        "profession": "Tank",
+        "profession": "Defender",
         "rarity": 5,
         "cost": 27,
         "infected": "Yes"
@@ -604,7 +604,7 @@
         "gender": "Female",
         "race": "Feline",
         "allegiance": "Glasgow",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 5,
         "cost": 12,
         "infected": "No"
@@ -614,7 +614,7 @@
         "gender": "Female",
         "race": "Unknown/Undisclosed",
         "allegiance": "Ægir",
-        "profession": "Support",
+        "profession": "Supporter",
         "rarity": 4,
         "cost": 10,
         "infected": "No"
@@ -624,7 +624,7 @@
         "gender": "Female",
         "race": "Perro",
         "allegiance": "Rhodes Island",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 4,
         "cost": 15,
         "infected": "Yes"
@@ -634,7 +634,7 @@
         "gender": "Female",
         "race": "Zalak",
         "allegiance": "Rhine Lab",
-        "profession": "Special",
+        "profession": "Specialist",
         "rarity": 6,
         "cost": 12,
         "infected": "No"
@@ -644,7 +644,7 @@
         "gender": "Female",
         "race": "Vulpo",
         "allegiance": "Rhodes Island",
-        "profession": "Tank",
+        "profession": "Defender",
         "rarity": 4,
         "cost": 24,
         "infected": "No"
@@ -674,7 +674,7 @@
         "gender": "Female",
         "race": "Caprinae",
         "allegiance": "Leithanien",
-        "profession": "Support",
+        "profession": "Supporter",
         "rarity": 4,
         "cost": 14,
         "infected": "Yes"
@@ -694,7 +694,7 @@
         "gender": "Male",
         "race": "Liberi",
         "allegiance": "Rhodes Island",
-        "profession": "Pioneer",
+        "profession": "Vanguard",
         "rarity": 5,
         "cost": 11,
         "infected": "Yes"
@@ -704,7 +704,7 @@
         "gender": "Male",
         "race": "Sankta",
         "allegiance": "Laterano",
-        "profession": "Special",
+        "profession": "Specialist",
         "rarity": 5,
         "cost": 22,
         "infected": "No"
@@ -724,7 +724,7 @@
         "gender": "Female",
         "race": "Archosauria",
         "allegiance": "Sargon",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 4,
         "cost": 22,
         "infected": "Yes"
@@ -734,7 +734,7 @@
         "gender": "Male",
         "race": "Savra",
         "allegiance": "Rhodes Island",
-        "profession": "Special",
+        "profession": "Specialist",
         "rarity": 4,
         "cost": 19,
         "infected": "Yes"
@@ -744,7 +744,7 @@
         "gender": "Female",
         "race": "Pythia",
         "allegiance": "Sargon",
-        "profession": "Tank",
+        "profession": "Defender",
         "rarity": 6,
         "cost": 33,
         "infected": "Yes"
@@ -784,7 +784,7 @@
         "gender": "Female",
         "race": "Ursus",
         "allegiance": "Lungmen",
-        "profession": "Special",
+        "profession": "Specialist",
         "rarity": 5,
         "cost": 20,
         "infected": "Yes"
@@ -794,7 +794,7 @@
         "gender": "Female",
         "race": "Kuranta",
         "allegiance": "Reserve 1",
-        "profession": "Pioneer",
+        "profession": "Vanguard",
         "rarity": 3,
         "cost": 11,
         "infected": "Yes"
@@ -834,7 +834,7 @@
         "gender": "Female",
         "race": "Liberi",
         "allegiance": "Rim Billiton",
-        "profession": "Tank",
+        "profession": "Defender",
         "rarity": 5,
         "cost": 27,
         "infected": "No"
@@ -844,7 +844,7 @@
         "gender": "Male",
         "race": "Sarkaz",
         "allegiance": "Rhodes Island",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 5,
         "cost": 20,
         "infected": "Yes"
@@ -854,7 +854,7 @@
         "gender": "Female",
         "race": "Zalak",
         "allegiance": "Pinus",
-        "profession": "Pioneer",
+        "profession": "Vanguard",
         "rarity": 6,
         "cost": 14,
         "infected": "Yes"
@@ -864,7 +864,7 @@
         "gender": "Female",
         "race": "Liberi",
         "allegiance": "Sargon",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 5,
         "cost": 10,
         "infected": "No"
@@ -884,7 +884,7 @@
         "gender": "Female",
         "race": "Vulpo",
         "allegiance": "Blacksteel",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 5,
         "cost": 18,
         "infected": "Yes"
@@ -894,7 +894,7 @@
         "gender": "Female",
         "race": "Unknown/Undisclosed",
         "allegiance": "Rainbow 6",
-        "profession": "Special",
+        "profession": "Specialist",
         "rarity": 5,
         "cost": 11,
         "infected": "No"
@@ -904,7 +904,7 @@
         "gender": "Female",
         "race": "Vulpo",
         "allegiance": "Rhodes Island",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 4,
         "cost": 18,
         "infected": "Yes"
@@ -924,7 +924,7 @@
         "gender": "Female",
         "race": "Archosauria",
         "allegiance": "Rhodes Island",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 6,
         "cost": 24,
         "infected": "Yes"
@@ -944,7 +944,7 @@
         "gender": "Female",
         "race": "Unknown/Undisclosed",
         "allegiance": "Abyssal Hunter",
-        "profession": "Special",
+        "profession": "Specialist",
         "rarity": 6,
         "cost": 16,
         "infected": "No"
@@ -954,7 +954,7 @@
         "gender": "Female",
         "race": "Unknown/Undisclosed",
         "allegiance": "Iberia",
-        "profession": "Support",
+        "profession": "Supporter",
         "rarity": 5,
         "cost": 15,
         "infected": "No"
@@ -964,7 +964,7 @@
         "gender": "Male",
         "race": "Liberi",
         "allegiance": "Karlan",
-        "profession": "Support",
+        "profession": "Supporter",
         "rarity": 6,
         "cost": 13,
         "infected": "No"
@@ -984,7 +984,7 @@
         "gender": "Female",
         "race": "Kuranta",
         "allegiance": "Victoria",
-        "profession": "Pioneer",
+        "profession": "Vanguard",
         "rarity": 5,
         "cost": 14,
         "infected": "No"
@@ -994,7 +994,7 @@
         "gender": "Female",
         "race": "Zalak",
         "allegiance": "Kazimierz",
-        "profession": "Special",
+        "profession": "Specialist",
         "rarity": 4,
         "cost": 8,
         "infected": "No"
@@ -1034,7 +1034,7 @@
         "gender": "Female",
         "race": "Ursus",
         "allegiance": "Students of Ursus",
-        "profession": "Tank",
+        "profession": "Defender",
         "rarity": 4,
         "cost": 20,
         "infected": "No"
@@ -1064,7 +1064,7 @@
         "gender": "Female",
         "race": "Kuranta",
         "allegiance": "Rhodes Island",
-        "profession": "Tank",
+        "profession": "Defender",
         "rarity": 5,
         "cost": 24,
         "infected": "No"
@@ -1074,7 +1074,7 @@
         "gender": "Female",
         "race": "Feline",
         "allegiance": "Victoria",
-        "profession": "Support",
+        "profession": "Supporter",
         "rarity": 5,
         "cost": 9,
         "infected": "No"
@@ -1084,7 +1084,7 @@
         "gender": "Male",
         "race": "Liberi",
         "allegiance": "Ursus",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 6,
         "cost": 26,
         "infected": "Yes"
@@ -1114,7 +1114,7 @@
         "gender": "Female",
         "race": "Ægir",
         "allegiance": "Iberia",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 5,
         "cost": 22,
         "infected": "No"
@@ -1134,7 +1134,7 @@
         "gender": "Female",
         "race": "Lupo",
         "allegiance": "Victoria",
-        "profession": "Tank",
+        "profession": "Defender",
         "rarity": 6,
         "cost": 28,
         "infected": "No"
@@ -1144,7 +1144,7 @@
         "gender": "Female",
         "race": "Oni",
         "allegiance": "LDG",
-        "profession": "Tank",
+        "profession": "Defender",
         "rarity": 6,
         "cost": 23,
         "infected": "No"
@@ -1154,7 +1154,7 @@
         "gender": "Male",
         "race": "Perro",
         "allegiance": "Lee's Detective Agency",
-        "profession": "Tank",
+        "profession": "Defender",
         "rarity": 5,
         "cost": 21,
         "infected": "No"
@@ -1184,7 +1184,7 @@
         "gender": "Female",
         "race": "Feline",
         "allegiance": "Glasgow",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 5,
         "cost": 10,
         "infected": "No"
@@ -1194,7 +1194,7 @@
         "gender": "Female",
         "race": "Liberi",
         "allegiance": "Iberia",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 6,
         "cost": 23,
         "infected": "No"
@@ -1214,7 +1214,7 @@
         "gender": "Female",
         "race": "Ursus",
         "allegiance": "Students of Ursus",
-        "profession": "Support",
+        "profession": "Supporter",
         "rarity": 5,
         "cost": 15,
         "infected": "No"
@@ -1224,7 +1224,7 @@
         "gender": "Female",
         "race": "Perro",
         "allegiance": "Columbia",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 4,
         "cost": 9,
         "infected": "Yes"
@@ -1234,7 +1234,7 @@
         "gender": "Male",
         "race": "Ursus",
         "allegiance": "Lungmen",
-        "profession": "Special",
+        "profession": "Specialist",
         "rarity": 4,
         "cost": 7,
         "infected": "No"
@@ -1264,7 +1264,7 @@
         "gender": "Female",
         "race": "Liberi",
         "allegiance": "Columbia",
-        "profession": "Special",
+        "profession": "Specialist",
         "rarity": 5,
         "cost": 9,
         "infected": "Yes"
@@ -1284,7 +1284,7 @@
         "gender": "Female",
         "race": "Feline",
         "allegiance": "Higashi",
-        "profession": "Special",
+        "profession": "Specialist",
         "rarity": 5,
         "cost": 15,
         "infected": "No"
@@ -1294,7 +1294,7 @@
         "gender": "Female",
         "race": "Ægir",
         "allegiance": "Higashi",
-        "profession": "Special",
+        "profession": "Specialist",
         "rarity": 5,
         "cost": 20,
         "infected": "Yes"
@@ -1304,7 +1304,7 @@
         "gender": "Female",
         "race": "Oni",
         "allegiance": "Action 4",
-        "profession": "Special",
+        "profession": "Specialist",
         "rarity": 6,
         "cost": 10,
         "infected": "Yes"
@@ -1344,7 +1344,7 @@
         "gender": "Female",
         "race": "Liberi",
         "allegiance": "Bolivar",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 5,
         "cost": 22,
         "infected": "No"
@@ -1364,7 +1364,7 @@
         "gender": "Female",
         "race": "Lupo",
         "allegiance": "Siracusa",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 5,
         "cost": 19,
         "infected": "Yes"
@@ -1394,7 +1394,7 @@
         "gender": "Male",
         "race": "Lung",
         "allegiance": "Lee's Detective Agency",
-        "profession": "Special",
+        "profession": "Specialist",
         "rarity": 6,
         "cost": 9,
         "infected": "No"
@@ -1434,7 +1434,7 @@
         "gender": "Female",
         "race": "Unknown/Undisclosed",
         "allegiance": "Sui",
-        "profession": "Support",
+        "profession": "Supporter",
         "rarity": 6,
         "cost": 12,
         "infected": "No"
@@ -1444,7 +1444,7 @@
         "gender": "Female",
         "race": "Vouivre",
         "allegiance": "Blacksteel",
-        "profession": "Tank",
+        "profession": "Defender",
         "rarity": 5,
         "cost": 22,
         "infected": "No"
@@ -1474,7 +1474,7 @@
         "gender": "Male",
         "race": "Feline",
         "allegiance": "Yan",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 4,
         "cost": 17,
         "infected": "No"
@@ -1484,7 +1484,7 @@
         "gender": "Female",
         "race": "Liberi",
         "allegiance": "Rhine Lab",
-        "profession": "Support",
+        "profession": "Supporter",
         "rarity": 6,
         "cost": 12,
         "infected": "No"
@@ -1494,7 +1494,7 @@
         "gender": "Female",
         "race": "Manticore",
         "allegiance": "Sargon",
-        "profession": "Special",
+        "profession": "Specialist",
         "rarity": 5,
         "cost": 20,
         "infected": "Yes"
@@ -1504,7 +1504,7 @@
         "gender": "Female",
         "race": "Oni",
         "allegiance": "Higashi",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 4,
         "cost": 17,
         "infected": "No"
@@ -1514,7 +1514,7 @@
         "gender": "Male",
         "race": "Forte",
         "allegiance": "Karlan",
-        "profession": "Tank",
+        "profession": "Defender",
         "rarity": 4,
         "cost": 21,
         "infected": "No"
@@ -1534,7 +1534,7 @@
         "gender": "Female",
         "race": "Anaty",
         "allegiance": "Rhine Lab",
-        "profession": "Support",
+        "profession": "Supporter",
         "rarity": 5,
         "cost": 11,
         "infected": "No"
@@ -1544,7 +1544,7 @@
         "gender": "Female",
         "race": "Feline",
         "allegiance": "Reserve 4",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 3,
         "cost": 15,
         "infected": "Yes"
@@ -1574,7 +1574,7 @@
         "gender": "Male",
         "race": "Sarkaz",
         "allegiance": "Reserve 6",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 3,
         "cost": 16,
         "infected": "Yes"
@@ -1604,7 +1604,7 @@
         "gender": "Male",
         "race": "Ægir",
         "allegiance": "Higashi",
-        "profession": "Special",
+        "profession": "Specialist",
         "rarity": 6,
         "cost": 21,
         "infected": "No"
@@ -1624,7 +1624,7 @@
         "gender": "Male",
         "race": "Feline",
         "allegiance": "Columbia",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 6,
         "cost": 11,
         "infected": "Yes"
@@ -1634,7 +1634,7 @@
         "gender": "Female",
         "race": "Feline",
         "allegiance": "Victoria",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 4,
         "cost": 20,
         "infected": "Yes"
@@ -1644,7 +1644,7 @@
         "gender": "Male",
         "race": "Liberi",
         "allegiance": "Yan",
-        "profession": "Special",
+        "profession": "Specialist",
         "rarity": 5,
         "cost": 8,
         "infected": "No"
@@ -1654,7 +1654,7 @@
         "gender": "Female",
         "race": "Sarkaz",
         "allegiance": "Rhodes Island",
-        "profession": "Tank",
+        "profession": "Defender",
         "rarity": 6,
         "cost": 36,
         "infected": "Yes"
@@ -1684,7 +1684,7 @@
         "gender": "Female",
         "race": "Durin",
         "allegiance": "Rhodes Island",
-        "profession": "Pioneer",
+        "profession": "Vanguard",
         "rarity": 4,
         "cost": 10,
         "infected": "No"
@@ -1694,7 +1694,7 @@
         "gender": "Male",
         "race": "Kuranta",
         "allegiance": "Kazimierz",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 6,
         "cost": 12,
         "infected": "No"
@@ -1704,7 +1704,7 @@
         "gender": "Female",
         "race": "Kuranta",
         "allegiance": "Followers",
-        "profession": "Tank",
+        "profession": "Defender",
         "rarity": 5,
         "cost": 21,
         "infected": "Yes"
@@ -1714,7 +1714,7 @@
         "gender": "Female",
         "race": "Kuranta",
         "allegiance": "Kazimierz",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 6,
         "cost": 19,
         "infected": "No"
@@ -1724,7 +1724,7 @@
         "gender": "Female",
         "race": "Unknown/Undisclosed",
         "allegiance": "Sui",
-        "profession": "Tank",
+        "profession": "Defender",
         "rarity": 6,
         "cost": 23,
         "infected": "Undisclosed"
@@ -1754,7 +1754,7 @@
         "gender": "Female",
         "race": "Elafia",
         "allegiance": "Yan",
-        "profession": "Support",
+        "profession": "Supporter",
         "rarity": 5,
         "cost": 11,
         "infected": "No"
@@ -1764,7 +1764,7 @@
         "gender": "Male",
         "race": "Oni",
         "allegiance": "Action 4",
-        "profession": "Tank",
+        "profession": "Defender",
         "rarity": 2,
         "cost": 14,
         "infected": "Yes"
@@ -1774,7 +1774,7 @@
         "gender": "Female",
         "race": "Liberi",
         "allegiance": "Reserve 6",
-        "profession": "Support",
+        "profession": "Supporter",
         "rarity": 3,
         "cost": 12,
         "infected": "Yes"
@@ -1784,7 +1784,7 @@
         "gender": "Female",
         "race": "Forte",
         "allegiance": "Minos",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 6,
         "cost": 17,
         "infected": "Yes"
@@ -1814,7 +1814,7 @@
         "gender": "Female",
         "race": "Lupo",
         "allegiance": "Siracusa",
-        "profession": "Tank",
+        "profession": "Defender",
         "rarity": 6,
         "cost": 36,
         "infected": "No"
@@ -1834,7 +1834,7 @@
         "gender": "Male",
         "race": "Feline",
         "allegiance": "Victoria",
-        "profession": "Special",
+        "profession": "Specialist",
         "rarity": 6,
         "cost": 10,
         "infected": "Yes"
@@ -1874,7 +1874,7 @@
         "gender": "Female",
         "race": "Liberi",
         "allegiance": "Laterano",
-        "profession": "Pioneer",
+        "profession": "Vanguard",
         "rarity": 3,
         "cost": 10,
         "infected": "No"
@@ -1884,7 +1884,7 @@
         "gender": "Female",
         "race": "Perro",
         "allegiance": "Rhodes Island",
-        "profession": "Support",
+        "profession": "Supporter",
         "rarity": 4,
         "cost": 14,
         "infected": "No"
@@ -1894,7 +1894,7 @@
         "gender": "Female",
         "race": "Cautus",
         "allegiance": "Reserve 6",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 3,
         "cost": 19,
         "infected": "Yes"
@@ -1914,7 +1914,7 @@
         "gender": "Female",
         "race": "Feline",
         "allegiance": "Karlan",
-        "profession": "Support",
+        "profession": "Supporter",
         "rarity": 5,
         "cost": 12,
         "infected": "No"
@@ -1924,7 +1924,7 @@
         "gender": "Female",
         "race": "Lupo",
         "allegiance": "Sweep",
-        "profession": "Special",
+        "profession": "Specialist",
         "rarity": 5,
         "cost": 9,
         "infected": "No"
@@ -1944,7 +1944,7 @@
         "gender": "Female",
         "race": "Kuranta",
         "allegiance": "Kazimierz",
-        "profession": "Support",
+        "profession": "Supporter",
         "rarity": 5,
         "cost": 15,
         "infected": "No"
@@ -1984,7 +1984,7 @@
         "gender": "Male",
         "race": "Vouivre",
         "allegiance": "Victoria",
-        "profession": "Pioneer",
+        "profession": "Vanguard",
         "rarity": 5,
         "cost": 12,
         "infected": "Yes"
@@ -2004,7 +2004,7 @@
         "gender": "Female",
         "race": "Elafia",
         "allegiance": "Yan",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 6,
         "cost": 20,
         "infected": "No"
@@ -2014,7 +2014,7 @@
         "gender": "Female",
         "race": "Lupo",
         "allegiance": "Columbia",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 4,
         "cost": 22,
         "infected": "No"
@@ -2024,7 +2024,7 @@
         "gender": "Female",
         "race": "Feline",
         "allegiance": "Rhodes Island",
-        "profession": "Support",
+        "profession": "Supporter",
         "rarity": 5,
         "cost": 12,
         "infected": "No"
@@ -2044,7 +2044,7 @@
         "gender": "Male",
         "race": "Oni",
         "allegiance": "Action 4",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 5,
         "cost": 25,
         "infected": "Yes"
@@ -2054,7 +2054,7 @@
         "gender": "Female",
         "race": "Draco",
         "allegiance": "Victoria",
-        "profession": "Pioneer",
+        "profession": "Vanguard",
         "rarity": 5,
         "cost": 12,
         "infected": "Yes"
@@ -2074,7 +2074,7 @@
         "gender": "Female",
         "race": "Anaty",
         "allegiance": "Columbia",
-        "profession": "Support",
+        "profession": "Supporter",
         "rarity": 4,
         "cost": 17,
         "infected": "No"
@@ -2084,7 +2084,7 @@
         "gender": "Female",
         "race": "Anaty",
         "allegiance": "Columbia",
-        "profession": "Special",
+        "profession": "Specialist",
         "rarity": 5,
         "cost": 13,
         "infected": "No"
@@ -2104,7 +2104,7 @@
         "gender": "Female",
         "race": "Cautus",
         "allegiance": "Lungmen",
-        "profession": "Special",
+        "profession": "Specialist",
         "rarity": 4,
         "cost": 12,
         "infected": "Yes"
@@ -2134,7 +2134,7 @@
         "gender": "Female",
         "race": "Perro",
         "allegiance": "Higashi",
-        "profession": "Pioneer",
+        "profession": "Vanguard",
         "rarity": 6,
         "cost": 14,
         "infected": "No"
@@ -2144,7 +2144,7 @@
         "gender": "Female",
         "race": "Vouivre",
         "allegiance": "Victoria",
-        "profession": "Pioneer",
+        "profession": "Vanguard",
         "rarity": 6,
         "cost": 12,
         "infected": "No"
@@ -2154,7 +2154,7 @@
         "gender": "Female",
         "race": "Vouivre",
         "allegiance": "Rhine Lab",
-        "profession": "Tank",
+        "profession": "Defender",
         "rarity": 6,
         "cost": 22,
         "infected": "No"
@@ -2164,7 +2164,7 @@
         "gender": "Female",
         "race": "Cautus",
         "allegiance": "Rim Billiton",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 5,
         "cost": 22,
         "infected": "No"
@@ -2174,7 +2174,7 @@
         "gender": "Female",
         "race": "Zalak",
         "allegiance": "Sweep",
-        "profession": "Pioneer",
+        "profession": "Vanguard",
         "rarity": 4,
         "cost": 12,
         "infected": "Yes"
@@ -2184,7 +2184,7 @@
         "gender": "Female",
         "race": "Pilosa",
         "allegiance": "Sargon",
-        "profession": "Support",
+        "profession": "Supporter",
         "rarity": 5,
         "cost": 11,
         "infected": "Yes"
@@ -2214,7 +2214,7 @@
         "gender": "Male",
         "race": "Phidia",
         "allegiance": "Victoria",
-        "profession": "Tank",
+        "profession": "Defender",
         "rarity": 5,
         "cost": 25,
         "infected": "Yes"
@@ -2224,7 +2224,7 @@
         "gender": "Female",
         "race": "Vulpo",
         "allegiance": "Siracusa",
-        "profession": "Support",
+        "profession": "Supporter",
         "rarity": 5,
         "cost": 12,
         "infected": "Yes"
@@ -2234,7 +2234,7 @@
         "gender": "Male",
         "race": "Phidia",
         "allegiance": "None",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 5,
         "cost": 17,
         "infected": "Yes"
@@ -2244,7 +2244,7 @@
         "gender": "Female",
         "race": "Zalak",
         "allegiance": "Lungmen",
-        "profession": "Special",
+        "profession": "Specialist",
         "rarity": 4,
         "cost": 19,
         "infected": "No"
@@ -2274,7 +2274,7 @@
         "gender": "Female",
         "race": "Forte",
         "allegiance": "Minos",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 5,
         "cost": 23,
         "infected": "No"
@@ -2284,7 +2284,7 @@
         "gender": "Female",
         "race": "Aslan",
         "allegiance": "Glasgow",
-        "profession": "Pioneer",
+        "profession": "Vanguard",
         "rarity": 6,
         "cost": 14,
         "infected": "No"
@@ -2304,7 +2304,7 @@
         "gender": "Male",
         "race": "Feline",
         "allegiance": "Karlan",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 6,
         "cost": 20,
         "infected": "No"
@@ -2314,7 +2314,7 @@
         "gender": "Female",
         "race": "Unknown/Undisclosed",
         "allegiance": "Abyssal Hunter",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 6,
         "cost": 19,
         "infected": "No"
@@ -2324,7 +2324,7 @@
         "gender": "Female",
         "race": "Unknown/Undisclosed",
         "allegiance": "Ægir",
-        "profession": "Support",
+        "profession": "Supporter",
         "rarity": 6,
         "cost": 8,
         "infected": "No"
@@ -2344,7 +2344,7 @@
         "gender": "Female",
         "race": "Liberi",
         "allegiance": "Lungmen",
-        "profession": "Special",
+        "profession": "Specialist",
         "rarity": 5,
         "cost": 15,
         "infected": "No"
@@ -2354,7 +2354,7 @@
         "gender": "Female",
         "race": "Unknown/Undisclosed",
         "allegiance": "Penguin Logistics",
-        "profession": "Support",
+        "profession": "Supporter",
         "rarity": 5,
         "cost": 7,
         "infected": "No"
@@ -2364,7 +2364,7 @@
         "gender": "Female",
         "race": "Unknown/Undisclosed",
         "allegiance": "Abyssal Hunter",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 5,
         "cost": 23,
         "infected": "Yes"
@@ -2374,7 +2374,7 @@
         "gender": "Female",
         "race": "Ægir",
         "allegiance": "Abyssal Hunter",
-        "profession": "Special",
+        "profession": "Specialist",
         "rarity": 6,
         "cost": 16,
         "infected": "Yes"
@@ -2384,7 +2384,7 @@
         "gender": "Male",
         "race": "Rebbah",
         "allegiance": "Reserve 6",
-        "profession": "Tank",
+        "profession": "Defender",
         "rarity": 3,
         "cost": 17,
         "infected": "Yes"
@@ -2394,7 +2394,7 @@
         "gender": "Male",
         "race": "Feline",
         "allegiance": "Victoria",
-        "profession": "Support",
+        "profession": "Supporter",
         "rarity": 6,
         "cost": 19,
         "infected": "No"
@@ -2424,7 +2424,7 @@
         "gender": "Female",
         "race": "Sarkaz",
         "allegiance": "Rhodes Island",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 6,
         "cost": 21,
         "infected": "Yes"
@@ -2444,7 +2444,7 @@
         "gender": "Female",
         "race": "Vulpo",
         "allegiance": "Siracusa",
-        "profession": "Support",
+        "profession": "Supporter",
         "rarity": 6,
         "cost": 16,
         "infected": "Yes"
@@ -2454,7 +2454,7 @@
         "gender": "Female",
         "race": "Feline",
         "allegiance": "LDG",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 5,
         "cost": 16,
         "infected": "No"
@@ -2464,7 +2464,7 @@
         "gender": "Male",
         "race": "Feb 15",
         "allegiance": "Rhodes Island",
-        "profession": "Special",
+        "profession": "Specialist",
         "rarity": 1,
         "cost": 3,
         "infected": "N/A"
@@ -2474,7 +2474,7 @@
         "gender": "Male",
         "race": "Unknown/Undisclosed",
         "allegiance": "Rainbow 6",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 5,
         "cost": 24,
         "infected": "No"
@@ -2484,7 +2484,7 @@
         "gender": "Male",
         "race": "Perro",
         "allegiance": "Bolivar",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 5,
         "cost": 13,
         "infected": "No"
@@ -2504,7 +2504,7 @@
         "gender": "Female",
         "race": "Lupo",
         "allegiance": "Penguin Logistics",
-        "profession": "Pioneer",
+        "profession": "Vanguard",
         "rarity": 5,
         "cost": 13,
         "infected": "No"
@@ -2514,7 +2514,7 @@
         "gender": "Female",
         "race": "Lupo",
         "allegiance": "Penguin Logistics",
-        "profession": "Special",
+        "profession": "Specialist",
         "rarity": 6,
         "cost": 10,
         "infected": "No"
@@ -2524,7 +2524,7 @@
         "gender": "Male",
         "race": "Ægir",
         "allegiance": "Iberia",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 6,
         "cost": 20,
         "infected": "No"
@@ -2574,7 +2574,7 @@
         "gender": "Female",
         "race": "Elafia",
         "allegiance": "Higashi",
-        "profession": "Support",
+        "profession": "Supporter",
         "rarity": 5,
         "cost": 12,
         "infected": "Yes"
@@ -2584,7 +2584,7 @@
         "gender": "Female",
         "race": "Phidia",
         "allegiance": "None",
-        "profession": "Pioneer",
+        "profession": "Vanguard",
         "rarity": 5,
         "cost": 12,
         "infected": "Yes"
@@ -2604,7 +2604,7 @@
         "gender": "Female",
         "race": "Unknown/Undisclosed",
         "allegiance": "Higashi",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 4,
         "cost": 24,
         "infected": "Yes"
@@ -2614,7 +2614,7 @@
         "gender": "Female",
         "race": "Vouivre",
         "allegiance": "Blacksteel",
-        "profession": "Pioneer",
+        "profession": "Vanguard",
         "rarity": 3,
         "cost": 11,
         "infected": "No"
@@ -2634,7 +2634,7 @@
         "gender": "Male",
         "race": "Lupo",
         "allegiance": "Siracusa",
-        "profession": "Pioneer",
+        "profession": "Vanguard",
         "rarity": 6,
         "cost": 17,
         "infected": "No"
@@ -2644,7 +2644,7 @@
         "gender": "Female",
         "race": "Sarkaz",
         "allegiance": "Columbia",
-        "profession": "Pioneer",
+        "profession": "Vanguard",
         "rarity": 4,
         "cost": 11,
         "infected": "Yes"
@@ -2654,7 +2654,7 @@
         "gender": "Female",
         "race": "Forte",
         "allegiance": "Minos",
-        "profession": "Tank",
+        "profession": "Defender",
         "rarity": 5,
         "cost": 35,
         "infected": "Yes"
@@ -2674,7 +2674,7 @@
         "gender": "Female",
         "race": "Feline",
         "allegiance": "Lee's Detective Agency",
-        "profession": "Special",
+        "profession": "Specialist",
         "rarity": 5,
         "cost": 9,
         "infected": "No"
@@ -2694,7 +2694,7 @@
         "gender": "Female",
         "race": "Ægir",
         "allegiance": "Rhodes Island",
-        "profession": "Special",
+        "profession": "Specialist",
         "rarity": 6,
         "cost": 21,
         "infected": "No"
@@ -2704,7 +2704,7 @@
         "gender": "Female",
         "race": "Kuranta",
         "allegiance": "Kazimierz",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 5,
         "cost": 18,
         "infected": "No"
@@ -2724,7 +2724,7 @@
         "gender": "Female",
         "race": "Kuranta",
         "allegiance": "Pinus",
-        "profession": "Pioneer",
+        "profession": "Vanguard",
         "rarity": 5,
         "cost": 14,
         "infected": "Yes"
@@ -2734,7 +2734,7 @@
         "gender": "Female",
         "race": "Forte",
         "allegiance": "Yan",
-        "profession": "Warrior",
+        "profession": "Guard",
         "rarity": 5,
         "cost": 23,
         "infected": "Yes"
@@ -2744,7 +2744,7 @@
         "gender": "Male",
         "race": "Perro",
         "allegiance": "Columbia",
-        "profession": "Support",
+        "profession": "Supporter",
         "rarity": 5,
         "cost": 18,
         "infected": "No"
@@ -2754,7 +2754,7 @@
         "gender": "Female",
         "race": "Oni",
         "allegiance": "Action 4",
-        "profession": "Pioneer",
+        "profession": "Vanguard",
         "rarity": 2,
         "cost": 7,
         "infected": "Yes"
@@ -2764,7 +2764,7 @@
         "gender": "Female",
         "race": "Ursus",
         "allegiance": "Students of Ursus",
-        "profession": "Pioneer",
+        "profession": "Vanguard",
         "rarity": 5,
         "cost": 13,
         "infected": "No"

@@ -6,7 +6,6 @@ type Props = {
 }
 
 export default function SearchBar({setResults} : Props) {
-    const actionData: any = useActionData();
     const loaderData: any = useLoaderData();
     const allOperators: string[] = loaderData.allOperators;
     const [input , setInput] = React.useState('');
@@ -19,13 +18,15 @@ export default function SearchBar({setResults} : Props) {
             return;
         }
         
-        const lower = value.toLowerCase().trim()
+        const lower = value.toLowerCase().trim();
+
         const results = allOperators.filter((op) => {
             return (
-                op && 
-                (op.toLowerCase().startsWith(lower) || 
-                op.toLowerCase().replace("'", "").startsWith(lower)));
-        })
+                op[0].toLowerCase().startsWith(lower) || 
+                op[0].replace("'", "").startsWith(lower)
+            );
+        });
+
         setResults(results);
     }
 
