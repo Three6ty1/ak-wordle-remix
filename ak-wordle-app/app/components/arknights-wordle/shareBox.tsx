@@ -1,4 +1,5 @@
 import { GuessResult } from "~/wordle.server";
+import { Range, Correctness } from "~/helper/helper";
 import React from 'react';
 import { ChosenOperators } from "@prisma/client";
 type Props = {
@@ -18,12 +19,17 @@ export default function ShareBox({ guesses, gameInfo }: Props) {
         
                     const compare: any= guess[category as keyof typeof guess]
         
-                    if (compare.result === 'Correct' || compare.result === true) {
+                    // Correctness and Range .corret's are the same, just added for clarity
+                    if (compare.result === Range.Correct || compare.result === Correctness.Correct || compare.result === true) {
                         newString += '🟩';
-                    } else if (compare.result === false) {
+                    } else if (compare.result === false || compare.result === Correctness.Wrong) {
                         newString += '🟥';
-                    } else {
-                        newString += compare.result === 'Higher' ? '⬆️' : '⬆️';
+                    } else if (compare.result === Range.Lower) {
+                        newString += '⬇️';
+                    } else if (compare.result === Range.Higher) {
+                        newString += '⬆️';
+                    } else if (compare.result === Correctness.Half) {
+                        newString += '🟨';
                     }
                 }
                 newString += '\n';

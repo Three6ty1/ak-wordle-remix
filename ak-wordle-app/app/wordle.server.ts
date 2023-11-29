@@ -1,19 +1,14 @@
 import { prisma } from '~/prisma.server';
 import { randomInteger } from '~/helper/helper';
 import { Operator } from '@prisma/client';
-
-export enum Range {
-    Lower = "Lower",
-    Correct = "Correct",
-    Higher = "Higher",
-}
+import { Range, Correctness } from '~/helper/helper';
 
 export type GuessResult = {
     charId: string,
     name: string,
     gender: {guess: string, result: boolean},
     race: {guess: string, result: boolean},
-    allegiance: {guess: string, result: boolean},
+    allegiance: {guess: string, result: Correctness},
     infected: {guess: string, result: boolean},
     profession: {guess: string, result: boolean},
     rarity: {guess: number, result: Range},
@@ -89,10 +84,33 @@ export const getOperatorStats = async() => {
 }
 
 const compareGuessLogic = (answer: Operator, guess: Operator):GuessResult => {
+    /**
+     * Groups take precedence in allegiances over nation (more specific)
+     * 
+     * AG, GG (Answer Group, Guess Group)
+     * AG, GN (Guess Nation)
+     * AN, GG etc...
+     * AN, GN
+     */
+
+    let allegiance_res;
+    if (answer.group && guess.group) { // AG, GG
+        // Answer has group, guess has group
+        if (answer.group == guess.group) {
+            allegiance_res = Correctness.Correct;
+        } else { // Wrong group but same nation (Like Rhodes Island)
+            allegiance_res = (answer.nation == guess.nation) ? Correctness.Half : Correctness.Wrong
+        }
+    } else if (!answer.group && !guess.group) { // AN, GN
+        allegiance_res = (answer.nation == guess.nation) ? Correctness.Correct : Correctness.Wrong
+    } else { // AG, GN || AN, GG Can't compare the groups to nations as their scope is different, can only compare nations and be half correct.
+        allegiance_res = (answer.nation == guess.nation) ? Correctness.Half : Correctness.Wrong
+    }
+
     let res = {
         gender: {guess: guess.gender, result: answer.gender === guess.gender},
         race: {guess: guess.race, result: answer.race === guess.race},
-        allegiance: {guess: guess.allegiance, result: answer.allegiance === guess.allegiance},
+        allegiance: { guess: guess.group ? guess.group : guess.nation, result: allegiance_res },
         infected: {guess: guess.infected, result: answer.infected === guess.infected},
         profession: {guess: guess.profession, result: answer.profession === guess.profession},
         rarity: {guess: guess.rarity, result: ((answer.rarity < guess.rarity) ? Range.Lower : (answer.rarity > guess.rarity) ? Range.Higher : Range.Correct)},
@@ -104,7 +122,7 @@ const compareGuessLogic = (answer: Operator, guess: Operator):GuessResult => {
         ...res,
         correct: res.gender.result &&
         res.race.result &&
-        res.allegiance.result &&
+        res.allegiance.result == Correctness.Correct &&
         res.profession.result &&
         res.rarity.result == Range.Correct &&
         res.cost.result == Range.Correct &&
