@@ -11,3 +11,15 @@ export enum OPERATOR_RESULTS {
     charId = 1,
     rarity = 2,
 }
+
+export enum Range {
+    Lower = "Lower",
+    Correct = "Correct",
+    Higher = "Higher",
+}
+
+export enum Correctness {
+    Wrong = "Wrong",
+    Half = "Half",
+    Correct = "Correct",
+}

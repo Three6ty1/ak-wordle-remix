@@ -1,18 +1,7 @@
 import { prisma } from '~/prisma.server';
 import { randomInteger } from '~/helper/helper';
 import { Operator } from '@prisma/client';
-
-export enum Range {
-    Lower = "Lower",
-    Correct = "Correct",
-    Higher = "Higher",
-}
-
-export enum Correctness {
-    Wrong = "Wrong",
-    Half = "Half",
-    Correct = "Correct",
-}
+import { Range, Correctness } from '~/helper/helper';
 
 export type GuessResult = {
     charId: string,
@@ -103,7 +92,7 @@ const compareGuessLogic = (answer: Operator, guess: Operator):GuessResult => {
      * AN, GG etc...
      * AN, GN
      */
-    
+
     let allegiance_res;
     if (answer.group && guess.group) { // AG, GG
         // Answer has group, guess has group
