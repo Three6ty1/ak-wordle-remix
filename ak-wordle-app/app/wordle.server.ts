@@ -116,6 +116,7 @@ const compareGuessLogic = (answer: Operator, guess: Operator):GuessResult => {
         rarity: {guess: guess.rarity, result: ((answer.rarity < guess.rarity) ? Range.Lower : (answer.rarity > guess.rarity) ? Range.Higher : Range.Correct)},
         cost: {guess: [guess.costE0, guess.costE2], result: ((answer.costE2 < guess.costE2) ? Range.Lower : (answer.costE2 > guess.costE2) ? Range.Higher : Range.Correct)},
     }
+    
     return {
         charId: guess.charId,
         name: guess.name,

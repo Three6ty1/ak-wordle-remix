@@ -27,6 +27,8 @@ const prisma = new PrismaClient()
 async function main() {
     let amt = 0
     const operator_db:Dictionary<Operator> = db;
+    await prisma.operator.deleteMany()
+
     for (const key in operator_db) {
         const operator = operator_db[key]
         await prisma.operator.upsert({
