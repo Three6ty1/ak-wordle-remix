@@ -10,7 +10,6 @@ type Props = {
 
 export default function Search({ guesses, }: Props) {
     const [results, setResults] = React.useState([]);
-
     let newGuesses: string[] = [];
     
     for (const guess of guesses) {

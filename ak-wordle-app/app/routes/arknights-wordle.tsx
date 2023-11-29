@@ -94,7 +94,7 @@ export default function ArknightsWordle() {
     return (
         <main className='justify-center align-middle items-center content-center text-center'>
             <h1>Arknights Wordle</h1>
-            {false &&
+            {true &&
                 <p>{`Game number: ${stats.gameId} Date: ${stats.date} Operator Id: ${stats.operatorId} Times guessed: ${stats.timesGuessed}`}</p>
             }
             

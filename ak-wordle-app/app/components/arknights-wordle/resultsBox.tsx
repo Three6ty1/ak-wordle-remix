@@ -2,7 +2,7 @@
 import Result from './result';
 
 type Props = {
-    results: [];
+    results: [string, string, number][];
     guesses: string[];
 }
 
