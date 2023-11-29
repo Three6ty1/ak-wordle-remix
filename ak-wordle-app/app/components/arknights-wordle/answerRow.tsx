@@ -27,7 +27,7 @@ export default function AnswerRow(props: { guess: GuessResult }) {
                     ? 
                         <AnswerBox key={key} category={key} guess={guess[key as keyof typeof guess].guess} result={guess[key as keyof typeof guess].result}/>
                     : 
-                        <span key={key} className='m-2'>{guess?.name}</span>             
+                        <span key={key} className='mx-2 my-1 h-16 w-16 p-1 leading-2 break-all'>{guess?.name}</span>             
                 ))
             }
         </div>

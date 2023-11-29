@@ -3,6 +3,7 @@ import { Range, Correctness } from "~/helper/helper";
 export default function AnswerBox(props: {category: string, guess: string | number | boolean, result: boolean | Range | Correctness }) {
     const result = props.result;
     const guess = props.guess;
+    const category = props.category;
 
     const showResult = result == Range.Higher || result == Range.Lower;
     // TODO: Fix this thing with the dumb enum stuff...
@@ -18,14 +19,14 @@ export default function AnswerBox(props: {category: string, guess: string | numb
         bg = 'yellow'
     } else if (result === Correctness.Wrong) {
         bg = 'red'
+    } else if (category === 'Name') {
+        bg = 'white'
     }
 
     return (
-        <div className='m-2'>
-            <div className='flex flex-col' style={{'backgroundColor': bg}}>
-                <span>{guess}</span>
-                {showResult && <span>{result}</span>}
-            </div>
+        <div className='flex flex-col mx-2 my-1 h-16 w-16 p-1 leading-2 break-all' style={{'backgroundColor': bg}}>
+            <span>{guess}</span>
+            {showResult && <span>{result}</span>}
         </div>
     );
 }

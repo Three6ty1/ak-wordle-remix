@@ -116,11 +116,14 @@ export default function ArknightsWordle() {
             
             <br/>
             
-            {guesses && (guesses.length) > 0 ?
-                GUESS_CATEGORIES.map((category, index) => (
-                    <span key={index} className='m-2'>{category}</span>
-                )) : null
-            }
+            <div className='flex flex-row font-bold justify-center break-all'>
+                {guesses && (guesses.length) > 0 ?
+                    GUESS_CATEGORIES.map((category, index) => (
+                        <span key={index} className='w-16 m-2'>{category}</span>
+                    )) : null
+                }
+            </div>
+            
             {guesses && (guesses.length) > 0 ? 
                 guesses.map((guess: GuessResult, index) => (
                     <AnswerRow key={index} guess={guess}/>
