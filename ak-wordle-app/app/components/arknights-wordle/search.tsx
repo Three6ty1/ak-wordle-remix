@@ -17,7 +17,7 @@ export default function Search({ guesses, }: Props) {
     }
 
     return (
-        <div>
+        <div className='flex flex-col items-center'>
             <SearchBar setResults={setResults} />
             <ResultsBox results={results} guesses={newGuesses} />
         </div>

@@ -34,9 +34,11 @@ export default function Result({op, hasGuessed}: Props) {
     }
 
     return (
-        <div className='flex flex-row self-center'>
-            <img src={url} alt={`${op[0]} operator icon`} width={25} height={25} />
-            <div style={{'color': hasGuessed ? 'pink' : 'black'}} onClick={(e) => handleSubmit(e)}>{op[OPERATOR_RESULTS.name]}</div> 
+        <div className='flex flex-row self-center w-full items-center'>
+            <div className='flex w-1/2 justify-end pr-5'>
+                <img src={url} alt={`${op[0]} operator icon`} width={25} height={25} />
+            </div>
+            <div className='flex w-1/2 justify-start' style={{'color': hasGuessed ? 'pink' : 'black'}} onClick={(e) => handleSubmit(e)}>{op[OPERATOR_RESULTS.name]}</div> 
         </div>
     );
 }

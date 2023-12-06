@@ -104,32 +104,41 @@ export default function ArknightsWordle() {
                 <p className='text-red-500'>{actionData.error}</p>
             ) : null}
             
-            {playing === 0 ? 
-                <Search guesses={guesses} />
-            :
-                <>
-                    <span>You guessed the operator!</span>
-                    <br />
-                    <br />
-                    <ShareBox guesses={guesses} gameInfo={stats}/>
-                </>
-            }
-            
-            <br/>
-            
-            <div className='flex flex-row font-bold justify-center break-all'>
-                {guesses && (guesses.length) > 0 ?
-                    GUESS_CATEGORIES.map((category, index) => (
-                        <span key={index} className='flex w-20 m-2 items-center justify-center'>{category}</span>
-                    )) : null
-                }
+            <div className='grid'>
+                <div className='col-start-1 row-start-1 z-10'>
+                    {playing === 0 ? 
+                        <Search guesses={guesses} />
+                    :
+                        <>
+                            <span>You guessed the operator!</span>
+                            <br />
+                            <br />
+                            <ShareBox guesses={guesses} gameInfo={stats}/>
+                        </>
+                    }
+                </div>
+
+                <div className='col-start-1 row-start-1 relative my-10'>
+                    <div className='flex flex-row font-bold justify-center break-all'>
+                        {guesses && (guesses.length) > 0 ?
+                            GUESS_CATEGORIES.map((category, index) => (
+                                <span key={index} className='flex w-20 m-2 items-center justify-center'>{category}</span>
+                            )) : null
+                        }
+                    </div>
+                    
+                    {guesses && (guesses.length) > 0 ? 
+                        guesses.map((guess: GuessResult, index) => (
+                            <AnswerRow key={index} guess={guess}/>
+                        )) : null
+                    }
+                </div>
+
+                
             </div>
             
-            {guesses && (guesses.length) > 0 ? 
-                guesses.map((guess: GuessResult, index) => (
-                    <AnswerRow key={index} guess={guess}/>
-                )) : null
-            }
+           
+
         </main>
         
     );
