@@ -26,7 +26,7 @@ export default function App() {
         <Links />
       </head>
       {/**<body className="bg-[url('../public/2Q.png')] text-white">**/}
-      <body>
+      <body className='bg-[url("~/../public/bg.png")]'>
         <Outlet />
         <ScrollRestoration />
         <Scripts />

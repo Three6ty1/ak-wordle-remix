@@ -1,3 +1,4 @@
+import tailwindConfig from "tailwind.config";
 import { Range, Correctness } from "~/helper/helper";
 
 export default function AnswerBox(props: {category: string, guess: string | number | boolean | number[], result: boolean | Range | Correctness }) {
@@ -8,23 +9,21 @@ export default function AnswerBox(props: {category: string, guess: string | numb
     const showResult = result == Range.Higher || result == Range.Lower;
     // TODO: Fix this thing with the dumb enum stuff...
 
-    let bg = 'green';
+    let bg = tailwindConfig.theme.extend.colors.correct;
     if (typeof result === "boolean" && !result) {
-        bg = 'red'
+        bg = tailwindConfig.theme.extend.colors.incorrect;
     } else if (result === Range.Lower) {
-        bg = 'pink';
+        bg = tailwindConfig.theme.extend.colors.lower;
     } else if (result === Range.Higher) {
-        bg = 'cyan'
+        bg = tailwindConfig.theme.extend.colors.higher;
     } else if (result === Correctness.Half) {
-        bg = 'yellow'
+        bg = tailwindConfig.theme.extend.colors.half
     } else if (result === Correctness.Wrong) {
-        bg = 'red'
-    } else if (category === 'Name') {
-        bg = 'white'
+        bg = tailwindConfig.theme.extend.colors.incorrect
     }
 
     return (
-        <div className='flex flex-col mx-2 my-1 h-16 w-20 p-1 leading-2 break-all justify-center' style={{'backgroundColor': bg}}>
+        <div className='flex flex-col mx-2 my-1 h-16 w-20 p-1 leading-2 break-all justify-center text-white' style={{'backgroundColor': bg}}>
             {category === 'cost' ?
                 <div className='flex flex-col leading-tight'>
                     <span>{`E0: ${guess[0 as keyof typeof guess]}`}</span>

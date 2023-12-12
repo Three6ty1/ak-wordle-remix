@@ -122,7 +122,7 @@ export default function ArknightsWordle() {
                     <div className='flex flex-row font-bold justify-center break-all'>
                         {guesses && (guesses.length) > 0 ?
                             GUESS_CATEGORIES.map((category, index) => (
-                                <span key={index} className='flex w-20 m-2 items-center justify-center'>{category}</span>
+                                <span key={index} className='flex h-16 w-20 m-2 items-center justify-center bg-bg_main'>{category}</span>
                             )) : null
                         }
                     </div>
@@ -136,9 +136,6 @@ export default function ArknightsWordle() {
 
                 
             </div>
-            
-           
-
         </main>
         
     );
