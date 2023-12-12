@@ -3,8 +3,8 @@ import React from 'react';
 import { ICON_DIR, OPERATOR_RESULTS } from "~/helper/helper";
 
 type Props = {
-    op: [string, string, number],
-    hasGuessed: boolean,
+    op: [string, string, number];
+    hasGuessed: boolean;
 }
 
 export default function Result({op, hasGuessed}: Props) {
