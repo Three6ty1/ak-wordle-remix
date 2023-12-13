@@ -23,3 +23,12 @@ export enum Correctness {
     Half = "Half",
     Correct = "Correct",
 }
+
+export const wordleColors = {
+    incorrect: '#919090',
+    higher: '#08aadd',
+    lower: '#c80000',
+    half: '#d3470b',
+    correct: '#424142',
+    bg_main: '#edeeee',
+  }

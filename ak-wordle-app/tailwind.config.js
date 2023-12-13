@@ -1,7 +1,10 @@
-import type { Config } from 'tailwindcss'
+const path = require('path')
+const fromRoot = p => path.join(__dirname, p)
 
-export default {
-  content: ['./app/**/*.{js,jsx,ts,tsx}'],
+module.exports = {
+  mode: 'jit',
+  content: [fromRoot('./app/**/*.+(js|ts|tsx|mdx|md)')],
+  darkMode: 'media',
   theme: {
     extend: {
       fontFamily: {
@@ -17,6 +20,11 @@ export default {
       },
     },
   },
-  plugins: [],
-} satisfies Config
-
+  variants: {
+    extend: {},
+  },
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('daisyui')
+  ],
+}

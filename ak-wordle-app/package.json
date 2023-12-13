@@ -1,41 +1,62 @@
 {
-  "name": "ak-wordle-app",
   "private": true,
-  "sideEffects": false,
+  "name": "remix-app-template",
+  "description": "",
+  "license": "",
   "type": "module",
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  },
   "scripts": {
-    "build": "remix build",
-    "dev": "remix dev --manual",
-    "start": "remix-serve ./build/index.js",
-    "typecheck": "tsc"
+    "build:css": "postcss ./styles/* --dir ./app/styles",
+    "build:remix": "remix build",
+    "build": "yarn build:css && prisma migrate deploy && prisma generate && remix build",
+    "dev:css": "postcss ./styles/* --dir ./app/styles --watch",
+    "dev:remix": "remix dev",
+    "dev": "concurrently \"npm:dev:*\"",
+    "prisma": "npx prisma"
   },
   "dependencies": {
-    "@prisma/client": "^5.6.0",
-    "@remix-run/css-bundle": "^2.3.0",
-    "@remix-run/node": "^2.3.0",
-    "@remix-run/react": "^2.3.0",
-    "@remix-run/serve": "^2.3.0",
-    "express": "^4.18.2",
-    "isbot": "^3.6.8",
+    "@prisma/client": "^5.7.0",
+    "@remix-run/node": "^2.3.1",
+    "@remix-run/react": "^2.3.1",
+    "@remix-run/serve": "^2.3.1",
+    "@remix-run/server-runtime": "^2.3.1",
+    "@tailwindcss/forms": "^0.5.7",
+    "daisyui": "^4.4.19",
+    "esbuild": "^0.19.9",
+    "qs": "^6.11.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "remix": "^2.3.1",
+    "remix-utils": "^7.3.0",
+    "superjson": "^2.2.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^2.3.1",
+    "@types/qs": "^6.9.10",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.17",
+    "autoprefixer": "^10.4.16",
+    "concurrently": "^8.2.2",
+    "esbuild-register": "^3.5.0",
+    "postcss": "^8.4.32",
+    "postcss-cli": "^11.0.0",
+    "postcss-import": "^15.1.0",
+    "prettier": "^3.1.1",
+    "prettier-plugin-tailwindcss": "^0.5.9",
+    "prisma": "^5.7.0",
+    "tailwindcss": "^3.3.6",
+    "tsx": "^4.6.2",
+    "typescript": "^5.3.3"
+  },
+  "resolutions": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
-  "devDependencies": {
-    "@remix-run/dev": "^2.3.0",
-    "@remix-run/eslint-config": "^2.3.0",
-    "@types/react": "^18.2.20",
-    "@types/react-dom": "^18.2.7",
-    "autoprefixer": "^10.4.16",
-    "eslint": "^8.38.0",
-    "prisma": "^5.6.0",
-    "tailwindcss": "^3.3.6",
-    "tsx": "^4.2.0",
-    "typescript": "^5.1.6"
-  },
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=14"
   },
-  "prisma": {
-    "seed": "tsx prisma/seed.ts"
-  }
+  "sideEffects": false
 }

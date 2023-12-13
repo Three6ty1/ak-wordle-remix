@@ -7,6 +7,7 @@ import AnswerRow from '~/components/arknights-wordle/answerRow';
 import { GUESS_CATEGORIES } from '~/helper/helper';
 import Search from '~/components/arknights-wordle/search';
 import ShareBox from '~/components/arknights-wordle/shareBox';
+import OperatorList from '~/components/arknights-wordle/operatorList';
 
 export const loader = async() => {
     console.log("Getting operator stats and all operators")
@@ -92,10 +93,10 @@ export default function ArknightsWordle() {
     }, [actionData])
 
     return (
-        <main className='justify-center align-middle items-center content-center text-center'>
+        <main className='justify-center align-middle items-center content-center text-center font-sans'>
             <h1>Arknights Wordle</h1>
             <p>{`Game number: ${stats.gameId} Date: ${stats.date} Times guessed: ${stats.timesGuessed}`}</p>
-            {true &&
+            {false &&
                 <p>{`Operator Id: ${stats.operatorId}`}</p>
             }
             
@@ -103,6 +104,8 @@ export default function ArknightsWordle() {
             {actionData?.error ? (
                 <p className='text-red-500'>{actionData.error}</p>
             ) : null}
+
+            <OperatorList />
             
             <div className='grid'>
                 <div className='col-start-1 row-start-1 z-10'>

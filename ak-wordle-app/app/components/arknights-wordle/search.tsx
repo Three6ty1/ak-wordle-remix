@@ -1,4 +1,3 @@
-
 import SearchBar from "./searchBar";
 import React from 'react'
 import ResultsBox from "./resultsBox";

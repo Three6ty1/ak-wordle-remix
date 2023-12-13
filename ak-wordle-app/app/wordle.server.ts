@@ -1,4 +1,4 @@
-import { prisma } from '~/prisma.server';
+import { PrismaClient } from '@prisma/client'
 import { randomInteger } from '~/helper/helper';
 import { Operator } from '@prisma/client';
 import { Range, Correctness } from '~/helper/helper';
@@ -15,6 +15,8 @@ export type GuessResult = {
     cost: {guess: number[], result: Range},
     correct: boolean,
 }
+
+const prisma = new PrismaClient()
 
 // Chooses a new operator for today
 // Restrains the new operator to not have been picked in the last TOTAL_OPERATORS/2 days

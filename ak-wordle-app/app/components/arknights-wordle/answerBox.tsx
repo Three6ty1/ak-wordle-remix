@@ -1,4 +1,4 @@
-import tailwindConfig from "tailwind.config";
+import { wordleColors } from "~/helper/helper";
 import { Range, Correctness } from "~/helper/helper";
 
 export default function AnswerBox(props: {category: string, guess: string | number | boolean | number[], result: boolean | Range | Correctness }) {
@@ -9,17 +9,17 @@ export default function AnswerBox(props: {category: string, guess: string | numb
     const showResult = result == Range.Higher || result == Range.Lower;
     // TODO: Fix this thing with the dumb enum stuff...
 
-    let bg = tailwindConfig.theme.extend.colors.correct;
+    let bg = wordleColors.correct;
     if (typeof result === "boolean" && !result) {
-        bg = tailwindConfig.theme.extend.colors.incorrect;
+        bg = wordleColors.incorrect;
     } else if (result === Range.Lower) {
-        bg = tailwindConfig.theme.extend.colors.lower;
+        bg = wordleColors.lower;
     } else if (result === Range.Higher) {
-        bg = tailwindConfig.theme.extend.colors.higher;
+        bg = wordleColors.higher;
     } else if (result === Correctness.Half) {
-        bg = tailwindConfig.theme.extend.colors.half
+        bg = wordleColors.half
     } else if (result === Correctness.Wrong) {
-        bg = tailwindConfig.theme.extend.colors.incorrect
+        bg = wordleColors.incorrect
     }
 
     return (
