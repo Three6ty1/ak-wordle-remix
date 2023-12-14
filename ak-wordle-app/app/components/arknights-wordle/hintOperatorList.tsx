@@ -46,7 +46,7 @@ export default function HintOperatorList({ amtGuesses, }: Props) {
                 <div className='modal-box max-w-[3/5vh] justify-items-center'>
                     <h1>Operator List</h1>
                     <div className='flex flex-row flex-wrap'>
-                        {amtGuesses > HintBreakpoints.one ?
+                        {amtGuesses < HintBreakpoints.one ?
                                 <div>
                                     {allOperators.map((operator) => {
                                         return (<HintListIcon key={`${operator} list icon`} operator={operator} />)
@@ -61,22 +61,20 @@ export default function HintOperatorList({ amtGuesses, }: Props) {
                                             </button>
                                         ))}
                                     </div>
-                                    {Object.entries(sortedRarityOperators).reverse().map((rarity) => {
-                                        return (
-                                            <div>
-                                                <h2>{rarity[0]} star Operators</h2>
-                                                {rarity[1].map((operator) => {
-                                                    if (amtGuesses > HintBreakpoints.two) {
-                                                        if (operator[2] === selectedProfession) {
-                                                                return <HintListIcon key={`${operator} list icon`} operator={operator} />
-                                                        } 
-                                                        return <></>
-                                                    }
-                                                    return <HintListIcon key={`${operator} list icon`} operator={operator} />
-                                                })}
-                                            </div>
-                                        )
-                                    })}
+                                    {Object.entries(sortedRarityOperators).reverse().map((rarity) => (
+                                        <div key={`${rarity} rarity operators`}>
+                                            <h2>{rarity[0]} star Operators</h2>
+                                            {rarity[1].map((operator) => {
+                                                if (amtGuesses > HintBreakpoints.two) {
+                                                    if (operator[2] === selectedProfession) {
+                                                            return <HintListIcon key={`${operator} list icon`} operator={operator} />
+                                                    } 
+                                                    return <></>
+                                                }
+                                                return <HintListIcon key={`${operator} list icon`} operator={operator} />
+                                            })}
+                                        </div>
+                                    ))}
                                 </div>
                         }
                     </div>

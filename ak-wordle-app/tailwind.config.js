@@ -15,7 +15,7 @@ module.exports = {
         higher: '#08aadd',
         lower: '#c80000',
         half: '#d3470b',
-        correct: '#424142',
+        correct: '#6BBF59',
         bg_main: '#edeeee',
       },
     },
