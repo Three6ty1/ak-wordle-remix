@@ -105,8 +105,11 @@ export default function ArknightsWordle() {
                 <p className='text-red-500'>{actionData.error}</p>
             ) : null}
 
+            {/* HINTS */}
             <OperatorList />
-            
+            <br />
+            <br />
+
             <div className='grid'>
                 <div className='col-start-1 row-start-1 z-10'>
                     {playing === 0 ? 
