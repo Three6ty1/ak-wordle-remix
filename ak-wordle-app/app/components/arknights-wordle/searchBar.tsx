@@ -1,6 +1,7 @@
 import { useActionData, useLoaderData, useSubmit } from "@remix-run/react";
 import type { ActionFunctionArgs } from "@remix-run/node";
 import React from "react";
+import { GuessType, GuessTypeValue } from "~/helper/helper";
 
 type Props = {
     setResults: React.Dispatch<React.SetStateAction<any>>;
@@ -8,7 +9,7 @@ type Props = {
 
 export default function SearchBar({setResults} : Props) {
     const loaderData: any = useLoaderData();
-    const allOperators: string[] = loaderData.allOperators;
+    const allOperators: GuessType[] = loaderData.allOperators;
     const [input , setInput] = React.useState('');
     
     const actionData = useActionData<ActionFunctionArgs>();
@@ -24,7 +25,7 @@ export default function SearchBar({setResults} : Props) {
         const lower = value.toLowerCase().trim();
 
         const results = allOperators.filter((op) => {
-            const op_lower = op[0].toLowerCase();
+            const op_lower = op[GuessTypeValue.name].toLowerCase();
             return (
                 op_lower.startsWith(lower) || 
                 op_lower.replace("'", "").startsWith(lower.replace("", ""))

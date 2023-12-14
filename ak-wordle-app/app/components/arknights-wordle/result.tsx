@@ -1,9 +1,9 @@
 import { useSubmit } from "@remix-run/react";
 import React from 'react';
-import { ICON_DIR, OPERATOR_RESULTS, getOperatorIconUrl } from "~/helper/helper";
+import { GuessType, GuessTypeValue, ICON_DIR, getOperatorIconUrl } from "~/helper/helper";
 
 type Props = {
-    op: [string, string, number];
+    op: GuessType;
     hasGuessed: boolean;
 }
 
@@ -25,14 +25,14 @@ export default function Result({op, hasGuessed}: Props) {
         submit(data, {method: 'POST'});
     }
 
-    const url = getOperatorIconUrl(op[OPERATOR_RESULTS.charId], op[OPERATOR_RESULTS.rarity]);
+    const url = getOperatorIconUrl(op[GuessTypeValue.charId], op[GuessTypeValue.rarity]);
 
     return (
         <div className='flex flex-row self-center w-full items-center'>
             <div className='flex w-1/2 justify-end pr-5'>
                 <img src={url} alt={`${op[0]} operator icon`} width={25} height={25} />
             </div>
-            <div className='flex w-1/2 justify-start' style={{'color': hasGuessed ? 'pink' : 'black'}} onClick={(e) => handleSubmit(e)}>{op[OPERATOR_RESULTS.name]}</div> 
+            <div className='flex w-1/2 justify-start' style={{'color': hasGuessed ? 'pink' : 'black'}} onClick={(e) => handleSubmit(e)}>{op[GuessTypeValue.name]}</div> 
         </div>
     );
 }

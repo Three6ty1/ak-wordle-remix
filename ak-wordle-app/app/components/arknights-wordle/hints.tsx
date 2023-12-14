@@ -5,6 +5,12 @@ type Props = {
     amtGuesses: number,
 }
 
+export enum HintBreakpoints {
+    "one" = 3,
+    "two" = 5,
+    "three" = 8,
+}
+
 export default function Hints({ amtGuesses, } : Props) {
     // 3 guesses
     //  sort by rarity
@@ -17,7 +23,7 @@ export default function Hints({ amtGuesses, } : Props) {
 
     return (
         <div>
-            <HintOperatorList />
+            <HintOperatorList amtGuesses={amtGuesses}/>
             <HintWorldMap />
         </div>
     )
