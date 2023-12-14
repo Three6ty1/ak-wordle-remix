@@ -1,7 +1,7 @@
 import { useLoaderData } from "@remix-run/react";
 import HintListIcon from "./hintListIcon";
 import React from "react";
-import { GuessType, GuessTypeValue } from "~/helper/helper";
+import { GuessType, GuessTypeValue, getProfessionIconUrl, wordleColors } from "~/helper/helper";
 import { HintBreakpoints } from "./hints";
 
 type Props = {
@@ -12,9 +12,13 @@ interface Dictionary<T> {
     [Key: string]: T;
 }
 
+const Professsions = ['Vanguard', 'Guard', 'Defender', 'Sniper', 'Caster', 'Medic', 'Supporter', 'Specialist'];
+
 export default function HintOperatorList({ amtGuesses, }: Props) {
     const loaderData: any = useLoaderData();
     const allOperators: GuessType[] = loaderData.allOperators;
+
+    const [selectedProfession, setSelectedProfession] = React.useState<string>('');
 
     const sortedRarityOperators: Dictionary<GuessType[]> = {
         "6": [],
@@ -27,20 +31,22 @@ export default function HintOperatorList({ amtGuesses, }: Props) {
 
     allOperators.map((operator) => sortedRarityOperators[operator[GuessTypeValue.rarity] as keyof typeof sortedRarityOperators].push(operator))
 
+    const handleProfession = (e: React.SyntheticEvent<EventTarget>) => {
+        // @ts-ignore
+        setSelectedProfession(e.target.id)
+    }
+
     return (
         <>
-        {/* Open the modal using document.getElementById('ID').showModal() method */}
-            <button className='btn' onClick={()=> {
-                    /* @ts-ignore */
-                    return (document.getElementById('operator_list_modal').showModal())}
-                }>Open Operator List</button>
-
+            {/* @ts-ignore */}
+            <button className='btn' onClick={()=> {return (document.getElementById('operator_list_modal').showModal())}}>
+                Open Operator List
+            </button>
             <dialog id='operator_list_modal' className='modal'>
                 <div className='modal-box max-w-[3/5vh] justify-items-center'>
                     <h1>Operator List</h1>
                     <div className='flex flex-row flex-wrap'>
-                        {/*amtGuesses > HintBreakpoints.one ? */
-                        false ?
+                        {amtGuesses > HintBreakpoints.one ?
                                 <div>
                                     {allOperators.map((operator) => {
                                         return (<HintListIcon key={`${operator} list icon`} operator={operator} />)
@@ -48,13 +54,26 @@ export default function HintOperatorList({ amtGuesses, }: Props) {
                                 </div>
                             :
                                 <div>
+                                    <div>
+                                        {amtGuesses > HintBreakpoints.two && Professsions.map((p) => (
+                                            <button className='tooltip p-[0.2rem]' data-tip={p} key={`${p} icon`} onClick={handleProfession} style={{backgroundColor: selectedProfession === p ? wordleColors.higher : 'white'}}>
+                                                <img src={getProfessionIconUrl(p)} width={40} id={p}/>
+                                            </button>
+                                        ))}
+                                    </div>
                                     {Object.entries(sortedRarityOperators).reverse().map((rarity) => {
                                         return (
                                             <div>
                                                 <h2>{rarity[0]} star Operators</h2>
-                                                {rarity[1].map((operator) => (
-                                                    <HintListIcon key={`${operator} list icon`} operator={operator} />
-                                                ))}
+                                                {rarity[1].map((operator) => {
+                                                    if (amtGuesses > HintBreakpoints.two) {
+                                                        if (operator[2] === selectedProfession) {
+                                                                return <HintListIcon key={`${operator} list icon`} operator={operator} />
+                                                        } 
+                                                        return <></>
+                                                    }
+                                                    return <HintListIcon key={`${operator} list icon`} operator={operator} />
+                                                })}
                                             </div>
                                         )
                                     })}

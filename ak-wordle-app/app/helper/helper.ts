@@ -5,7 +5,7 @@ export function randomInteger(min: number, max: number) {
 }
 
 export const ICON_DIR = 'https://raw.githubusercontent.com/Three6ty1/ak-wordle-icons/main/avatars/'
-
+export const PROFESSION_ICON_DIR = 'https://raw.githubusercontent.com/Three6ty1/ak-wordle-icons/main/classes/black/'
 export type GuessType = [string, string, string, string, number];
 
 export enum GuessTypeValue {
@@ -46,4 +46,8 @@ export function getOperatorIconUrl(charId: string, rarity: number) {
     }
 
     return url;
+}
+
+export function getProfessionIconUrl(profession: string) {
+    return PROFESSION_ICON_DIR + 'icon_profession_' + profession.toLowerCase() + '_large.png';
 }
