@@ -1,6 +1,6 @@
 import { useSubmit } from "@remix-run/react";
 import React from 'react';
-import { ICON_DIR, OPERATOR_RESULTS } from "~/helper/helper";
+import { ICON_DIR, OPERATOR_RESULTS, getOperatorIconUrl } from "~/helper/helper";
 
 type Props = {
     op: [string, string, number];
@@ -25,13 +25,7 @@ export default function Result({op, hasGuessed}: Props) {
         submit(data, {method: 'POST'});
     }
 
-    let url;
-
-    if (op[OPERATOR_RESULTS.rarity] > 3) {
-        url = ICON_DIR + op[OPERATOR_RESULTS.charId] + '_2.png'
-    } else {
-        url = ICON_DIR + op[OPERATOR_RESULTS.charId] + '.png'
-    }
+    const url = getOperatorIconUrl(op[OPERATOR_RESULTS.charId], op[OPERATOR_RESULTS.rarity]);
 
     return (
         <div className='flex flex-row self-center w-full items-center'>

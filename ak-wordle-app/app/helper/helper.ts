@@ -31,4 +31,15 @@ export const wordleColors = {
     half: '#d3470b',
     correct: '#424142',
     bg_main: '#edeeee',
-  }
+}
+
+export function getOperatorIconUrl(charId: string, rarity: number) {
+    let url;
+    if (rarity > 3) {
+        url = ICON_DIR + charId + '_2.png'
+    } else {
+        url = ICON_DIR + charId + '.png'
+    }
+
+    return url;
+}
