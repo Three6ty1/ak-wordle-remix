@@ -4,7 +4,7 @@ type Props = {
     operator: [string, string, number];
 }
 
-export default function ListIcon({ operator, } : Props) {
+export default function HintListIcon({ operator, } : Props) {
     const url = getOperatorIconUrl(operator[1], operator[2])
     return (
         <div className='tooltip' data-tip={operator[0]}>

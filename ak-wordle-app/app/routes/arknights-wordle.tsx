@@ -7,7 +7,8 @@ import AnswerRow from '~/components/arknights-wordle/answerRow';
 import { GUESS_CATEGORIES } from '~/helper/helper';
 import Search from '~/components/arknights-wordle/search';
 import ShareBox from '~/components/arknights-wordle/shareBox';
-import OperatorList from '~/components/arknights-wordle/operatorList';
+import HintOperatorList from '~/components/arknights-wordle/hintOperatorList';
+import Hints from '~/components/arknights-wordle/hints';
 
 export const loader = async() => {
     console.log("Getting operator stats and all operators")
@@ -105,8 +106,7 @@ export default function ArknightsWordle() {
                 <p className='text-red-500'>{actionData.error}</p>
             ) : null}
 
-            {/* HINTS */}
-            <OperatorList />
+            <Hints amtGuesses={guesses.length}/>
             <br />
             <br />
 
