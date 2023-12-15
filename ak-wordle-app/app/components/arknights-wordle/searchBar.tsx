@@ -28,7 +28,9 @@ export default function SearchBar({setResults} : Props) {
             const op_lower = op[GuessTypeValue.name].toLowerCase();
             return (
                 op_lower.startsWith(lower) || 
-                op_lower.replace("'", "").startsWith(lower.replace("", ""))
+                op_lower.replace("'", "").startsWith(lower.replace("", "")) || 
+                op_lower.replace("ł", "l").startsWith(lower) || // special cases for Pozyomka and Mylnar
+                op_lower.replace("ë", "yo").startsWith(lower)
             );
         });
 
