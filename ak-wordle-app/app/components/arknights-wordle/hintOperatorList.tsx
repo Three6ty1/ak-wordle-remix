@@ -33,7 +33,7 @@ export default function HintOperatorList({ amtGuesses, }: Props) {
 
     const handleProfession = (e: React.SyntheticEvent<EventTarget>) => {
         // @ts-ignore
-        setSelectedProfession(e.target.id)
+        selectedProfession === e.target.id ? setSelectedProfession('') : setSelectedProfession(e.target.id)
     }
 
     return (
@@ -43,39 +43,42 @@ export default function HintOperatorList({ amtGuesses, }: Props) {
                 Open Operator List
             </button>
             <dialog id='operator_list_modal' className='modal'>
-                <div className='modal-box max-w-[3/5vh] justify-items-center'>
-                    <h1>Operator List</h1>
-                    <div className='flex flex-row flex-wrap'>
-                        {amtGuesses < HintBreakpoints.one ?
-                                <div>
+                <div className='modal-box flex flex-col max-w-[3/5vh] justify-items-center h-[70vh] overflow-y-scroll'>
+                    <h1 className='w-full'>Operator List</h1>
+                    <div className='flex flex-row flex-wrap justify-center w-full'>
+                        {amtGuesses <= HintBreakpoints.one ?
+                                <>
                                     {allOperators.map((operator) => {
                                         return (<HintListIcon key={`${operator} list icon`} operator={operator} />)
                                     })}
-                                </div>
+                                </>
                             :
-                                <div>
+                                <>
                                     <div>
-                                        {amtGuesses > HintBreakpoints.two && Professsions.map((p) => (
-                                            <button className='tooltip p-[0.2rem]' data-tip={p} key={`${p} icon`} onClick={handleProfession} style={{backgroundColor: selectedProfession === p ? wordleColors.higher : 'white'}}>
-                                                <img src={getProfessionIconUrl(p)} width={40} id={p}/>
+                                        {amtGuesses >= HintBreakpoints.two && Professsions.map((p) => (
+                                            <button className='tooltip p-[0.2rem]' data-tip={p} key={`${p} icon`} style={{backgroundColor: selectedProfession === p ? wordleColors.higher : 'white'}}>
+                                                <img src={getProfessionIconUrl(p)} width={40} id={p} onClick={handleProfession}/>
                                             </button>
                                         ))}
                                     </div>
                                     {Object.entries(sortedRarityOperators).reverse().map((rarity) => (
-                                        <div key={`${rarity} rarity operators`}>
+                                        <div key={`${rarity} rarity operators`} className='w-full'>
                                             <h2>{rarity[0]} star Operators</h2>
                                             {rarity[1].map((operator) => {
-                                                if (amtGuesses > HintBreakpoints.two) {
+                                                if (amtGuesses >= HintBreakpoints.two) {
+                                                    if (selectedProfession === '') {
+                                                        return <HintListIcon key={`${operator} list icon`} operator={operator} />
+                                                    }
                                                     if (operator[2] === selectedProfession) {
                                                             return <HintListIcon key={`${operator} list icon`} operator={operator} />
                                                     } 
-                                                    return <></>
+                                                    return null
                                                 }
                                                 return <HintListIcon key={`${operator} list icon`} operator={operator} />
                                             })}
                                         </div>
                                     ))}
-                                </div>
+                                </>
                         }
                     </div>
                 </div>
