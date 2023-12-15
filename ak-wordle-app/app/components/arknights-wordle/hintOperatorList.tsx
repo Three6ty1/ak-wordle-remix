@@ -46,7 +46,7 @@ export default function HintOperatorList({ amtGuesses, }: Props) {
                 <div className='modal-box flex flex-col max-w-[3/5vh] justify-items-center h-[70vh] overflow-y-scroll'>
                     <h1 className='w-full'>Operator List</h1>
                     <div className='flex flex-row flex-wrap justify-center w-full'>
-                        {amtGuesses <= HintBreakpoints.one ?
+                        {amtGuesses < HintBreakpoints.one ?
                                 <>
                                     {allOperators.map((operator) => {
                                         return (<HintListIcon key={`${operator} list icon`} operator={operator} />)

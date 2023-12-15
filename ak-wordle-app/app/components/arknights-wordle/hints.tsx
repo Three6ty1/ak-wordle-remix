@@ -6,14 +6,11 @@ type Props = {
 }
 
 export enum HintBreakpoints {
-    "one" = 3,
-    "two" = 5,
-    "three" = 8,
+    "one" = 5,
+    "two" = 8,
 }
 
 export default function Hints({ amtGuesses, } : Props) {
-    // 3 guesses
-    //  sort by rarity
     // 5 guesses
     //  sort by class
     //  species cheatsheet
