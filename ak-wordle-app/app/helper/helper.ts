@@ -51,3 +51,43 @@ export function getOperatorIconUrl(charId: string, rarity: number) {
 export function getProfessionIconUrl(profession: string) {
     return PROFESSION_ICON_DIR + 'icon_profession_' + profession.toLowerCase() + '_large.png';
 }
+
+export const raceToolTips = {
+    'Ægir': 'Seaborn and Aquatic animals',
+    'Anasa': 'Asuras, Rakshasas and Yakshas (Hindu-Buddhist mythology)',
+    'Anaty': 'Otters, Weasels, Raccoons and Wolverines',
+    'Anura': 'Frogs',
+    'Archosauria': 'Crocodilians',
+    'Aslan': 'Lions',
+    'Caprinae': 'Goats and Sheeps',
+    'Cautus': 'Rabbits and Hares',
+    'Cerato': 'Rhinoceroses',
+    'Chimera': 'Hybrid race',
+    'Draco': 'European dragons',
+    'Durin': 'Dwarves',
+    'Elafia': 'Deers',
+    'Feline': 'Cats, Big cats and Mongooses (Exc. Aslan: Lions)',
+    'Forte': 'Bovines and camelids',
+    'Itra': 'Musk Deer',
+    'Kuranta': 'Horses and Zebras',
+    'Kylin': 'Qilin (Chinese mythology)',
+    'Liberi': 'Birds and Bird-like mythological creatures',
+    'Lung': 'Chinese dragons',
+    'Lupo': 'Wolves',
+    'Manticore': 'Manticore (one) (Persian mythology)',
+    'Oni': 'Oni (Japanese mythology)',
+    'Perro': 'Dogs',
+    'Petram': 'Turtles and Tortoises',
+    'Pilosa': 'Sloths',
+    'Pythia': 'Serpents',
+    'Rebbah': 'Hyenas',
+    'Robot': 'Beep Boop',
+    'Sankta': 'Angels (Abrahamic religions)',
+    'Sarkaz': 'Demons (Abrahamic religions)',
+    'Savra': 'Lizards and Salamanders',
+    'Ursus': 'Bears',
+    'Vouivre': 'Wyverns, Wyrms, Hydras, Amphipteres (Winged Serpents) and Drakes',
+    'Vulpo': 'Foxes',
+    'Zalak': 'Rodents, Opposums and Moles',
+    'Credits': 'Arknights Fandom wiki'
+}

@@ -18,7 +18,7 @@ const regions = {
     'Sami': 'Mainly Elafia: Deer',
     'Sargon': 'Mainly Archosauria: Crocodilians and Pythia: Serpents.',
     'Siracusa': 'Mainly Lupo: Wolves and Vulpo: Foxes.\nGroups: Chiave\'s Gang.',
-    'Ursus': 'Mainly Ursus: Bears.\nGroups: Students of Ursus.',
+    'Ursus': 'Mainly Ursus: Bears.\nGroups: Ursus Student Self-Governing Group.',
     'Victoria': 'Mainly Feline: Cats.\nGroups: Dublinn, Glasgow.',
     'Yan': 'Varied. Ruled by Lung.\nGroups: Sui.',
 }

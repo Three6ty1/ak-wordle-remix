@@ -111,7 +111,7 @@ export default function ArknightsWordle() {
             <br />
 
             <div className='grid'>
-                <div className='col-start-1 row-start-1 z-10'>
+                <div className='col-start-1 row-start-1'>
                     {playing === 0 ? 
                         <Search guesses={guesses} />
                     :
