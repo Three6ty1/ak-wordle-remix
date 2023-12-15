@@ -1,5 +1,3 @@
-export const GUESS_CATEGORIES = ['Operator', 'Gender', 'Race', 'Allegiance', 'Infected', 'Profession', 'Rarity', 'Cost (E2)']
-
 export function randomInteger(min: number, max: number) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -89,5 +87,16 @@ export const raceToolTips = {
     'Vouivre': 'Wyverns, Wyrms, Hydras, Amphipteres (Winged Serpents) and Drakes',
     'Vulpo': 'Foxes',
     'Zalak': 'Rodents, Opposums and Moles',
-    'Credits': 'Arknights Fandom wiki'
+    'Credits to': 'Arknights Fandom wiki'
+}
+
+export const guessCategoryToolTips = {
+    'Operator': null,
+    'Gender': 'Male/Female',
+    'Race': null,
+    'Allegiance': 'The Group/Team > Nation the operator represents.',
+    'Infected': 'Yes/No/Undisclosed',
+    'Profession': null,
+    'Rarity': '1/2/3/4/5/6 star',
+    'Cost (E2)': 'Cost is compared at E2 Potential 0. E0 is included for accessibility.'
 }

@@ -4,7 +4,7 @@ import { ChosenOperators } from '@prisma/client';
 import { ActionFunction } from '@remix-run/node';
 import React from 'react';
 import AnswerRow from '~/components/arknights-wordle/answerRow';
-import { GUESS_CATEGORIES } from '~/helper/helper';
+import { guessCategoryToolTips } from '~/helper/helper';
 import Search from '~/components/arknights-wordle/search';
 import ShareBox from '~/components/arknights-wordle/shareBox';
 import HintOperatorList from '~/components/arknights-wordle/hintOperatorList';
@@ -127,8 +127,8 @@ export default function ArknightsWordle() {
                 <div className='col-start-1 row-start-1 relative my-10'>
                     <div className='flex flex-row font-bold justify-center break-all'>
                         {guesses && (guesses.length) > 0 ?
-                            GUESS_CATEGORIES.map((category, index) => (
-                                <span key={index} className='flex h-16 w-20 m-2 items-center justify-center bg-bg_main'>{category}</span>
+                            Object.entries(guessCategoryToolTips).map((category, index) => (
+                                <span key={index} className='tooltip flex h-16 w-20 m-2 items-center justify-center bg-bg_main whitespace-pre-line' data-tip={category[1]}>{category[0]}</span>
                             )) : null
                         }
                     </div>

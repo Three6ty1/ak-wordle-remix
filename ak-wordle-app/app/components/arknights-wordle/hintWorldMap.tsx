@@ -39,7 +39,7 @@ export default function HintWorldMap({amtGuesses, }: Props) {
                     {amtGuesses >= HintBreakpoints.one &&
                     <div className='flex flex-wrap flex-row justify-start'>
                         {Object.entries(regions).map((region) => (
-                            <div className='text-left w-1/2 h-20'>
+                            <div className='text-left w-1/2 h-20' key={region[0]}>
                                 <h1 className='font-bold'>{region[0]}</h1>
                                 <p className='whitespace-pre-line'>{region[1]}</p>
                             </div>
