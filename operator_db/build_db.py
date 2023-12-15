@@ -51,7 +51,7 @@ def get_group(info):
 
     # Format
     if group == "student":
-        group = "Students of Ursus"
+        group = "Ursus Student Self-Governing Group"
     elif group == "lee":
         group = "Lee's Detective Agency"
     elif group == "penguin":
@@ -72,6 +72,10 @@ def get_group(info):
         group = "Karlan Trade"
     elif group == "chiave":
         group = "Chiave's Gang"
+    elif group == "pinus":
+        group = "Pinus Sylvestris"
+    elif group == "sweep":
+        group = "S.W.E.E.P."
     elif "reserve" in group:
         group = "Reserve " + group[-1]
     else:
@@ -112,6 +116,20 @@ def get_class(info):
 
     return _class
 
+def handleRaceCases(race):
+    if "unknown" in race.lower() or "undisclosed" in race.lower(): # afaik, Ch'en and Nian special case
+        race = "Unknown/Undisclosed"
+    elif any(char.isdigit() for char in race): # Robots special case
+        race = "Robot"
+    elif race == 'Cautus/Chimera': # Amiya Special case
+        race = 'Chimera'
+    elif race == "Phidia": # Serpents diferent name case
+        race = "Pythia"
+    elif race == "Rebbah": # Hyena diferent name case
+        race = "Reproba"
+
+    return race
+
 def main():
     ignored = []
     nations = set()
@@ -140,13 +158,7 @@ def main():
         name = info["name"]
         infected = get_infected_status(profile_info, name)
         gender = profile_info[1].split(']')[1].strip()
-        race = profile_info[5].split(']')[1].strip()
-        if "unknown" in race.lower() or "undisclosed" in race.lower():  # afaik, Ch'en and Nian special case
-            race = "Unknown/Undisclosed"
-        if any(char.isdigit() for char in race):                        # Robots special case
-            race = "Robot"
-        if race == 'Cautus/Chimera':                                    # Amiya Special case
-            race = 'Chimera'
+        race = handleRaceCases(profile_info[5].split(']')[1].strip())
         group = get_group(info)
         nation = get_nation(info)
         position = info["position"].lower().capitalize()
