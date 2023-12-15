@@ -21,7 +21,7 @@ export default function Hints({ amtGuesses, } : Props) {
     return (
         <div>
             <HintOperatorList amtGuesses={amtGuesses}/>
-            <HintWorldMap />
+            <HintWorldMap amtGuesses={amtGuesses}/>
         </div>
     )
 }
