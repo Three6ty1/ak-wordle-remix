@@ -1,12 +1,15 @@
 import { wordleColors, Range, Correctness, raceToolTips, costToolTips } from "~/helper/helper";
 
-const divStyle = 'flex flex-col mx-2 my-1 h-20 w-20 p-1 leading-2 break-all justify-center text-white'
+const divStyle = 'flex flex-col mx-2 my-1 h-20 w-20 p-1 leading-2 break-all justify-center text-white animate-flip opacity-0'
 
-export default function AnswerBox(props: {category: string, guess: string | number | boolean | number[], result: boolean | Range | Correctness }) {
-    const result = props.result;
-    const guess = props.guess;
-    const category = props.category;
+type Props = {
+    category: string
+    guess: string | number | boolean | number[]
+    result: boolean | Range | Correctness
+    index: number
+}   
 
+export default function AnswerBox({category, guess, result, index}: Props) {
     const showResult = result == Range.Higher || result == Range.Lower;
     // TODO: Fix this thing with the dumb enum stuff...
 
@@ -24,11 +27,11 @@ export default function AnswerBox(props: {category: string, guess: string | numb
     }
 
     return (
-        <>
+        <div className=''>
             {category === 'race' ?
                     <div className={`${divStyle} tooltip before:whitespace-pre-wrap before:content-[attr(data-tip)]`}
                         data-tip={raceToolTips[guess as keyof typeof raceToolTips]}
-                        style={{'backgroundColor': bg}}
+                        style={{'backgroundColor': bg, animationDelay: `${index*250}ms`}}
                     >
                         <span>{guess}</span>
                     </div>
@@ -36,20 +39,20 @@ export default function AnswerBox(props: {category: string, guess: string | numb
                     category === 'cost' ?
                         <div className={`${divStyle} tooltip before:whitespace-pre-wrap before:content-[attr(data-tip)]`}
                             data-tip={costToolTips[result as keyof typeof costToolTips]}
-                            style={{'backgroundColor': bg}}
+                            style={{'backgroundColor': bg, animationDelay: `${index*250}ms`}}
                         >
                             <span>{`E0: ${guess[0 as keyof typeof guess]}`}</span>
                             <span>{`E2: ${guess[1 as keyof typeof guess]}`}</span>
                             <span className='font-bold'>{result}</span>
                         </div>
                     :
-                        <div className={`${divStyle}`} style={{"backgroundColor" : bg}}>
+                        <div className={`${divStyle}`} style={{"backgroundColor" : bg, animationDelay: `${index*250}ms`}}>
                             <span>{guess}</span>
                             {showResult && <span className='font-bold'>{result}</span>}
                         </div>
 
             }
-        </>
+        </div>
         
     );
 }

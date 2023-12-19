@@ -26,10 +26,10 @@ export default function AnswerRow(props: { guess: GuessResult, index: number }) 
     return (
         <div className='flex flex-row justify-center'>
             {
-                Object.keys(guess).map(key => (
+                Object.keys(guess).map((key, index) => (
                     key != 'name' 
                     ? 
-                        <AnswerBox key={key} category={key} guess={guess[key as keyof typeof guess].guess} result={guess[key as keyof typeof guess].result}/>
+                        <AnswerBox key={key} category={key} guess={guess[key as keyof typeof guess].guess} result={guess[key as keyof typeof guess].result} index={index}/>
                     : 
                         <div key={key} className='tooltip flex mx-2 my-1 h-20 w-20 p-1 break-all items-center justify-end bg-bg_main' data-tip={guess?.name}>
                             <img src={url} />
