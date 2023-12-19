@@ -125,8 +125,8 @@ def handleRaceCases(race):
         race = 'Chimera'
     elif race == "Phidia": # Serpents diferent name case
         race = "Pythia"
-    elif race == "Rebbah": # Hyena diferent name case
-        race = "Reproba"
+    elif race == "Reproba": # Hyena diferent name case
+        race = "Rebbah"
 
     return race
 
