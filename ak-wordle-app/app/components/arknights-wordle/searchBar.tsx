@@ -8,10 +8,11 @@ type Props = {
 }
 
 export default function SearchBar({setResults} : Props) {
+    const submit = useSubmit();
     const loaderData: any = useLoaderData();
     const allOperators: GuessType[] = loaderData.allOperators;
     const [input , setInput] = React.useState('');
-    
+    const [_results, _setResults] = React.useState<GuessType[]>([]);
     const actionData = useActionData<ActionFunctionArgs>();
 
     const handleChange = (value: string) => {
@@ -33,8 +34,19 @@ export default function SearchBar({setResults} : Props) {
                 op_lower.replace("ë", "yo").startsWith(lower)
             );
         });
-
+        _setResults(results);
         setResults(results);
+    }
+
+    const handleKey = (e: React.KeyboardEvent<HTMLInputElement>) => {
+        if(e.key === 'Enter') {
+            const guesses  = localStorage.getItem('guesses');
+            let data = {
+                'operator-guess': _results[0][GuessTypeValue.name],
+                'guesses': guesses ? guesses : JSON.stringify([]),
+            };
+            submit(data, {method: 'POST'});
+        }
     }
 
     // Reset search whenever a guess is submitted
@@ -48,7 +60,12 @@ export default function SearchBar({setResults} : Props) {
 
     return (
         <div className='items-center flex flex-row justify-center'>
-            <input name='operator-guess' value={input} onChange={(e) => handleChange(e.target.value)} className='border-solid border-black border-2' type='text'/>
+            <input name='operator-guess'
+            value={input}
+            onChange={(e) => handleChange(e.target.value)}
+            onKeyDown={(e) => handleKey(e)}
+            className='border-solid border-black border-2'
+            type='text'/>
         </div>
     );
 }

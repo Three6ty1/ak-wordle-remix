@@ -18,7 +18,6 @@ export default function AnswerRow(props: { guess: GuessResult, index: number }) 
     const isGuesses = localStorage.getItem('guesses');
     const guesses = (isGuesses) ? JSON.parse(isGuesses) : [];
     const op = guesses[props.index]
-    console.log(op)
     const url = getOperatorIconUrl(op['charId'], op['rarity'].guess)
 
     delete guess['charId']
