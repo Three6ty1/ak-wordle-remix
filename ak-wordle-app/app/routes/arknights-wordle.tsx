@@ -109,7 +109,7 @@ export default function ArknightsWordle() {
             <br />
             <br />
 
-            <div className='justify-center'>
+            <div className='grid justify-center w-full'>
                 <div className='col-start-1 row-start-1 w-full'>
                     {playing === 0 ? 
                         <Search guesses={guesses} />

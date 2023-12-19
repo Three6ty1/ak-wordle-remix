@@ -1,6 +1,6 @@
 import { wordleColors, Range, Correctness, raceToolTips, costToolTips } from "~/helper/helper";
 
-const divStyle = 'flex flex-col mx-2 my-1 h-20 w-20 p-1 leading-2 break-all justify-center'
+const divStyle = 'flex flex-col mx-2 my-1 h-20 w-20 p-1 leading-2 break-all justify-center text-white'
 
 export default function AnswerBox(props: {category: string, guess: string | number | boolean | number[], result: boolean | Range | Correctness }) {
     const result = props.result;
