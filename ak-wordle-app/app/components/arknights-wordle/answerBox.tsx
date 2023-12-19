@@ -1,4 +1,6 @@
-import { wordleColors, Range, Correctness, raceToolTips } from "~/helper/helper";
+import { wordleColors, Range, Correctness, raceToolTips, costToolTips } from "~/helper/helper";
+
+const divStyle = 'flex flex-col mx-2 my-1 h-20 w-20 p-1 leading-2 break-all justify-center'
 
 export default function AnswerBox(props: {category: string, guess: string | number | boolean | number[], result: boolean | Range | Correctness }) {
     const result = props.result;
@@ -24,24 +26,28 @@ export default function AnswerBox(props: {category: string, guess: string | numb
     return (
         <>
             {category === 'race' ?
-                    <div className='flex flex-col mx-2 my-1 h-16 w-20 p-1 leading-2 break-all justify-center text-white tooltip'
+                    <div className={`${divStyle} tooltip before:whitespace-pre-wrap before:content-[attr(data-tip)]`}
                         data-tip={raceToolTips[guess as keyof typeof raceToolTips]}
                         style={{'backgroundColor': bg}}
                     >
                         <span>{guess}</span>
                     </div>
                 :
-                    <div className='flex flex-col mx-2 my-1 h-16 w-20 p-1 leading-2 break-all justify-center text-white' style={{'backgroundColor': bg}}>
-                        {category === 'cost' ?
-                            <div className='flex flex-col leading-tight'>
-                                <span>{`E0: ${guess[0 as keyof typeof guess]}`}</span>
-                                <span>{`E2: ${guess[1 as keyof typeof guess]}`}</span>
-                            </div>
-                        :
+                    category === 'cost' ?
+                        <div className={`${divStyle} tooltip before:whitespace-pre-wrap before:content-[attr(data-tip)]`}
+                            data-tip={costToolTips[result as keyof typeof costToolTips]}
+                            style={{'backgroundColor': bg}}
+                        >
+                            <span>{`E0: ${guess[0 as keyof typeof guess]}`}</span>
+                            <span>{`E2: ${guess[1 as keyof typeof guess]}`}</span>
+                            <span className='font-bold'>{result}</span>
+                        </div>
+                    :
+                        <div className={`${divStyle}`} style={{"backgroundColor" : bg}}>
                             <span>{guess}</span>
-                        }
-                        {showResult && <span>{result}</span>}
-                    </div>
+                            {showResult && <span className='font-bold'>{result}</span>}
+                        </div>
+
             }
         </>
         

@@ -84,7 +84,7 @@ export const raceToolTips = {
     'Sarkaz': 'Demons (Abrahamic religions)',
     'Savra': 'Lizards and Salamanders',
     'Ursus': 'Bears',
-    'Vouivre': 'Wyverns, Wyrms, Hydras, Amphipteres (Winged Serpents) and Drakes',
+    'Vouivre': 'Wyverns, Wyrms, Hydras, Amphipteres (Winged Serpents)\nand Drakes',
     'Vulpo': 'Foxes',
     'Zalak': 'Rodents, Opposums and Moles',
     'Credits to': 'Arknights Fandom wiki'
@@ -98,5 +98,10 @@ export const guessCategoryToolTips = {
     'Infected': 'Yes/No/Undisclosed',
     'Profession': null,
     'Rarity': '1/2/3/4/5/6 star',
-    'Cost (E2)': 'Cost is compared at E2 Potential 0. E0 is included for accessibility.'
+    'Cost (E2)': 'Cost is compared at E2 Potential 0.\nE0 is included for accessibility.'
+}
+
+export const costToolTips = {
+    'Higher': 'The E2 cost of the correct operator is HIGHER\nthan this operators E2 cost.',
+    'Lower': 'The E2 cost of the correct operator is LOWER\nthan this operators E2 cost.'
 }

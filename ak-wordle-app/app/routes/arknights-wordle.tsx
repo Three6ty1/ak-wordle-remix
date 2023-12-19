@@ -7,7 +7,6 @@ import AnswerRow from '~/components/arknights-wordle/answerRow';
 import { guessCategoryToolTips } from '~/helper/helper';
 import Search from '~/components/arknights-wordle/search';
 import ShareBox from '~/components/arknights-wordle/shareBox';
-import HintOperatorList from '~/components/arknights-wordle/hintOperatorList';
 import Hints from '~/components/arknights-wordle/hints';
 
 export const loader = async() => {
@@ -110,8 +109,8 @@ export default function ArknightsWordle() {
             <br />
             <br />
 
-            <div className='grid'>
-                <div className='col-start-1 row-start-1'>
+            <div className='justify-center'>
+                <div className='col-start-1 row-start-1 w-full'>
                     {playing === 0 ? 
                         <Search guesses={guesses} />
                     :
@@ -128,14 +127,14 @@ export default function ArknightsWordle() {
                     <div className='flex flex-row font-bold justify-center break-all'>
                         {guesses && (guesses.length) > 0 ?
                             Object.entries(guessCategoryToolTips).map((category, index) => (
-                                <span key={index} className='tooltip flex h-16 w-20 m-2 items-center justify-center bg-bg_main whitespace-pre-line' data-tip={category[1]}>{category[0]}</span>
+                                <span key={index} className='tooltip flex h-20 w-20 m-2 items-center justify-center bg-bg_main whitespace-pre-line' data-tip={category[1]}>{category[0]}</span>
                             )) : null
                         }
                     </div>
                     
                     {guesses && (guesses.length) > 0 ? 
                         guesses.map((guess: GuessResult, index) => (
-                            <AnswerRow key={index} guess={guess}/>
+                            <AnswerRow key={index} guess={guess} index={index}/>
                         )) : null
                     }
                 </div>
