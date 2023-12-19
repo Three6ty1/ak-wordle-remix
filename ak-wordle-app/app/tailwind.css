@@ -3,3 +3,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .answer-box {
+        @apply flex flex-col mx-2 my-1 h-20 w-20 p-1 leading-2 break-all justify-center text-white animate-flip opacity-0;
+    }
+}

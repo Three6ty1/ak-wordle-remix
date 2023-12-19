@@ -4,10 +4,10 @@ import { ChosenOperators } from '@prisma/client';
 import { ActionFunction } from '@remix-run/node';
 import React from 'react';
 import AnswerRow from '~/components/arknights-wordle/answerRow';
-import { GUESS_CATEGORIES } from '~/helper/helper';
+import { guessCategoryToolTips } from '~/helper/helper';
 import Search from '~/components/arknights-wordle/search';
 import ShareBox from '~/components/arknights-wordle/shareBox';
-import OperatorList from '~/components/arknights-wordle/operatorList';
+import Hints from '~/components/arknights-wordle/hints';
 
 export const loader = async() => {
     console.log("Getting operator stats and all operators")
@@ -105,10 +105,12 @@ export default function ArknightsWordle() {
                 <p className='text-red-500'>{actionData.error}</p>
             ) : null}
 
-            <OperatorList />
-            
-            <div className='grid'>
-                <div className='col-start-1 row-start-1 z-10'>
+            <Hints amtGuesses={guesses.length}/>
+            <br />
+            <br />
+
+            <div className='grid justify-center w-full'>
+                <div className='flex col-start-1 row-start-1 justify-center w-[100vh]'>
                     {playing === 0 ? 
                         <Search guesses={guesses} />
                     :
@@ -124,15 +126,15 @@ export default function ArknightsWordle() {
                 <div className='col-start-1 row-start-1 relative my-10'>
                     <div className='flex flex-row font-bold justify-center break-all'>
                         {guesses && (guesses.length) > 0 ?
-                            GUESS_CATEGORIES.map((category, index) => (
-                                <span key={index} className='flex h-16 w-20 m-2 items-center justify-center bg-bg_main'>{category}</span>
+                            Object.entries(guessCategoryToolTips).map((category, index) => (
+                                <span key={index} className='tooltip flex h-20 w-20 m-2 items-center justify-center bg-bg_main whitespace-pre-line' data-tip={category[1]}>{category[0]}</span>
                             )) : null
                         }
                     </div>
                     
                     {guesses && (guesses.length) > 0 ? 
                         guesses.map((guess: GuessResult, index) => (
-                            <AnswerRow key={index} guess={guess}/>
+                            <AnswerRow key={index} guess={guess} index={index}/>
                         )) : null
                     }
                 </div>

@@ -1,16 +1,18 @@
 import { useActionData, useLoaderData, useSubmit } from "@remix-run/react";
 import type { ActionFunctionArgs } from "@remix-run/node";
 import React from "react";
+import { GuessType, GuessTypeValue } from "~/helper/helper";
 
 type Props = {
     setResults: React.Dispatch<React.SetStateAction<any>>;
 }
 
 export default function SearchBar({setResults} : Props) {
+    const submit = useSubmit();
     const loaderData: any = useLoaderData();
-    const allOperators: string[] = loaderData.allOperators;
+    const allOperators: GuessType[] = loaderData.allOperators;
     const [input , setInput] = React.useState('');
-    
+    const [_results, _setResults] = React.useState<GuessType[]>([]);
     const actionData = useActionData<ActionFunctionArgs>();
 
     const handleChange = (value: string) => {
@@ -24,14 +26,27 @@ export default function SearchBar({setResults} : Props) {
         const lower = value.toLowerCase().trim();
 
         const results = allOperators.filter((op) => {
-            const op_lower = op[0].toLowerCase();
+            const op_lower = op[GuessTypeValue.name].toLowerCase();
             return (
                 op_lower.startsWith(lower) || 
-                op_lower.replace("'", "").startsWith(lower.replace("", ""))
+                op_lower.replace("'", "").startsWith(lower.replace("", "")) || 
+                op_lower.replace("ł", "l").startsWith(lower) || // special cases for Pozyomka and Mylnar
+                op_lower.replace("ë", "yo").startsWith(lower)
             );
         });
-
+        _setResults(results);
         setResults(results);
+    }
+
+    const handleKey = (e: React.KeyboardEvent<HTMLInputElement>) => {
+        if(e.key === 'Enter') {
+            const guesses  = localStorage.getItem('guesses');
+            let data = {
+                'operator-guess': _results[0][GuessTypeValue.name],
+                'guesses': guesses ? guesses : JSON.stringify([]),
+            };
+            submit(data, {method: 'POST'});
+        }
     }
 
     // Reset search whenever a guess is submitted
@@ -45,7 +60,12 @@ export default function SearchBar({setResults} : Props) {
 
     return (
         <div className='items-center flex flex-row justify-center'>
-            <input name='operator-guess' value={input} onChange={(e) => handleChange(e.target.value)} className='border-solid border-black border-2' type='text'/>
+            <input name='operator-guess'
+            value={input}
+            onChange={(e) => handleChange(e.target.value)}
+            onKeyDown={(e) => handleKey(e)}
+            className='border-solid border-black border-2'
+            type='text'/>
         </div>
     );
 }

@@ -48,7 +48,19 @@ async function main() {
               costE2: operator.cost[1],
               infected: operator.infected,
           },
-          update: {},
+          update: {
+              name: key,
+              gender: operator.gender,
+              race: operator.race,
+              nation: operator.nation,
+              profession: operator.profession,
+              archetype: operator.archetype,
+              position: operator.position,
+              rarity: operator.rarity,
+              costE0: operator.cost[0],
+              costE2: operator.cost[1],
+              infected: operator.infected,
+          },
       });
 
       if (operator.group !== '') {
@@ -63,21 +75,6 @@ async function main() {
       }
 
       amt += 1
-  }
-  
-  // Remove the 's from the Justice knight just for indexing
-  try {
-      await prisma.operator.update({
-          where: {
-              name: "'Justice Knight'",
-          },
-          data: {
-              name: 'Justice Knight'
-          }
-      });
-  }
-  catch {
-      console.log('Justice Knight name change??/')
   }
 
   console.log(amt + ' operators seeded into db');

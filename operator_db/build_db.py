@@ -51,7 +51,7 @@ def get_group(info):
 
     # Format
     if group == "student":
-        group = "Students of Ursus"
+        group = "Ursus Student Self-Governing Group"
     elif group == "lee":
         group = "Lee's Detective Agency"
     elif group == "penguin":
@@ -68,6 +68,14 @@ def get_group(info):
         group = "Elite Operators"
     elif group == "action4":
         group = "Action 4"
+    elif group == "karlan":
+        group = "Karlan Trade"
+    elif group == "chiave":
+        group = "Chiave's Gang"
+    elif group == "pinus":
+        group = "Pinus Sylvestris"
+    elif group == "sweep":
+        group = "S.W.E.E.P."
     elif "reserve" in group:
         group = "Reserve " + group[-1]
     else:
@@ -108,9 +116,25 @@ def get_class(info):
 
     return _class
 
+def handleRaceCases(race):
+    if "unknown" in race.lower() or "undisclosed" in race.lower(): # afaik, Ch'en and Nian special case
+        race = "Unknown/Undisclosed"
+    elif any(char.isdigit() for char in race): # Robots special case
+        race = "Robot"
+    elif race == 'Cautus/Chimera': # Amiya Special case
+        race = 'Chimera'
+    elif race == "Phidia": # Serpents diferent name case
+        race = "Pythia"
+    elif race == "Reproba": # Hyena diferent name case
+        race = "Rebbah"
+
+    return race
+
 def main():
     ignored = []
-    allegiance_list = []
+    nations = set()
+    races = set()
+    groups = set()
     with open('./operator_db/character_table.json', 'r', encoding="utf-8") as f:
         char_data = json.load(f)
 
@@ -134,15 +158,9 @@ def main():
         name = info["name"]
         infected = get_infected_status(profile_info, name)
         gender = profile_info[1].split(']')[1].strip()
-        race = profile_info[5].split(']')[1].strip()
-        if "unknown" in race.lower() or "undisclosed" in race.lower():
-            race = "Unknown/Undisclosed"
+        race = handleRaceCases(profile_info[5].split(']')[1].strip())
         group = get_group(info)
-        if group not in allegiance_list: allegiance_list.append(group)
-
         nation = get_nation(info)
-        if nation not in allegiance_list: allegiance_list.append(nation)
-
         position = info["position"].lower().capitalize()
 
         profession = get_class(info)
@@ -165,6 +183,10 @@ def main():
             "infected": infected,
         }
 
+        races.add(race)
+        groups.add(group)
+        nations.add(nation)
+
     operators = dict(sorted(operators.items(), key=lambda item: item))
 
     # pprint(operators)
@@ -174,9 +196,14 @@ def main():
     # Missing 8 operators + 5 Reserve operators which makes up the difference
     # Shalem has 2 entries
     print("Ignored operators: " + str(len(ignored)))
-    pprint(ignored)
-    pprint(allegiance_list)
-    print(len(operators))
+    print(ignored)
+    print(str(len(nations)) + ' unique nations')
+    print(sorted(nations))
+    print(str(len(races)) + ' unique races')
+    print(sorted(races))
+    print(str(len(groups)) + ' unique groups')
+    print(sorted(groups))
+    print(str(len(operators)) + ' operators')
     with open('./operator_db/operator_db.json', 'w', encoding='utf-8') as f:
         json.dump(operators, f, ensure_ascii=False, indent=4)
 
