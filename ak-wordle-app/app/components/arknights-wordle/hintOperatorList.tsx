@@ -30,10 +30,11 @@ export default function HintOperatorList({ amtGuesses }: Props) {
         "1": [],
     };
 
+    // Sort all operators into sortedRarityOperators
     allOperators.map((operator) => sortedRarityOperators[operator[GuessTypeValue.rarity] as keyof typeof sortedRarityOperators].push(operator))
 
     const handleProfession = (e: React.SyntheticEvent<EventTarget>) => {
-        // @ts-ignore
+        // @ts-ignore for e.target.**id**
         selectedProfession === e.target.id ? setSelectedProfession('') : setSelectedProfession(e.target.id)
     }
 
@@ -65,6 +66,16 @@ export default function HintOperatorList({ amtGuesses }: Props) {
                 <div className='modal-box flex flex-col max-w-[3/5vh] justify-items-center h-[70vh] overflow-y-scroll'>
                     <h1 className='w-full'>Operator List</h1>
                     <div className='flex flex-row flex-wrap justify-center w-full'>
+                        {/**
+                         * If under breakpoint 1
+                         *      List all operators in alphabetical
+                         * Else 
+                         *      If over breakpoint 2
+                         *          Display the operator class filters
+                         *          Filter operators depending on class selected
+                         *      Else
+                         *          List all operators sorted in rarity 
+                         */}
                         {amtGuesses < HintBreakpoints.one ?
                                 <>
                                     {allOperators.map((operator) => {

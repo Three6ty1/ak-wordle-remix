@@ -1,5 +1,5 @@
 import { getOperatorStats, compareGuess, GuessResult, getAllOperatorNames, updateWins } from '~/wordle.server';
-import { useLoaderData, useActionData } from '@remix-run/react';
+import { useLoaderData, useActionData, ShouldRevalidateFunction } from '@remix-run/react';
 import { ChosenOperators } from '@prisma/client';
 import { ActionFunction } from '@remix-run/node';
 import React from 'react';
@@ -8,7 +8,7 @@ import { guessCategoryToolTips } from '~/helper/helper';
 import Search from '~/components/arknights-wordle/search';
 import ShareBox from '~/components/arknights-wordle/shareBox';
 import Hints from '~/components/arknights-wordle/hints';
-
+  
 export const loader = async() => {
     console.log("Getting operator stats and all operators")
     return {stats: await getOperatorStats(), allOperators: await getAllOperatorNames()}
@@ -54,11 +54,13 @@ export default function ArknightsWordle() {
                 setIsInputDelay(true)
                 const isGuesses = localStorage.getItem('guesses');
                 const guesses = (isGuesses) ? JSON.parse(isGuesses) : [];
-                let newGuesses = [...guesses];
-                newGuesses.unshift(actionData.result);
+                // Insert the newest guess at the first index of the answer row array
+                let newGuesses = [actionData.result, ...guesses];
                 localStorage.setItem('guesses', JSON.stringify(newGuesses));
                 setGuesses(newGuesses);
 
+                // Prevent the user from being able to input new guesses with an input delay, and to let the winning animation play fully
+                // state change while this animation is occuring will stop the animation entirely.
                 if (actionData.result.correct) {
                     setTimeout(() => setPlaying(1), 4000);
                     setTimeout(() => setIsInputDelay(false), 4000)
@@ -73,6 +75,7 @@ export default function ArknightsWordle() {
             const now = new Date().toDateString()
 
             const lastPlayed = localStorage.getItem('lastPlayed');
+            // Refresh the guesses and set playing to true if the last played date is not the current date
             if (now != lastPlayed) {
                 localStorage.setItem('guesses', JSON.stringify([]));
                 localStorage.setItem('lastPlayed', now);
@@ -117,6 +120,10 @@ export default function ArknightsWordle() {
             <br />
             <br />
 
+            {/** 
+             * Using grid and col-start to force these elements to overlap one another 
+             * This is so the search bar appears ontop of the answer row instead of pushing it down.
+            */}
             <div className='grid justify-center w-full'>
                 <div className='flex flex-col col-start-1 row-start-1 items-center w-[100vh] animate-fade-in'>
                     {playing === 0 && !isInputDelay && <Search guesses={guesses} />}
@@ -132,7 +139,7 @@ export default function ArknightsWordle() {
                     </div>
                     
                     {guesses && (guesses.length) > 0 &&
-                        [...guesses].map((guess: GuessResult, index) => (<AnswerRow key={guess.charId ? guess.charId : index} guess={guess} index={index}/>))
+                        guesses.map((guess: GuessResult, index) => (<AnswerRow key={guess.charId ? guess.charId : index} guess={guess} index={index}/>))
                     }
                 </div>
             </div>

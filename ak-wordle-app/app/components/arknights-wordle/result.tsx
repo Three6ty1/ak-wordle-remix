@@ -1,6 +1,6 @@
 import { useSubmit } from "@remix-run/react";
 import React from 'react';
-import { GuessType, GuessTypeValue, ICON_DIR, getOperatorIconUrl } from "~/helper/helper";
+import { GuessType, GuessTypeValue, getOperatorIconUrl } from "~/helper/helper";
 
 type Props = {
     op: GuessType;
@@ -11,6 +11,9 @@ export default function Result({op, hasGuessed}: Props) {
     let submit = useSubmit();
     const [_hasGuessed, setHasGuessed] = React.useState(hasGuessed);
 
+    // When a name is clicked in the list, it counts that as a selection for the character
+    // Submit will send a request to the Remix action hook
+    // The information is sent to the route file to do any necessary state changes.
     const handleSubmit = (event: React.MouseEvent) => {
         event.preventDefault();
 

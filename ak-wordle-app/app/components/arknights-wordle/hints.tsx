@@ -14,10 +14,10 @@ export enum HintBreakpoints {
 
 export default function Hints({ amtGuesses, } : Props) {
     // breakpoint one = 5
-    //  operator list split into rarity
-    //  Region cheatsheet
+    //      operator list split into rarity
+    //      Region cheatsheet
     // breakpoint two = 8
-    //  operator list sorted by class and rarity
+    //      operator list sorted by class and rarity
    
     return (
         <div className='flex flex-row w-1/2 justify-center'>

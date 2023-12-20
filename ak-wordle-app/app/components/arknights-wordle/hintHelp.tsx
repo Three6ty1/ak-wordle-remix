@@ -1,12 +1,6 @@
 import { HintBreakpoints } from "./hints"
 
 export default function HintHelp() {
-    // breakpoint one = 5
-    //  operator list split into rarity
-    //  Region cheatsheet
-    // breakpoint two = 8
-    //  operator list sorted by class and rarity
-
     return (
         <div>
             {/* @ts-ignore */}
@@ -21,8 +15,8 @@ export default function HintHelp() {
                     <br/>
                     <p>Each operator has 7 categories each.</p>
                     <p>You must enter an operator and compare its traits to the currently chosen operator.</p>
-                    <p><span className='font-bold'>After 5 guesses</span> the operator list will be sorted by Rarity and the world map will include operator Race information.</p>
-                    <p><span className='font-bold'>After 8 guesses</span> the operator list will be sorted by Class.</p>
+                    <p><span className='font-bold'>After {HintBreakpoints.one} guesses</span> the operator list will be sorted by Rarity and the world map will include operator Race information.</p>
+                    <p><span className='font-bold'>After {HintBreakpoints.two} guesses</span> the operator list will be sorted by Class.</p>
                     <p>After a guess, the correctness of your guess will be represented by these colours:</p>
                     <ul className='text-center whitespace-pre-line'>
                         <li>

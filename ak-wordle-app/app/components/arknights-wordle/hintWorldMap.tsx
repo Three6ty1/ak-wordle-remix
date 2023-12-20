@@ -28,7 +28,7 @@ type Props = {
     amtGuesses: number,
 }
 
-export default function HintWorldMap({amtGuesses}: Props) {
+export default function HintWorldMap({ amtGuesses, }: Props) {
     const [showAlert, setShowAlert] = React.useState(false)
     const handleClick = () => {
         /* @ts-ignore because this element by id is referenced in the same component */
