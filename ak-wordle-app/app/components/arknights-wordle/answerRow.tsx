@@ -10,7 +10,7 @@ export default function AnswerRow(props: { guess: GuessResult, index: number }) 
     const guesses = (isGuesses) ? JSON.parse(isGuesses) : [];
     const op = guesses[props.index]
     const url = getOperatorIconUrl(op['charId'], op['rarity'].guess);
-    const correct = guess['correct'];
+    const correct = op['correct']
 
     delete guess['charId']
     delete guess['correct']

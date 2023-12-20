@@ -46,10 +46,12 @@ export default function ArknightsWordle() {
     const actionData = useActionData<typeof action>();
     const [guesses, setGuesses] = React.useState<GuessResult[]>([]);
     const [playing, setPlaying] = React.useState(0);
+    const [isInputDelay, setIsInputDelay] = React.useState(false);
 
     React.useEffect(() => { 
         const updateGuesses = () => {
             if (actionData?.result) {
+                setIsInputDelay(true)
                 const isGuesses = localStorage.getItem('guesses');
                 const guesses = (isGuesses) ? JSON.parse(isGuesses) : [];
                 const newGuesses = [...guesses, actionData.result];
@@ -57,8 +59,11 @@ export default function ArknightsWordle() {
                 setGuesses(newGuesses);
 
                 if (actionData.result.correct) {
-                    setPlaying(1);
+                    setTimeout(() => setPlaying(1), 4000);
+                    setTimeout(() => setIsInputDelay(false), 4000)
                     localStorage.setItem('playing', '1');
+                } else {
+                    setTimeout(() => setIsInputDelay(false), 2500)
                 }
             }
         }
@@ -110,17 +115,8 @@ export default function ArknightsWordle() {
             <br />
 
             <div className='grid justify-center w-full'>
-                <div className='flex col-start-1 row-start-1 justify-center w-[100vh]'>
-                    {playing === 0 ? 
-                        <Search guesses={guesses} />
-                    :
-                        <>
-                            <span>You guessed the operator!</span>
-                            <br />
-                            <br />
-                            <ShareBox guesses={guesses} gameInfo={stats}/>
-                        </>
-                    }
+                <div className='flex flex-col col-start-1 row-start-1 items-center w-[100vh] animate-fade-in'>
+                    {playing === 0 && !isInputDelay && <Search guesses={guesses} />}
                 </div>
 
                 <div className='col-start-1 row-start-1 relative my-10'>
@@ -138,9 +134,14 @@ export default function ArknightsWordle() {
                         )) : null
                     }
                 </div>
-
-                
             </div>
+
+            {playing === 1 && !isInputDelay &&
+                <div className='flex flex-col items-center animate-fade-in'>
+                    <span>You guessed the operator!</span>
+                    <ShareBox guesses={guesses} gameInfo={stats}/>
+                </div>
+            }
         </main>
         
     );

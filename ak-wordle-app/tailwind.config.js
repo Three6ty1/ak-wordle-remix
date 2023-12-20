@@ -41,10 +41,34 @@ module.exports = {
             opacity: '1'
           },
         },
+        'fade-in-out': {
+          '0%': {
+            opacity: '0'
+          },
+          '10%': {
+            opacity: '1'
+          },
+          '90%': {
+            opacity: '1'
+          },
+          '100%': {
+            opacity: '0'
+          }
+        },
+        'fade-in': {
+          'from': {
+            opacity: '0'
+          },
+          'to': {
+            opacity: '1'
+          },
+        }
       },
       animation: {
         flip: 'flip 1s ease-out forwards',
         win: 'win 2s ease-in forwards',
+        'fade-in-out': 'fade-in-out 3s linear forwards',
+        'fade-in': 'fade-in 2s linear forwards'
       },
       fontFamily: {
         sans: ['Azbuka W01 Condensed', 'Ariel'],
