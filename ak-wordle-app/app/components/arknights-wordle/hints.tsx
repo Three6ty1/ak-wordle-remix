@@ -1,6 +1,7 @@
 import HintHelp from "./hintHelp";
 import HintOperatorList from "./hintOperatorList";
 import HintWorldMap from "./hintWorldMap";
+import React from 'react';
 
 type Props = {
     amtGuesses: number,
@@ -12,18 +13,17 @@ export enum HintBreakpoints {
 }
 
 export default function Hints({ amtGuesses, } : Props) {
-    // 5 guesses
-    //  sort by class
-    //  species cheatsheet
-    // 8 guesses
-    //  reveal species in each region
-    //  sort by archetype
-
+    // breakpoint one = 5
+    //  operator list split into rarity
+    //  Region cheatsheet
+    // breakpoint two = 8
+    //  operator list sorted by class and rarity
+   
     return (
         <div className='flex flex-row w-1/2 justify-center'>
             <HintHelp />
-            <HintOperatorList amtGuesses={amtGuesses}/>
-            <HintWorldMap amtGuesses={amtGuesses}/>
+            <HintOperatorList amtGuesses={amtGuesses} />
+            <HintWorldMap amtGuesses={amtGuesses} />
         </div>
     )
 }

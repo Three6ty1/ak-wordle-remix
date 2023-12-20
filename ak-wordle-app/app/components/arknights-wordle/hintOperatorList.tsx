@@ -14,9 +14,10 @@ interface Dictionary<T> {
 
 const Professsions = ['Vanguard', 'Guard', 'Defender', 'Sniper', 'Caster', 'Medic', 'Supporter', 'Specialist'];
 
-export default function HintOperatorList({ amtGuesses, }: Props) {
+export default function HintOperatorList({ amtGuesses }: Props) {
     const loaderData: any = useLoaderData();
     const allOperators: GuessType[] = loaderData.allOperators;
+    const [showAlert, setShowAlert] = React.useState(false)
 
     const [selectedProfession, setSelectedProfession] = React.useState<string>('');
 
@@ -36,10 +37,25 @@ export default function HintOperatorList({ amtGuesses, }: Props) {
         selectedProfession === e.target.id ? setSelectedProfession('') : setSelectedProfession(e.target.id)
     }
 
+    const handleClick = () => {
+        /* @ts-ignore because this element by id is referenced in the same component */
+        document.getElementById('operator_list_modal').showModal()
+        setShowAlert(false)
+    }
+
+    React.useEffect(() => {
+        const setAmtGuesses = () => {
+            if (amtGuesses === HintBreakpoints.one || amtGuesses === HintBreakpoints.two) {
+                setShowAlert(true)
+            }
+        }
+        setAmtGuesses();
+    }, [amtGuesses])
+
     return (
-        <>
-            {/* @ts-ignore */}
-            <button className='btn tooltip' data-tip='Operator List' onClick={()=> {return (document.getElementById('operator_list_modal').showModal())}}>
+        <div className='indicator'>
+            {showAlert && <span className="indicator-item badge bg-higher" />}
+            <button className='btn tooltip' data-tip='Operator List' onClick={()=> handleClick()}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 0 1 0 3.75H5.625a1.875 1.875 0 0 1 0-3.75Z" />
                 </svg>
@@ -89,6 +105,6 @@ export default function HintOperatorList({ amtGuesses, }: Props) {
                     <button>close</button>
                 </form>
             </dialog>
-        </>
+        </div>
     )
 }
