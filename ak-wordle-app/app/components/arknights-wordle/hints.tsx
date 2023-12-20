@@ -1,3 +1,4 @@
+import HintHelp from "./hintHelp";
 import HintOperatorList from "./hintOperatorList";
 import HintWorldMap from "./hintWorldMap";
 
@@ -19,7 +20,8 @@ export default function Hints({ amtGuesses, } : Props) {
     //  sort by archetype
 
     return (
-        <div>
+        <div className='flex flex-row w-1/2 justify-center'>
+            <HintHelp />
             <HintOperatorList amtGuesses={amtGuesses}/>
             <HintWorldMap amtGuesses={amtGuesses}/>
         </div>

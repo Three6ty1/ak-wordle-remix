@@ -110,7 +110,9 @@ export default function ArknightsWordle() {
                 <p className='text-red-500'>{actionData.error}</p>
             ) : null}
 
-            <Hints amtGuesses={guesses.length}/>
+            <div className='flex justify-center align-middle'>
+                <Hints amtGuesses={guesses.length}/>
+            </div>
             <br />
             <br />
 

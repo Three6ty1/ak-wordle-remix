@@ -77,7 +77,7 @@ module.exports = {
         incorrect: '#919090',
         higher: '#08aadd',
         lower: '#c80000',
-        half: '#d3470b',
+        half: '#FFAC1C',
         correct: '#6BBF59',
         bg_main: '#edeeee',
       },

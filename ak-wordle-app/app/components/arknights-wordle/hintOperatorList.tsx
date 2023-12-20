@@ -39,9 +39,12 @@ export default function HintOperatorList({ amtGuesses, }: Props) {
     return (
         <>
             {/* @ts-ignore */}
-            <button className='btn' onClick={()=> {return (document.getElementById('operator_list_modal').showModal())}}>
-                Open Operator List
+            <button className='btn tooltip' data-tip='Operator List' onClick={()=> {return (document.getElementById('operator_list_modal').showModal())}}>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 0 1 0 3.75H5.625a1.875 1.875 0 0 1 0-3.75Z" />
+                </svg>
             </button>
+            
             <dialog id='operator_list_modal' className='modal'>
                 <div className='modal-box flex flex-col max-w-[3/5vh] justify-items-center h-[70vh] overflow-y-scroll'>
                     <h1 className='w-full'>Operator List</h1>
@@ -70,7 +73,7 @@ export default function HintOperatorList({ amtGuesses, }: Props) {
                                                         return <HintListIcon key={`${operator} list icon`} operator={operator} />
                                                     }
                                                     if (operator[2] === selectedProfession) {
-                                                            return <HintListIcon key={`${operator} list icon`} operator={operator} />
+                                                        return <HintListIcon key={`${operator} list icon`} operator={operator} />
                                                     } 
                                                     return null
                                                 }
