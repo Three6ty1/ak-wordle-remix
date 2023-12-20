@@ -21,8 +21,9 @@ export default function HintHelp() {
                     <br/>
                     <p>Each operator has 7 categories each.</p>
                     <p>You must enter an operator and compare its traits to the currently chosen operator.</p>
+                    <p><span className='font-bold'>After 5 guesses</span> the operator list will be sorted by Rarity and the world map will include operator Race information.</p>
+                    <p><span className='font-bold'>After 8 guesses</span> the operator list will be sorted by Class.</p>
                     <p>After a guess, the correctness of your guess will be represented by these colours:</p>
-                    <br/>
                     <ul className='text-center whitespace-pre-line'>
                         <li>
                             <p className='bg-incorrect text-white'>Grey</p>
@@ -30,15 +31,15 @@ export default function HintHelp() {
                         </li>
                         <li>
                             <p className='bg-higher text-white'>Blue</p>
-                            <p>The E2 cost of the chosen operator is HIGHER<br/>than your guessed operators E2 cost.</p>
+                            <p>The E2 cost of the chosen operator is <span className='font-bold'>HIGHER</span><br/>than your guessed operators E2 cost.</p>
                         </li>
                         <li>
                             <p className='bg-lower text-white'>Red</p>
-                            <p>The E2 cost of the chosen operator is LOWER<br/>than your guessed operators E2 cost.</p>
+                            <p>The E2 cost of the chosen operator is <span className='font-bold'>LOWER</span><br/>than your guessed operators E2 cost.</p>
                         </li>
                         <li>
                             <p className='bg-half text-white'>Orange</p>
-                            <p>The region allegiance of your guessed operator is partially correct.</p>
+                            <p>The region allegiance of your guessed operator is <span className='font-bold'>partially correct</span></p>
                             <p>
                                 E.g. If the character is under Elite Ops and you guess a character from OP Reserve A1,
                                 this guess would be partially correct because both groups fall under Rhodes Island.
@@ -49,6 +50,7 @@ export default function HintHelp() {
                             <p>Correct.</p>
                         </li>
                     </ul>
+                   
                 </div>
                 <form method="dialog" className="modal-backdrop">
                     <button>close</button>
