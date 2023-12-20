@@ -21,9 +21,11 @@ export default function AnswerBox({ category, guess, result, boxIndex, rowIndex 
     const op = guesses[rowIndex]
     const url = getOperatorIconUrl(op['charId'], op['rarity'].guess);
     const correct = op['correct']
-    const isAnimate = rowIndex === 0 ? true : false
 
-    !actionData?.error ? (isAnimate ? (correct ? divStyle += ' opacity-0 animate-win ' : divStyle += ' opacity-0 animate-flip ') : 'opacity-1') : 'opacity-1'
+    // If its an error prevent any animations
+    //      If the row index isnt the 0th index, which is the newest guess, do not animate
+    //          If the answer is correct, play a seperate animation than the standard flipping animation
+    !actionData?.error && ((rowIndex === 0 ? true : false) && (correct ? divStyle += ' opacity-0 animate-win ' : divStyle += ' opacity-0 animate-flip '))
 
     let bg = wordleColors.correct;
     if (typeof result === "boolean" && !result) {
