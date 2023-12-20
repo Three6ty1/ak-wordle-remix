@@ -9,7 +9,8 @@ export default function AnswerRow(props: { guess: GuessResult, index: number }) 
     const isGuesses = localStorage.getItem('guesses');
     const guesses = (isGuesses) ? JSON.parse(isGuesses) : [];
     const op = guesses[props.index]
-    const url = getOperatorIconUrl(op['charId'], op['rarity'].guess)
+    const url = getOperatorIconUrl(op['charId'], op['rarity'].guess);
+    const correct = guess['correct'];
 
     delete guess['charId']
     delete guess['correct']
@@ -20,7 +21,7 @@ export default function AnswerRow(props: { guess: GuessResult, index: number }) 
                 Object.keys(guess).map((key, index) => (
                     key != 'name' 
                     ? 
-                        <AnswerBox key={key} category={key} guess={guess[key as keyof typeof guess].guess} result={guess[key as keyof typeof guess].result} index={index}/>
+                        <AnswerBox key={key} category={key} guess={guess[key as keyof typeof guess].guess} result={guess[key as keyof typeof guess].result} index={index} correct={correct}/>
                     : 
                         <div key={key} className='tooltip flex mx-2 my-1 h-20 w-20 p-1 break-all items-center justify-end bg-bg_main animate-flip' data-tip={guess?.name}>
                             <img src={url} />

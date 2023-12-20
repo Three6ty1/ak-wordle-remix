@@ -10,17 +10,41 @@ module.exports = {
       keyframes: {
         flip: {
           '0%': {
-              transform: 'rotateX(90deg)',
-              opacity: '0'
+            transform: 'rotateX(90deg)',
+            opacity: '0'
           },
           '100%': {
-              transform: 'rotateX(0)',
-              opacity: '1'
+            transform: 'rotateX(0)',
+            opacity: '1'
+          },
+        },
+        win: {
+          '0%': {
+            transform: 'rotateX(90deg)',
+            opacity: '0'
+          },
+          '25%': {
+            transform: 'rotateX(0)',
+            opacity: '1'
+          },
+          '80%': {
+            transform: 'translate(0)',
+          },
+          '90%': {
+            transform: 'translateY(-25%)',
+          },
+          '95%': {
+            transform: 'translateY(5%)',
+          },
+          '100%': {
+            transform: 'translateY(0)',
+            opacity: '1'
           },
         },
       },
       animation: {
         flip: 'flip 1s ease-out forwards',
+        win: 'win 2s ease-in forwards',
       },
       fontFamily: {
         sans: ['Azbuka W01 Condensed', 'Ariel'],
