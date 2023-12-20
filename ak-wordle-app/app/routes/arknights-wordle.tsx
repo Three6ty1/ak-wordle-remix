@@ -54,7 +54,8 @@ export default function ArknightsWordle() {
                 setIsInputDelay(true)
                 const isGuesses = localStorage.getItem('guesses');
                 const guesses = (isGuesses) ? JSON.parse(isGuesses) : [];
-                const newGuesses = [...guesses, actionData.result];
+                let newGuesses = [...guesses];
+                newGuesses.unshift(actionData.result);
                 localStorage.setItem('guesses', JSON.stringify(newGuesses));
                 setGuesses(newGuesses);
 
@@ -130,10 +131,8 @@ export default function ArknightsWordle() {
                         }
                     </div>
                     
-                    {guesses && (guesses.length) > 0 ? 
-                        guesses.map((guess: GuessResult, index) => (
-                            <AnswerRow key={index} guess={guess} index={index}/>
-                        )) : null
+                    {guesses && (guesses.length) > 0 &&
+                        [...guesses].map((guess: GuessResult, index) => (<AnswerRow key={guess.charId ? guess.charId : index} guess={guess} index={index}/>))
                     }
                 </div>
             </div>

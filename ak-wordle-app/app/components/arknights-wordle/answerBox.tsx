@@ -6,12 +6,13 @@ type Props = {
     result: boolean | Range | Correctness
     index: number
     correct: boolean
+    isAnimate: boolean
 }   
 
-export default function AnswerBox({category, guess, result, index, correct}: Props) {
+export default function AnswerBox({category, guess, result, index, correct, isAnimate}: Props) {
     const showResult = result == Range.Higher || result == Range.Lower;
-    let divStyle = 'flex flex-col mx-2 my-1 h-20 w-20 p-1 leading-2 break-all justify-center text-white opacity-0 '
-    correct ? divStyle += 'animate-win ' : divStyle += 'animate-flip '
+    let divStyle = 'flex flex-col mx-2 my-1 h-20 w-20 p-1 leading-2 break-all justify-center text-white'
+    isAnimate ? (correct ? divStyle += ' opacity-0 animate-win ' : divStyle += ' opacity-0 animate-flip ') : 'opacity-1'
 
     let bg = wordleColors.correct;
     if (typeof result === "boolean" && !result) {
