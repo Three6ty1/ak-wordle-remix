@@ -2,6 +2,7 @@ import { GuessResult } from "~/wordle.server";
 import { Range, Correctness } from "~/helper/helper";
 import React from 'react';
 import { ChosenOperators } from "@prisma/client";
+
 type Props = {
     guesses: GuessResult[];
     gameInfo: ChosenOperators;
@@ -14,11 +15,11 @@ export default function ShareBox({ guesses, gameInfo }: Props) {
     React.useEffect(() => {
         const generateshareString = () => {
             let newString = '';
-            for(const guess of guesses) {
+            for(const guess of guesses.reverse()) {
                 for (const category in guess) {
                     if (category === 'charId' || category === 'name' || category === 'correct') { continue }
         
-                    const compare: any= guess[category as keyof typeof guess]
+                    const compare: any = guess[category as keyof typeof guess]
         
                     // Correctness and Range .corret's are the same, just added for clarity
                     if (compare.result === Range.Correct || compare.result === Correctness.Correct || compare.result === true) {

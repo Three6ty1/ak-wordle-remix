@@ -27,17 +27,19 @@ module.exports = {
             transform: 'rotateX(0)',
             opacity: '1'
           },
-          '80%': {
+          '65%': {
             transform: 'translate(0)',
           },
-          '90%': {
-            transform: 'translateY(-25%)',
+          '70%': {
+            transform: 'translateY(-20%)',
           },
-          '95%': {
+          '75%': {
             transform: 'translateY(5%)',
           },
-          '100%': {
+          '80%': {
             transform: 'translateY(0)',
+          },
+          '100%': {
             opacity: '1'
           },
         },
@@ -66,7 +68,7 @@ module.exports = {
       },
       animation: {
         flip: 'flip 1s ease-out forwards',
-        win: 'win 2s ease-in forwards',
+        win: 'win 2.5s linear forwards',
         'fade-in-out': 'fade-in-out 3s linear forwards',
         'fade-in': 'fade-in 2s linear forwards'
       },

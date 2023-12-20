@@ -11,6 +11,8 @@ type Props = {
     rowIndex: number
 }   
 
+const animationDelay = 225;
+
 export default function AnswerBox({ category, guess, result, boxIndex, rowIndex }: Props) {
     const showResult = result == Range.Higher || result == Range.Lower;
     const actionData = useActionData<typeof action>();
@@ -20,12 +22,11 @@ export default function AnswerBox({ category, guess, result, boxIndex, rowIndex 
     const guesses: GuessResult[] = (isGuesses) ? JSON.parse(isGuesses) : [];
     const op = guesses[rowIndex]
     const url = getOperatorIconUrl(op['charId'], op['rarity'].guess);
-    const correct = op['correct']
 
     // If its an error prevent any animations
     //      If the row index isnt the 0th index, which is the newest guess, do not animate
     //          If the answer is correct, play a seperate animation than the standard flipping animation
-    !actionData?.error && ((rowIndex === 0 ? true : false) && (correct ? divStyle += ' opacity-0 animate-win ' : divStyle += ' opacity-0 animate-flip '))
+    !actionData?.error && ((rowIndex === 0 ? true : false) && (op['correct'] ? divStyle += ' opacity-0 animate-win ' : divStyle += ' opacity-0 animate-flip '))
 
     let bg = wordleColors.correct;
     if (typeof result === "boolean" && !result) {
@@ -53,14 +54,14 @@ export default function AnswerBox({ category, guess, result, boxIndex, rowIndex 
              *      The guess.
              */}
             {category === 'name' ?
-                    <div className={`${divStyle} bg-bg_main`} data-tip={guess}>
+                    <div className={`${divStyle} bg-bg_main`} data-tip={guess} style={{animationDelay: '200ms'}}>
                         <img src={url} />
                     </div>   
                 :
                     category === 'race' ?
                         <div className={`${divStyle} tooltip before:whitespace-pre-wrap before:content-[attr(data-tip)]`}
                             data-tip={raceToolTips[guess as keyof typeof raceToolTips]}
-                            style={{'backgroundColor': bg, animationDelay: `${boxIndex*250}ms`}}
+                            style={{'backgroundColor': bg, animationDelay: `${boxIndex*animationDelay}ms`}}
                         >
                             <span>{guess}</span>
                         </div>
@@ -68,14 +69,14 @@ export default function AnswerBox({ category, guess, result, boxIndex, rowIndex 
                         category === 'cost' ?
                             <div className={`${divStyle} tooltip before:whitespace-pre-wrap before:content-[attr(data-tip)]`}
                                 data-tip={costToolTips[result as keyof typeof costToolTips]}
-                                style={{'backgroundColor': bg, animationDelay: `${boxIndex*250}ms`}}
+                                style={{'backgroundColor': bg, animationDelay: `${boxIndex*animationDelay}ms`}}
                             >
                                 <span>{`E0: ${guess[0 as keyof typeof guess]}`}</span>
                                 <span>{`E2: ${guess[1 as keyof typeof guess]}`}</span>
                                 <span className='font-bold'>{result}</span>
                             </div>
                         :
-                            <div className={`${divStyle}`} style={{"backgroundColor" : bg, animationDelay: `${boxIndex*250}ms`}}>
+                            <div className={`${divStyle}`} style={{"backgroundColor" : bg, animationDelay: `${boxIndex*animationDelay}ms`}}>
                                 <span>{guess}</span>
                                 {showResult && <span className='font-bold'>{result}</span>}
                             </div>
