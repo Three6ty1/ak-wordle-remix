@@ -1,5 +1,5 @@
 import { getOperatorStats, compareGuess, GuessResult, getAllOperatorNames, updateWins } from '~/wordle.server';
-import { useLoaderData, useActionData, ShouldRevalidateFunction } from '@remix-run/react';
+import { useLoaderData, useActionData } from '@remix-run/react';
 import { ChosenOperators } from '@prisma/client';
 import { ActionFunction } from '@remix-run/node';
 import React from 'react';
