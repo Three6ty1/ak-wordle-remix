@@ -1,7 +1,8 @@
+import { GuessResult } from "~/wordle.server";
 import AnswerBox from "./answerBox";
 
 type Props = {
-    guess: any,
+    guess: GuessResult,
     index: number
 }
 
@@ -14,7 +15,9 @@ export default function AnswerRow({ guess, index } : Props) {
                         <AnswerBox
                             key={key}
                             category={key}
+                            /** @ts-ignore */
                             guess={guess[key as keyof typeof guess].guess}
+                            /** @ts-ignore */
                             result={guess[key as keyof typeof guess].result}
                             boxIndex={boxIndex}
                             rowIndex={index}
