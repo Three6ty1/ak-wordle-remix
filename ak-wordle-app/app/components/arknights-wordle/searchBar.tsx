@@ -19,7 +19,8 @@ export default function SearchBar({setResults} : Props) {
         setInput(value);
 
         if (value.trim() === '') {
-            setResults([]);
+            setResults([])
+            _setResults([])
             return;
         }
         
@@ -53,18 +54,20 @@ export default function SearchBar({setResults} : Props) {
     React.useEffect(() => {
         const resetInput = () => {
             setInput('');
+            _setResults([]);
             setResults([]);
         }
         resetInput();
     }, [actionData])
 
     return (
-        <div className='items-center flex flex-row justify-center'>
+        <div className='items-center flex flex-row justify-center w-full'>
             <input name='operator-guess'
             value={input}
             onChange={(e) => handleChange(e.target.value)}
             onKeyDown={(e) => handleKey(e)}
-            className='border-solid border-black border-2'
+            placeholder='Start typing an operator name'
+            className='input input-bordered w-1/2 text-center'
             type='text'/>
         </div>
     );

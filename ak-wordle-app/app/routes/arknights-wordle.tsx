@@ -108,17 +108,15 @@ export default function ArknightsWordle() {
             {false &&
                 <p>{`Operator Id: ${stats.operatorId}`}</p>
             }
-            
+            <br/>
+            <div className='flex justify-center align-middle'>
+                <Hints amtGuesses={guesses.length}/>
+            </div>
+            <br/>
             <br/>
             {actionData?.error ? (
                 <p className='text-red-500'>{actionData.error}</p>
             ) : null}
-
-            <div className='flex justify-center align-middle'>
-                <Hints amtGuesses={guesses.length}/>
-            </div>
-            <br />
-            <br />
 
             {/** 
              * Using grid and col-start to force these elements to overlap one another 
@@ -129,7 +127,7 @@ export default function ArknightsWordle() {
                     {playing === 0 && !isInputDelay && <Search guesses={guesses} />}
                 </div>
 
-                <div className='col-start-1 row-start-1 relative my-10'>
+                <div className='col-start-1 row-start-1 relative my-20'>
                     <div className='flex flex-row font-bold justify-center break-all'>
                         {guesses && (guesses.length) > 0 ?
                             Object.entries(guessCategoryToolTips).map((category, index) => (
