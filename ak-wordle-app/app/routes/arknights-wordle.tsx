@@ -8,7 +8,9 @@ import { guessCategoryToolTips } from '~/helper/helper';
 import Search from '~/components/arknights-wordle/search';
 import ShareBox from '~/components/arknights-wordle/shareBox';
 import Hints from '~/components/arknights-wordle/hints';
-  
+import LogoBlack from '~/../../public/logo_black.png';
+import LogoWhite from '~/../../public/logo_white.png';
+
 export const loader = async() => {
     console.log("Getting operator stats and all operators")
     return {stats: await getOperatorStats(), allOperators: await getAllOperatorNames()}
@@ -102,18 +104,19 @@ export default function ArknightsWordle() {
     }, [actionData])
 
     return (
-        <main className='justify-center align-middle items-center content-center text-center font-sans'>
-            <h1>Arknights Wordle</h1>
-            <p>{`Game number: ${stats.gameId} Date: ${stats.date} Times guessed: ${stats.timesGuessed}`}</p>
-            {false &&
+        <main className='flex flex-col w-full justify-center items-center text-center font-sans p-5 pt-10'>
+            <img style={{width: '40vh'}} src={`${LogoBlack}`}></img>
+            <h1 className='font-bold text-4xl'>WORDLE</h1>
+            <div className='mt-2'>
+                <p>{`#${stats.gameId}, ${stats.date} (AEST)`}</p>
+                <p>{`${stats.timesGuessed} Dokutah${stats.timesGuessed > 1 ? '\'s have' : ' has'} guessed the operator.`}</p>
+            </div>
+            {false && // TODO: Remove
                 <p>{`Operator Id: ${stats.operatorId}`}</p>
             }
-            <br/>
-            <div className='flex justify-center align-middle'>
+            <div className='flex justify-center align-middle w-full my-2'>
                 <Hints amtGuesses={guesses.length}/>
             </div>
-            <br/>
-            <br/>
             {actionData?.error ? (
                 <p className='text-red-500'>{actionData.error}</p>
             ) : null}
@@ -127,7 +130,7 @@ export default function ArknightsWordle() {
                     {playing === 0 && !isInputDelay && <Search guesses={guesses} />}
                 </div>
 
-                <div className='col-start-1 row-start-1 relative my-20'>
+                <div className='col-start-1 row-start-1 relative my-14'>
                     <div className='flex flex-row font-bold justify-center break-all'>
                         {guesses && (guesses.length) > 0 ?
                             Object.entries(guessCategoryToolTips).map((category, index) => (
