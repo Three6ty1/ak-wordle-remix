@@ -42,7 +42,7 @@ export default function SearchBar({setResults} : Props) {
         if(e.key === 'Enter') {
             const guesses  = localStorage.getItem('guesses');
             let data = {
-                'operator-guess': _results[0][GuessTypeValue.name],
+                'operator-guess': _results.length > 0 ? _results[0][GuessTypeValue.name] : '',
                 'guesses': guesses ? guesses : JSON.stringify([]),
             };
             submit(data, {method: 'POST'});
