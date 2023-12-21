@@ -11,8 +11,7 @@ export default function HintHelp() {
             </button>
             <dialog id="help_modal" className="modal">
                 <div className="modal-box">
-                    <h1 className='text-xl'>How to play Arknights Wordle</h1>
-                    <br/>
+                    <h1 className='text-xl mb-2 font-bold'>How to play Arknights Wordle</h1>
                     <p>Each operator has 7 categories each.</p>
                     <p>You must enter an operator and compare its traits to the currently chosen operator.</p>
                     <p><span className='font-bold'>After {HintBreakpoints.one} guesses</span> the operator list will be sorted by Rarity and the world map will include operator Race information.</p>
@@ -33,7 +32,7 @@ export default function HintHelp() {
                         </li>
                         <li>
                             <p className='bg-half text-white'>Orange</p>
-                            <p>The region allegiance of your guessed operator is <span className='font-bold'>partially correct</span></p>
+                            <p>The <span className='font-bold'>allegiance</span> of your guessed operator is <span className='font-bold'>partially correct</span></p>
                             <p>
                                 E.g. If the character is under Elite Ops and you guess a character from OP Reserve A1,
                                 this guess would be partially correct because both groups fall under Rhodes Island.
