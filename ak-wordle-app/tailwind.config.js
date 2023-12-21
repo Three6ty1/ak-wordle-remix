@@ -7,65 +7,6 @@ module.exports = {
   darkMode: 'media',
   theme: {
     extend: {
-      keyframes: {
-        flip: {
-          '0%': {
-            transform: 'rotateX(90deg)',
-            opacity: '0'
-          },
-          '100%': {
-            transform: 'rotateX(0)',
-            opacity: '1'
-          },
-        },
-        win: {
-          '0%': {
-            transform: 'rotateX(90deg)',
-            opacity: '0'
-          },
-          '25%': {
-            transform: 'rotateX(0)',
-            opacity: '1'
-          },
-          '65%': {
-            transform: 'translate(0)',
-          },
-          '70%': {
-            transform: 'translateY(-20%)',
-          },
-          '75%': {
-            transform: 'translateY(5%)',
-          },
-          '80%': {
-            transform: 'translateY(0)',
-          },
-          '100%': {
-            opacity: '1'
-          },
-        },
-        'fade-in-out': {
-          '0%': {
-            opacity: '0'
-          },
-          '10%': {
-            opacity: '1'
-          },
-          '90%': {
-            opacity: '1'
-          },
-          '100%': {
-            opacity: '0'
-          }
-        },
-        'fade-in': {
-          'from': {
-            opacity: '0'
-          },
-          'to': {
-            opacity: '1'
-          },
-        }
-      },
       animation: {
         flip: 'flip 1s ease-out forwards',
         win: 'win 2.5s linear forwards',
@@ -90,6 +31,6 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/forms'),
-    require('daisyui')
+    require('daisyui'),
   ],
 }

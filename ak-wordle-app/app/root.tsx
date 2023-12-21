@@ -63,7 +63,6 @@ function Document({
           name="viewport"
           content="width=device-width,initial-scale=1,shrink-to-fit=no"
         />
-        <link href="https://db.onlinewebfonts.com/c/e44695c6541c380ecd9cd9d1d14ddf7f?family=Azbuka+W01+Condensed" rel="stylesheet" />
         {title ? <title>{title}</title> : null}
         <Meta />
         <Links />
