@@ -12,6 +12,18 @@
     url("https://db.onlinewebfonts.com/t/e44695c6541c380ecd9cd9d1d14ddf7f.svg#Azbuka W01 Condensed")format("svg");
 }
 
+@layer utilities {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+   /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+  }
+}
+
 @keyframes flip {
     0% {
         transform: rotateX(90deg);
@@ -72,3 +84,4 @@
         opacity: 1
     }
 }
+
