@@ -55,7 +55,7 @@ export default function HintOperatorList({ amtGuesses }: Props) {
 
     return (
         <>
-            <div className='indicator w-2/5 m-2'>
+            <div className='indicator w-1/3 m-2'>
                 {showAlert && <span className="indicator-item badge bg-higher" />}
                 <button className='flex btn tooltip w-full items-center' data-tip='Operator List' onClick={()=> handleClick()}>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">

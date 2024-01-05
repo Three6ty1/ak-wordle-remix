@@ -124,8 +124,8 @@ export default function ArknightsWordle() {
     }
 
     return (
-        <main id='ak-wordle-root' className='flex flex-col w-full justify-top items-center text-center font-sans p-5 pt-10 h-screen'>
-            <label className="swap swap-rotate fixed top-3 right-3">
+        <main id='ak-wordle-root' className='flex flex-col w-screen justify-top items-center align-middle text-center font-sans p-5 pt-10 h-screen'>
+            <label className="swap swap-rotate fixed bottom-1 right-1 md:bottom-auto md:top-3 md:right-3 ">
                 {/* this hidden checkbox controls the state */}
                 <input id='theme-checkbox' type="checkbox" className="theme-controller hidden" value="dark" onClick={(e) => handleThemeChange(e)}/>
                 {/* sun icon */}
@@ -133,7 +133,7 @@ export default function ArknightsWordle() {
                 {/* moon icon */}
                 <svg className="swap-off fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"/></svg>
             </label>
-            <img style={{width: '40vh'}} src={`${darkMode ? LogoWhite : LogoBlack}`}></img>
+            <img style={{height: '50'}} src={`${darkMode ? LogoWhite : LogoBlack}`}></img>
             <h1 className='font-bold text-4xl'>WORDLE</h1>
             <div className='mt-2'>
                 <p>{`#${stats.gameId}, ${stats.date} (AEST)`}</p>
@@ -142,7 +142,7 @@ export default function ArknightsWordle() {
             {false && // TODO: Remove
                 <p>{`Operator Id: ${stats.operatorId}`}</p>
             }
-            <div className='flex justify-center align-middle w-full my-2'>
+            <div className='flex justify-center align-middle w-3/4 md:w-96 my-2'>
                 <Hints amtGuesses={guesses.length}/>
             </div>
             {actionData?.error ? (
@@ -154,7 +154,7 @@ export default function ArknightsWordle() {
              * This is so the search bar appears ontop of the answer row instead of pushing it down.
             */}
             <div className='grid justify-center w-full'>
-                <div className='flex flex-col col-start-1 row-start-1 items-center w-[100vh] animate-fade-in'>
+                <div className='flex flex-col col-start-1 row-start-1 items-center w-[30rem] md:w-[100vh] animate-fade-in'>
                     {playing === 0 && !isInputDelay && <Search guesses={guesses} />}
                 </div>
 
