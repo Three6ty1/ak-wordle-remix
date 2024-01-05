@@ -32,14 +32,14 @@ export default function Result({op, hasGuessed}: Props) {
 
     let textStyle = ' '
     // Ternary operator for this line BREAKS the code
-    if (_hasGuessed) { textStyle += 'text-higher' } else { textStyle += 'text-secondary' }
+    if (_hasGuessed) { textStyle += 'text-higher' }
 
     return (
-        <div className='flex flex-row self-center w-full items-center'>
+        <div className='flex flex-row self-center w-full items-center m-1'>
             <div className='flex w-1/2 justify-end pr-5'>
-                <img src={url} alt={`${op[0]} operator icon`} width={25} height={25} />
+                <img src={url} alt={`${op[0]} operator icon`} width={50} height={50} />
             </div>
-            <div className={'flex w-1/2 justify-start' + textStyle} onClick={(e) => handleSubmit(e)}>{op[GuessTypeValue.name]}</div> 
+            <div className={'flex w-1/2 justify-start text-start text-2xl' + textStyle} onClick={(e) => handleSubmit(e)}>{op[GuessTypeValue.name]}</div> 
         </div>
     );
 }

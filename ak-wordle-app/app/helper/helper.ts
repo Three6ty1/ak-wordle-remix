@@ -32,7 +32,6 @@ export const wordleColors = {
     lower: '#c80000',
     half: '#FFAC1C',
     correct: '#6BBF59',
-    bg_main: '#edeeee',
 }
 
 export function getOperatorIconUrl(charId: string, rarity: number) {

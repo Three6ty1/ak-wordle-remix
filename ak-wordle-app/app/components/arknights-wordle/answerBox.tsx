@@ -54,7 +54,7 @@ export default function AnswerBox({ category, guess, result, boxIndex, rowIndex 
              *      The guess.
              */}
             {category === 'name' ?
-                    <div className={`${divStyle} bg-bg_main`} data-tip={guess} style={{animationDelay: '200ms'}}>
+                    <div className={`${divStyle} bg-base-200`} data-tip={guess} style={{animationDelay: '200ms'}}>
                         <img src={url} />
                     </div>   
                 :

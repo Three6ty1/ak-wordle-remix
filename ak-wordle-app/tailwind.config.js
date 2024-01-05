@@ -22,9 +22,26 @@ module.exports = {
         lower: '#c80000',
         half: '#FFAC1C',
         correct: '#6BBF59',
-        bg_main: '#edeeee',
       },
     },
+  },
+  daisyui: {
+    themes: [{
+      "light": {
+        ...require("daisyui/src/theming/themes")["light"],
+        "base-200": "#edeeee"
+      }},
+      {'dark': {
+        ...require("daisyui/src/theming/themes")["dark"],
+        "base-content": "white",
+        "neutral-content": "white",
+        "primary-content": "white",
+        "secondary-content": "white",
+        "base-100": "#15191e",
+        "base-200": "black",
+      }}
+    ]
+    
   },
   variants: {
     extend: {},

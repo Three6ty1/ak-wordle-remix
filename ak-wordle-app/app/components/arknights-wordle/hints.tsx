@@ -1,7 +1,6 @@
 import HintHelp from "./hintHelp";
 import HintOperatorList from "./hintOperatorList";
 import HintWorldMap from "./hintWorldMap";
-import React from 'react';
 
 type Props = {
     amtGuesses: number,
