@@ -30,12 +30,16 @@ export default function Result({op, hasGuessed}: Props) {
 
     const url = getOperatorIconUrl(op[GuessTypeValue.charId], op[GuessTypeValue.rarity]);
 
+    let textStyle = ' '
+    // Ternary operator for this line BREAKS the code
+    if (_hasGuessed) { textStyle += 'text-higher' } else { textStyle += 'text-secondary' }
+
     return (
         <div className='flex flex-row self-center w-full items-center'>
             <div className='flex w-1/2 justify-end pr-5'>
                 <img src={url} alt={`${op[0]} operator icon`} width={25} height={25} />
             </div>
-            <div className='flex w-1/2 justify-start' style={{'color': hasGuessed ? 'pink' : 'black'}} onClick={(e) => handleSubmit(e)}>{op[GuessTypeValue.name]}</div> 
+            <div className={'flex w-1/2 justify-start' + textStyle} onClick={(e) => handleSubmit(e)}>{op[GuessTypeValue.name]}</div> 
         </div>
     );
 }
