@@ -97,7 +97,7 @@ export const guessCategoryToolTips = {
     'Infected': 'Yes/No/Undisclosed',
     'Profession': null,
     'Rarity': '1/2/3/4/5/6 star',
-    'Cost (E2)': 'Cost is compared at E2 Potential 0.\nE0 is included for accessibility.'
+    'Cost (E2)': 'Cost is compared at E2 Pot0.'
 }
 
 export const costToolTips = {

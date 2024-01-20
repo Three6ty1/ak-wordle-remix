@@ -56,13 +56,16 @@ export default function HintWorldMap({ amtGuesses, }: Props) {
                     </svg>
                 </button>
             </div>
-            <dialog id="world_map_modal" className="modal">
-                <div className="modal-box max-w-[70vw]">
-                    <img src={map} />
+            <dialog id="world_map_modal" className="modal w-screen overflow-visible">
+                <div className="modal-box max-w-[95vw] md:max-w-[80vw]">
+                    <div className='w-full h-48 md:h-auto overflow-auto touch-auto'>
+                        <img className='max-w-none w-[400%] md:w-[100%] h-auto' src={map}/>
+                    </div>
+
                     {amtGuesses >= HintBreakpoints.one &&
-                    <div className='flex flex-wrap flex-row justify-start'>
+                    <div className='flex flex-wrap flex-row justify-start mt-5'>
                         {Object.entries(regions).map((region) => (
-                            <div className='text-left w-1/2 h-20' key={region[0]}>
+                            <div className='text-left w-1/2 h-32 md:h-20' key={region[0]}>
                                 <h1 className='font-bold'>{region[0]}</h1>
                                 <p className='whitespace-pre-line'>{region[1]}</p>
                             </div>
