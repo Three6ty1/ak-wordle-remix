@@ -1,4 +1,4 @@
-import map from '../../../public/world_map.png'
+import map from '../../../../public/world_map.png'
 import { HintBreakpoints } from './hints'
 import React from 'react'
 

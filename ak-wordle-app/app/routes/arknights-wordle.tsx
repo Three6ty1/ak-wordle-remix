@@ -3,11 +3,11 @@ import { useLoaderData, useActionData } from '@remix-run/react';
 import { ChosenOperators } from '@prisma/client';
 import { ActionFunction } from '@remix-run/node';
 import React, { BaseSyntheticEvent } from 'react';
-import AnswerRow from '~/components/arknights-wordle/answerRow';
+import AnswerRow from '~/components/arknights-wordle/results/answerRow';
 import { guessCategoryToolTips } from '~/helper/helper';
-import Search from '~/components/arknights-wordle/search';
-import ShareBox from '~/components/arknights-wordle/shareBox';
-import Hints from '~/components/arknights-wordle/hints';
+import Search from '~/components/arknights-wordle/search/search';
+import ShareBox from '~/components/arknights-wordle/share/shareBox';
+import Hints from '~/components/arknights-wordle/hints/hints';
 import LogoBlack from '~/../../public/logo_black.png';
 import LogoWhite from '~/../../public/logo_white.png';
 
