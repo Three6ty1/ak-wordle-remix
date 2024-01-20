@@ -138,7 +138,7 @@ def main():
     with open('./operator_db/character_table.json', 'r', encoding="utf-8") as f:
         char_data = json.load(f)
 
-        with open('./operator_db/profile_table.json', 'r', encoding="utf-8") as ff:
+        with open('./operator_db/handbook_info_table.json', 'r', encoding="utf-8") as ff:
             profile_data = json.load(ff)["handbookDict"]
 
     operators = {}
@@ -165,7 +165,7 @@ def main():
 
         profession = get_class(info)
         archetype = info["subProfessionId"].capitalize()
-        rarity = info["rarity"] + 1
+        rarity = int(info["rarity"][-1])
         e0_cost = info["phases"][0]["attributesKeyFrames"][0]["data"]["cost"]
         e2_cost = info["phases"][-1]["attributesKeyFrames"][0]["data"]["cost"]
 

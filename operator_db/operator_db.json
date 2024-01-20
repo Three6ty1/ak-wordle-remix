@@ -402,7 +402,7 @@
     "Beanstalk": {
         "charId": "char_452_bstalk",
         "gender": "Female",
-        "race": "Reproba",
+        "race": "Rebbah",
         "group": "",
         "nation": "Columbia",
         "position": "Ranged",
@@ -702,6 +702,22 @@
             23
         ],
         "infected": "Yes"
+    },
+    "Cement": {
+        "charId": "char_464_cement",
+        "gender": "Female",
+        "race": "Zalak",
+        "group": "",
+        "nation": "Rim Billiton",
+        "position": "Melee",
+        "profession": "Defender",
+        "archetype": "Duelist",
+        "rarity": 5,
+        "cost": [
+            28,
+            32
+        ],
+        "infected": "No"
     },
     "Ceobe": {
         "charId": "char_2013_cerber",
@@ -1215,6 +1231,22 @@
         ],
         "infected": "No"
     },
+    "Executor the Ex Foedere": {
+        "charId": "char_1032_excu2",
+        "gender": "Male",
+        "race": "Sankta",
+        "group": "",
+        "nation": "Laterano",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Reaper",
+        "rarity": 6,
+        "cost": [
+            20,
+            23
+        ],
+        "infected": "No"
+    },
     "Exusiai": {
         "charId": "char_103_angel",
         "gender": "Female",
@@ -1422,6 +1454,22 @@
             18
         ],
         "infected": "Yes"
+    },
+    "Friston-3": {
+        "charId": "char_4093_frston",
+        "gender": "Male",
+        "race": "Robot",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Melee",
+        "profession": "Defender",
+        "archetype": "Protector",
+        "rarity": 1,
+        "cost": [
+            3,
+            3
+        ],
+        "infected": "N/A"
     },
     "Frost": {
         "charId": "char_458_rfrost",
@@ -1791,6 +1839,22 @@
         ],
         "infected": "No"
     },
+    "Ho'olheyak": {
+        "charId": "char_4027_heyak",
+        "gender": "Female",
+        "race": "Unknown/Undisclosed",
+        "group": "",
+        "nation": "Columbia",
+        "position": "Ranged",
+        "profession": "Caster",
+        "archetype": "Corecaster",
+        "rarity": 6,
+        "cost": [
+            19,
+            21
+        ],
+        "infected": "No"
+    },
     "Honeyberry": {
         "charId": "char_449_glider",
         "gender": "Female",
@@ -1838,6 +1902,22 @@
             23
         ],
         "infected": "No"
+    },
+    "Humus": {
+        "charId": "char_491_humus",
+        "gender": "Male",
+        "race": "Forte",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Reaper",
+        "rarity": 4,
+        "cost": [
+            18,
+            21
+        ],
+        "infected": "Yes"
     },
     "Hung": {
         "charId": "char_226_hmau",
@@ -1900,6 +1980,38 @@
         "cost": [
             8,
             10
+        ],
+        "infected": "No"
+    },
+    "Ines": {
+        "charId": "char_4087_ines",
+        "gender": "Female",
+        "race": "Unknown/Undisclosed",
+        "group": "",
+        "nation": "Rhodes Island",
+        "position": "Melee",
+        "profession": "Vanguard",
+        "archetype": "Agent",
+        "rarity": 6,
+        "cost": [
+            9,
+            11
+        ],
+        "infected": "Yes"
+    },
+    "Insider": {
+        "charId": "char_498_inside",
+        "gender": "Male",
+        "race": "Sankta",
+        "group": "",
+        "nation": "Laterano",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Fastshot",
+        "rarity": 5,
+        "cost": [
+            13,
+            15
         ],
         "infected": "No"
     },
@@ -2463,6 +2575,22 @@
         ],
         "infected": "No"
     },
+    "Melanite": {
+        "charId": "char_4006_melnte",
+        "gender": "Female",
+        "race": "Pythia",
+        "group": "",
+        "nation": "Columbia",
+        "position": "Ranged",
+        "profession": "Sniper",
+        "archetype": "Closerange",
+        "rarity": 5,
+        "cost": [
+            15,
+            19
+        ],
+        "infected": "Yes"
+    },
     "Melantha": {
         "charId": "char_208_melan",
         "gender": "Female",
@@ -2575,6 +2703,22 @@
         ],
         "infected": "No"
     },
+    "Morgan": {
+        "charId": "char_154_morgan",
+        "gender": "Female",
+        "race": "Feline",
+        "group": "Glasgow",
+        "nation": "Victoria",
+        "position": "Melee",
+        "profession": "Guard",
+        "archetype": "Fearless",
+        "rarity": 5,
+        "cost": [
+            18,
+            20
+        ],
+        "infected": "No"
+    },
     "Mostima": {
         "charId": "char_213_mostma",
         "gender": "Female",
@@ -2654,6 +2798,22 @@
             36
         ],
         "infected": "Yes"
+    },
+    "Muelsyse": {
+        "charId": "char_249_mlyss",
+        "gender": "Female",
+        "race": "Elf",
+        "group": "Rhine Lab",
+        "nation": "Columbia",
+        "position": "Ranged",
+        "profession": "Vanguard",
+        "archetype": "Tactician",
+        "rarity": 6,
+        "cost": [
+            13,
+            15
+        ],
+        "infected": "No"
     },
     "Mulberry": {
         "charId": "char_473_mberry",
@@ -3679,6 +3839,22 @@
         ],
         "infected": "Yes"
     },
+    "Silence the Paradigmatic": {
+        "charId": "char_1031_slent2",
+        "gender": "Female",
+        "race": "Liberi",
+        "group": "Rhine Lab",
+        "nation": "Columbia",
+        "position": "Ranged",
+        "profession": "Supporter",
+        "archetype": "Blessing",
+        "rarity": 6,
+        "cost": [
+            13,
+            15
+        ],
+        "infected": "Yes"
+    },
     "SilverAsh": {
         "charId": "char_172_svrash",
         "gender": "Male",
@@ -3810,7 +3986,7 @@
     "Spot": {
         "charId": "char_284_spot",
         "gender": "Male",
-        "race": "Reproba",
+        "race": "Rebbah",
         "group": "Reserve 6",
         "nation": "Rhodes Island",
         "position": "Melee",
@@ -3822,6 +3998,22 @@
             17
         ],
         "infected": "Yes"
+    },
+    "Spuria": {
+        "charId": "char_4015_spuria",
+        "gender": "Female",
+        "race": "Sankta",
+        "group": "",
+        "nation": "Laterano",
+        "position": "Ranged",
+        "profession": "Specialist",
+        "archetype": "Geek",
+        "rarity": 5,
+        "cost": [
+            10,
+            12
+        ],
+        "infected": "No"
     },
     "Stainless": {
         "charId": "char_4072_ironmn",
