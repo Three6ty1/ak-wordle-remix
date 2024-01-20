@@ -28,7 +28,7 @@ async function main() {
   let amt = 0
   const operator_db:Dictionary<Operator> = db;
   // await prisma.operator.deleteMany()
-
+  const operators = await prisma.operator.count();
   for (const key in operator_db) {
       const operator = operator_db[key]
       await prisma.operator.upsert({
@@ -77,11 +77,17 @@ async function main() {
       amt += 1
   }
 
-  console.log(amt + ' operators seeded into db');
-  console.log(`Removed all chosen ops (${await prisma.chosenOperators.count()})`);
-  
-  await prisma.chosenOperators.deleteMany()
+  console.log(amt + ' total operators seeded into db');
+  console.log(`(${await prisma.operator.count() - operators}) new operators seeded (Old ${operators})`);
 
+  // Doesnt have an icon yet...
+  await prisma.operator.delete(
+    {
+      where: {
+        name: 'Friston-3',
+      }
+    }
+  )
 }
 
 main()

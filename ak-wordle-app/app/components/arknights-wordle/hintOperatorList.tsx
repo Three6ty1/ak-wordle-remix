@@ -65,7 +65,7 @@ export default function HintOperatorList({ amtGuesses }: Props) {
             </div>
             <dialog id='operator_list_modal' className='modal'>
                 <div className='modal-box flex flex-col max-w-[3/5vh] justify-items-center h-[70vh] overflow-y-scroll'>
-                    <h1 className='w-full text-xl mb-2'>Operator List (Up to MH collab)</h1>
+                    <h1 className='w-full text-xl mb-2'>Operator List (Up to Executor Alter)</h1>
                     <div className='flex flex-row flex-wrap justify-center w-full'>
                         {/**
                          * If under breakpoint 1
