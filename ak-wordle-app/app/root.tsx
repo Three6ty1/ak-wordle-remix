@@ -58,17 +58,16 @@ function Document({
   return (
     <html lang="en">
       <head>
-        <meta charSet="utf-8" />
         <meta
+          charSet="utf-8"
           name="viewport"
-          content="width=device-width,initial-scale=1,shrink-to-fit=no"
+          content="width=device-width,initial-scale=1,initial-scale=1, maximum-scale=1, user-scalable=0"
         />
-        <link href="https://db.onlinewebfonts.com/c/e44695c6541c380ecd9cd9d1d14ddf7f?family=Azbuka+W01+Condensed" rel="stylesheet" />
         {title ? <title>{title}</title> : null}
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className='no-scrollbar'>
         {children}
         <RouteChangeAnnouncement />
         <ScrollRestoration />

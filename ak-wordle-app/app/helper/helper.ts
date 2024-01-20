@@ -30,9 +30,8 @@ export const wordleColors = {
     incorrect: '#919090',
     higher: '#08aadd',
     lower: '#c80000',
-    half: '#d3470b',
+    half: '#FFAC1C',
     correct: '#6BBF59',
-    bg_main: '#edeeee',
 }
 
 export function getOperatorIconUrl(charId: string, rarity: number) {
@@ -98,7 +97,7 @@ export const guessCategoryToolTips = {
     'Infected': 'Yes/No/Undisclosed',
     'Profession': null,
     'Rarity': '1/2/3/4/5/6 star',
-    'Cost (E2)': 'Cost is compared at E2 Potential 0.\nE0 is included for accessibility.'
+    'Cost (E2)': 'Cost is compared at E2 Pot0.'
 }
 
 export const costToolTips = {

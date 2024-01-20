@@ -14,9 +14,10 @@ interface Dictionary<T> {
 
 const Professsions = ['Vanguard', 'Guard', 'Defender', 'Sniper', 'Caster', 'Medic', 'Supporter', 'Specialist'];
 
-export default function HintOperatorList({ amtGuesses, }: Props) {
+export default function HintOperatorList({ amtGuesses }: Props) {
     const loaderData: any = useLoaderData();
     const allOperators: GuessType[] = loaderData.allOperators;
+    const [showAlert, setShowAlert] = React.useState(false)
 
     const [selectedProfession, setSelectedProfession] = React.useState<string>('');
 
@@ -29,23 +30,53 @@ export default function HintOperatorList({ amtGuesses, }: Props) {
         "1": [],
     };
 
+    // Sort all operators into sortedRarityOperators
     allOperators.map((operator) => sortedRarityOperators[operator[GuessTypeValue.rarity] as keyof typeof sortedRarityOperators].push(operator))
 
     const handleProfession = (e: React.SyntheticEvent<EventTarget>) => {
-        // @ts-ignore
+        // @ts-ignore for e.target.**id**
         selectedProfession === e.target.id ? setSelectedProfession('') : setSelectedProfession(e.target.id)
     }
 
+    const handleClick = () => {
+        /* @ts-ignore because this element by id is referenced in the same component */
+        document.getElementById('operator_list_modal').showModal()
+        setShowAlert(false)
+    }
+
+    React.useEffect(() => {
+        const setAmtGuesses = () => {
+            if (amtGuesses === HintBreakpoints.one || amtGuesses === HintBreakpoints.two) {
+                setShowAlert(true)
+            }
+        }
+        setAmtGuesses();
+    }, [amtGuesses])
+
     return (
         <>
-            {/* @ts-ignore */}
-            <button className='btn' onClick={()=> {return (document.getElementById('operator_list_modal').showModal())}}>
-                Open Operator List
-            </button>
+            <div className='indicator w-1/3 m-2'>
+                {showAlert && <span className="indicator-item badge bg-higher" />}
+                <button className='flex btn tooltip w-full items-center' data-tip='Operator List' onClick={()=> handleClick()}>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 0 1 0 3.75H5.625a1.875 1.875 0 0 1 0-3.75Z" />
+                    </svg>
+                </button>
+            </div>
             <dialog id='operator_list_modal' className='modal'>
                 <div className='modal-box flex flex-col max-w-[3/5vh] justify-items-center h-[70vh] overflow-y-scroll'>
-                    <h1 className='w-full'>Operator List</h1>
+                    <h1 className='w-full text-xl mb-2'>Operator List (Up to MH collab)</h1>
                     <div className='flex flex-row flex-wrap justify-center w-full'>
+                        {/**
+                         * If under breakpoint 1
+                         *      List all operators in alphabetical
+                         * Else 
+                         *      If over breakpoint 2
+                         *          Display the operator class filters
+                         *          Filter operators depending on class selected
+                         *      Else
+                         *          List all operators sorted in rarity 
+                         */}
                         {amtGuesses < HintBreakpoints.one ?
                                 <>
                                     {allOperators.map((operator) => {
@@ -70,7 +101,7 @@ export default function HintOperatorList({ amtGuesses, }: Props) {
                                                         return <HintListIcon key={`${operator} list icon`} operator={operator} />
                                                     }
                                                     if (operator[2] === selectedProfession) {
-                                                            return <HintListIcon key={`${operator} list icon`} operator={operator} />
+                                                        return <HintListIcon key={`${operator} list icon`} operator={operator} />
                                                     } 
                                                     return null
                                                 }

@@ -7,20 +7,11 @@ module.exports = {
   darkMode: 'media',
   theme: {
     extend: {
-      keyframes: {
-        flip: {
-          '0%': {
-              transform: 'rotateX(90deg)',
-              opacity: '0'
-          },
-          '100%': {
-              transform: 'rotateX(0)',
-              opacity: '1'
-          },
-        },
-      },
       animation: {
         flip: 'flip 1s ease-out forwards',
+        win: 'win 2.5s linear forwards',
+        'fade-in-out': 'fade-in-out 3s linear forwards',
+        'fade-in': 'fade-in 2s linear forwards'
       },
       fontFamily: {
         sans: ['Azbuka W01 Condensed', 'Ariel'],
@@ -29,17 +20,34 @@ module.exports = {
         incorrect: '#919090',
         higher: '#08aadd',
         lower: '#c80000',
-        half: '#d3470b',
+        half: '#FFAC1C',
         correct: '#6BBF59',
-        bg_main: '#edeeee',
       },
     },
+  },
+  daisyui: {
+    themes: [{
+      "light": {
+        ...require("daisyui/src/theming/themes")["light"],
+        "base-200": "#edeeee"
+      }},
+      {'dark': {
+        ...require("daisyui/src/theming/themes")["dark"],
+        "base-content": "white",
+        "neutral-content": "white",
+        "primary-content": "white",
+        "secondary-content": "white",
+        "base-100": "#15191e",
+        "base-200": "black",
+      }}
+    ]
+    
   },
   variants: {
     extend: {},
   },
   plugins: [
     require('@tailwindcss/forms'),
-    require('daisyui')
+    require('daisyui'),
   ],
 }
