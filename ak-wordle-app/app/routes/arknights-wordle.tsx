@@ -125,7 +125,7 @@ export default function ArknightsWordle() {
 
     return (
         <main id='ak-wordle-root' className='flex flex-col w-screen justify-top items-center align-middle text-center font-sans p-5 pt-10 h-screen'>
-            <label className="swap swap-rotate fixed bottom-1 right-1 md:bottom-auto md:top-3 md:right-3 ">
+            <label className="z-10 swap swap-rotate fixed bottom-1 right-1 md:bottom-auto md:top-3 md:right-3 ">
                 {/* this hidden checkbox controls the state */}
                 <input id='theme-checkbox' type="checkbox" className="theme-controller hidden" value="dark" onClick={(e) => handleThemeChange(e)}/>
                 {/* sun icon */}
@@ -139,7 +139,7 @@ export default function ArknightsWordle() {
                 <p>{`#${stats.gameId}, ${stats.date} (AEST)`}</p>
                 <p>{`${stats.timesGuessed === 0 ? 'No Dokutah\'s have': stats.timesGuessed + ' ' + (stats.timesGuessed > 1 ? 'Dokutah\'s have' : 'Dokutah has')} guessed the operator.`}</p>
             </div>
-            {false && // TODO: Remove
+            {false && // TODO: Remove. This is for testing purposes.
                 <p>{`Operator Id: ${stats.operatorId}`}</p>
             }
             <div className='flex justify-center align-middle w-3/4 md:w-96 my-2'>
@@ -153,23 +153,26 @@ export default function ArknightsWordle() {
              * Using grid and col-start to force these elements to overlap one another 
              * This is so the search bar appears ontop of the answer row instead of pushing it down.
             */}
-            <div className='grid justify-center w-full'>
-                <div className='flex flex-col col-start-1 row-start-1 items-center w-[30rem] md:w-[100vh] animate-fade-in'>
+            <div className='grid w-full justify-center'>
+                <div className='flex flex-col col-start-1 row-start-1 align-middle w-full animate-fade-in'>
                     {playing === 0 && !isInputDelay && <Search guesses={guesses} />}
                 </div>
 
-                <div className='col-start-1 row-start-1 relative my-14'>
-                    <div className='flex flex-row font-bold justify-center break-all'>
-                        {guesses && (guesses.length) > 0 ?
-                            Object.entries(guessCategoryToolTips).map((category, index) => (
-                                <span key={index} className='tooltip flex h-20 w-20 m-2 items-center justify-center bg-base-200 text-content whitespace-pre-line' data-tip={category[1]}>{category[0]}</span>
-                            )) : null
+                <div className='col-start-1 row-start-1 flex flex-col my-14 w-auto overflow-x-scroll overflow-y-clip md:overflow-visible'>
+                    {/** Wrapper for div to expand into scrollable area in mobile*/}
+                    <div className='flex flex-col items-start'>
+                        <div className='flex flex-row font-bold justify-center break-all'>
+                            {guesses && (guesses.length) > 0 ?
+                                Object.entries(guessCategoryToolTips).map((category, index) => (
+                                    <span key={index} className='tooltip-answer-row flex h-20 w-20 m-2 items-center justify-center bg-base-200 text-content whitespace-pre-line' data-tip={category[1]}>{category[0]}</span>
+                                )) : null
+                            }
+                        </div>
+                        
+                        {guesses && (guesses.length) > 0 &&
+                            guesses.map((guess: GuessResult, index) => (<AnswerRow key={guess.charId ? guess.charId : index} guess={guess} index={index}/>))
                         }
                     </div>
-                    
-                    {guesses && (guesses.length) > 0 &&
-                        guesses.map((guess: GuessResult, index) => (<AnswerRow key={guess.charId ? guess.charId : index} guess={guess} index={index}/>))
-                    }
                 </div>
             </div>
 
