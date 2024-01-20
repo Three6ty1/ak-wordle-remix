@@ -58,8 +58,8 @@ function Document({
   return (
     <html lang="en">
       <head>
-        <meta charSet="utf-8" />
         <meta
+          charSet="utf-8"
           name="viewport"
           content="width=device-width,initial-scale=1,initial-scale=1, maximum-scale=1, user-scalable=0"
         />
@@ -67,7 +67,7 @@ function Document({
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className='no-scrollbar'>
         {children}
         <RouteChangeAnnouncement />
         <ScrollRestoration />
