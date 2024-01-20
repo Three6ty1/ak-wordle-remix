@@ -54,12 +54,12 @@ export default function AnswerBox({ category, guess, result, boxIndex, rowIndex 
              *      The guess.
              */}
             {category === 'name' ?
-                    <div className={`${divStyle} bg-base-200`} data-tip={guess} style={{animationDelay: '200ms'}}>
+                    <div className={`${divStyle} tooltip-answer-row bg-base-200`} data-tip={guess} style={{animationDelay: '200ms'}}>
                         <img src={url} />
                     </div>   
                 :
                     category === 'race' ?
-                        <div className={`${divStyle} tooltip before:whitespace-pre-wrap before:content-[attr(data-tip)]`}
+                        <div className={`${divStyle} tooltip-answer-row`}
                             data-tip={raceToolTips[guess as keyof typeof raceToolTips]}
                             style={{'backgroundColor': bg, animationDelay: `${boxIndex*animationDelay}ms`}}
                         >
@@ -67,7 +67,7 @@ export default function AnswerBox({ category, guess, result, boxIndex, rowIndex 
                         </div>
                     :
                         category === 'cost' ?
-                            <div className={`${divStyle} tooltip before:whitespace-pre-wrap before:content-[attr(data-tip)]`}
+                            <div className={`${divStyle} tooltip-answer-row`}
                                 data-tip={costToolTips[result as keyof typeof costToolTips]}
                                 style={{'backgroundColor': bg, animationDelay: `${boxIndex*animationDelay}ms`}}
                             >
