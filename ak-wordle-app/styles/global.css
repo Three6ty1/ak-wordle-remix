@@ -24,14 +24,21 @@
   }
 }
 
+@layer components {
+    .tooltip-answer-row {
+        @apply md:tooltip md:tooltip-top before:md:w-max before:whitespace-pre-line md:before:content-[attr(data-tip)]
+    }
+}
+
 @keyframes flip {
     0% {
         transform: rotateX(90deg);
         opacity: 0;
     }
     100% {
-    transform: rotateX(0);
-    opacity: 1;
+        transform: rotateX(0);
+        opacity: 1;
+        z-index: 0;
     }
 }
 
