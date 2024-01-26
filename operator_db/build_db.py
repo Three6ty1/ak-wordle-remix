@@ -59,7 +59,7 @@ def get_group(info):
     elif group == "rainbow":
         group = "Rainbow 6" 
     elif group == "lgd":
-        group = "LDG"
+        group = "LGD"
     elif group == "abyssal":
         group = "Abyssal Hunter"
     elif group == "rhine":
